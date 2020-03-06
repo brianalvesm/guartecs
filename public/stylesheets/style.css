@@ -9,3 +9,25 @@ a {
 h1 {
   color: #222;
   margin-top: 0; }
+
+@font-face {
+  font-family: 'baloo_daregular';
+  src: url("../fonts/balooda-regular-webfont.woff2") format("woff2"), url("../fonts/balooda-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.main-menu {
+  background-color: #E4283D; }
+  .main-menu ul {
+    margin: 10px 0;
+    text-align: center; }
+    .main-menu ul li {
+      display: inline-block;
+      padding: 0 10px;
+      border-right: 1px solid #F2617C;
+      text-transform: uppercase;
+      font-family: 'baloo_daregular', sans-serif;
+      font-size: 18px;
+      color: white; }
+      .main-menu ul li:last-child {
+        border-right: none; }
