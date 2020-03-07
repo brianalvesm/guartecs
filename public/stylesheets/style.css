@@ -18,19 +18,19 @@ h1 {
 
 @font-face {
   font-family: 'open_sans';
-  src: url("OpenSans-Regular-webfont.woff") format("woff");
+  src: url("../fonts/OpenSans-Regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'open_sans';
-  src: url("OpenSans-Bold-webfont.woff") format("woff");
+  src: url("../fonts/OpenSans-Bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'open_sans';
-  src: url("OpenSans-Italic-webfont.woff") format("woff");
+  src: url("../fonts/OpenSans-Italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: italic; }
 
@@ -44,35 +44,57 @@ h1 {
       padding: 0 10px;
       border-right: 1px solid #F2617C;
       text-transform: uppercase;
-      font-family: 'baloo_daregular', sans-serif;
+      font-family: "baloo_daregular", sans-serif;
       font-size: 18px;
       color: white; }
       .main-menu ul li:last-child {
         border-right: none; }
 
+.header-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 15px 0; }
+  .header-wrapper .social-media-icons {
+    width: 56px; }
+    .header-wrapper .social-media-icons img:first-child {
+      padding-right: 20px; }
+
+.header-tel {
+  color: #E4283D;
+  font-family: "baloo_daregular", sans-serif;
+  font-size: 22px;
+  position: relative;
+  top: 5px; }
+  .header-tel img {
+    position: relative;
+    top: -5px; }
+
 .sec {
   text-align: center;
   font-size: 1.5rem; }
   .sec h1 {
-    font-family: 'baloo_daregular', sans-serif;
+    font-family: "baloo_daregular", sans-serif;
     font-size: 50px;
     color: #E4283D; }
   .sec h2 {
-    font-family: 'baloo_daregular', sans-serif;
-    font-size: 32px;
+    font-family: "baloo_daregular", sans-serif;
+    font-size: 28px;
+    line-height: 28px;
     color: #E4283D; }
   .sec p {
     line-height: 1.4; }
   .sec--diferenciais {
     background-color: #F9F5ED; }
-    .sec--diferenciais .card {
-      background: none; }
-      .sec--diferenciais .card .card-section {
-        background: #fefefe; }
+    .sec--diferenciais .card--diferenciais .card-section p {
+      max-width: 420px; }
+    .sec--diferenciais .card--diferenciais .btn {
+      width: 300px;
+      height: 60px;
+      padding: 18px; }
     .sec--diferenciais .diferenciais-figure {
       overflow: hidden;
-      border-radius: 20px 20px 0 0;
-      width: 580px;
+      border-radius: 10px 10px 0 0;
       height: 250px; }
   .sec--galeria {
     background: #F9F5ED;
@@ -93,7 +115,7 @@ h1 {
           background: #E4283D;
           opacity: 0.9;
           color: white;
-          font-family: 'baloo_daregular', sans-serif;
+          font-family: "baloo_daregular", sans-serif;
           font-size: 22px;
           width: 100%;
           height: 40px;
@@ -102,21 +124,32 @@ h1 {
           padding: 5px; }
 
 .card {
-  border: none; }
-  .card .card-section p {
-    font-size: 16px; }
+  border: none;
+  box-shadow: 6px 0 32px 0 rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  border-radius: 10px; }
+  .card .card-section {
+    background: #fefefe;
+    padding: 20px 40px 60px; }
+    .card .card-section p {
+      margin: auto;
+      font-size: 15px; }
+    .card .card-section h2 {
+      margin-bottom: 20px; }
+    .card .card-section h3 {
+      font-size: 21px;
+      font-weight: bold;
+      margin-bottom: 0; }
 
 .btn {
-  width: 300px;
-  height: 60px;
+  display: inline-block;
   border-radius: 60px;
   background: #58BEED;
   color: white;
   text-transform: uppercase;
-  font-family: 'baloo_daregular', sans-serif;
+  font-family: "baloo_daregular", sans-serif;
   font-size: 18px;
-  padding: 18px;
-  margin: auto; }
+  padding: 10px 20px; }
 
 .newsletter {
   background-color: #F3EEE4;
@@ -138,5 +171,5 @@ footer {
   .footer-menu ul li {
     display: block;
     text-transform: uppercase;
-    font-family: 'baloo_daregular', sans-serif;
+    font-family: "baloo_daregular", sans-serif;
     font-size: 18px; }
