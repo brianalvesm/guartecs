@@ -1,53 +1,55 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title><%= title %></title>
-		<link rel="stylesheet" href="/stylesheets/style.css" />
-		<link rel="stylesheet" href="/stylesheets/foundation.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-<body>
-	<header>
+<%- include('partials/header') %>
+	<section class="sec sec--slide">
 		<div class="grid-container">
 			<div class="grid-x">
 				<div class="cell">
-					<img src="../images/guartecs-logo.png" title="Guartecs" alt="Guartecs">
-					<div class="header-tel">0800 777-0199 - (11) 98129-0226</div>
-					<div class="btn btn--primary">Orçamento</div>
+					<p>slide here</p>
 				</div>
 			</div>
 		</div>
-	</header>
-	<nav class="main-menu">
+	</section>
+	<section class="sec sec--cerca">
 		<div class="grid-container">
 			<div class="grid-x">
 				<div class="cell">
-					<ul>
-						<li>Empresa</li>
-						<li>Produtos</li>
-						<li>Características</li>
-						<li>Galeria</li>
-						<li>Como comprar</li>
-						<li>Instalação</li>
-						<li>Blog</li>
-						<li>Contato</li>
-						<li>Orçamento</li>
-					</ul>
+					<h1>Cerca para proteção de crianças em piscinas</h1>
+					<p>Cerca removível é a melhor maneira de proteger suas crianças<br>
+						e seus animais de estimação contra afogamento.<br>
+						É uma barreira física, facilmente monitorável pelos responsáveis.<br>
+						<b>É bonita, transparente, durável, dispensa pintura e é livre de manutenção.</b></p>
 				</div>
 			</div>
 		</div>
-	</nav>
-	<section class="sec-slide">
+	</section>
+	<section class="sec sec--diferenciais">
 		<div class="grid-container">
 			<div class="grid-x">
 				<div class="cell">
-					<h1><%= title %></h1>
-					<p>Bem-vindo ao Guartecs!</p>
+					<h1>Nossos Diferenciais</h1>
+					<p>Ao adquirir a cerca para piscina Guartecs você conta com dois modelos de coluna, alça anatômica, fecho inox com mola e três modelos de portão, com qualidade assegurada.</p>
+				</div>
+			</div>
+			<div class="grid-x">
+				<div class="cell large-6 small-12">
+					<div class="card">
+					  <img src="assets/img/generic/rectangle-1.jpg">
+					  <div class="card-section">
+					    <h4>This is a card.</h4>
+					    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+					  </div>
+					</div>
+				</div>
+				<div class="cell large-6 small-12">
+					<div class="card">
+					  <img src="assets/img/generic/rectangle-1.jpg">
+					  <div class="card-section">
+					    <h4>This is a card.</h4>
+					    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+					  </div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<script src="/javascripts/foundation.js"></script>
-</body>
-</html>
+<%- include('partials/footer') %>

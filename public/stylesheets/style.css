@@ -1,7 +1,7 @@
 body, html {
   margin: 0;
   height: 100%;
-  font: normal normal 1rem/1.5 Helvetica, Arial, sans-serif; }
+  font: normal normal 1rem/1.5 "open_sans", sans-serif; }
 
 a {
   color: #00B7FF; }
@@ -12,9 +12,27 @@ h1 {
 
 @font-face {
   font-family: 'baloo_daregular';
-  src: url("../fonts/balooda-regular-webfont.woff2") format("woff2"), url("../fonts/balooda-regular-webfont.woff") format("woff");
+  src: url("../fonts/balooda-regular-webfont.woff") format("woff"), url("../fonts/balooda-regular-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
+
+@font-face {
+  font-family: 'open_sans';
+  src: url("OpenSans-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sans';
+  src: url("OpenSans-Bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sans';
+  src: url("OpenSans-Italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
 
 .main-menu {
   background-color: #E4283D; }
@@ -31,3 +49,36 @@ h1 {
       color: white; }
       .main-menu ul li:last-child {
         border-right: none; }
+
+.sec {
+  text-align: center;
+  font-size: 1.5rem; }
+  .sec h1 {
+    font-family: 'baloo_daregular', sans-serif;
+    font-size: 50px;
+    color: #E4283D; }
+  .sec p {
+    line-height: 1.4; }
+
+.newsletter {
+  background-color: #F3EEE4;
+  color: #E4283D; }
+
+footer {
+  background-color: #E4283D;
+  color: white;
+  height: 380px;
+  overflow: auto; }
+  footer .footer-content {
+    margin: 75px auto; }
+  footer .all-rights-reserved {
+    border-top: 1px solid white; }
+
+.footer-menu ul {
+  column-count: 2;
+  column-width: 150px; }
+  .footer-menu ul li {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'baloo_daregular', sans-serif;
+    font-size: 18px; }

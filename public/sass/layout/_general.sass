@@ -14,13 +14,31 @@ h1
 // Fonts
 @font-face
   font-family: 'baloo_daregular'
-  src: url('../fonts/balooda-regular-webfont.woff2') format('woff2'), url('../fonts/balooda-regular-webfont.woff') format('woff')
+  src:  url('../fonts/balooda-regular-webfont.woff') format('woff'), url('../fonts/balooda-regular-webfont.woff2') format('woff2')
   font-weight: normal
   font-style: normal
 
+@font-face
+  font-family: 'open_sans'
+  src: url('OpenSans-Regular-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'open_sans'
+  src: url('OpenSans-Bold-webfont.woff') format('woff')
+  font-weight: bold
+  font-style: normal
+
+@font-face
+  font-family: 'open_sans'
+  src: url('OpenSans-Italic-webfont.woff') format('woff')
+  font-weight: normal
+  font-style: italic
+
 // Navigation
 .main-menu
-	background-color: #E4283D
+	background-color: $color-primary
 	ul
 		margin: 10px 0
 		text-align: center
@@ -34,3 +52,38 @@ h1
 			color: white
 			&:last-child
 				border-right: none
+
+// SECTIONS
+.sec
+	text-align: center
+	font-size: 1.5rem
+	h1
+		font-family: 'baloo_daregular', sans-serif
+		font-size: 50px
+		color: $color-primary
+	p
+		line-height: 1.4
+
+// Footer
+.newsletter
+	background-color: #F3EEE4
+	color: $color-primary
+
+footer
+	background-color: $color-primary
+	color: white
+	height: 380px
+	overflow: auto
+	.footer-content
+		margin: 75px auto
+	.all-rights-reserved
+		border-top: 1px solid white
+
+.footer-menu ul
+	column-count: 2
+	column-width: 150px
+	li
+		display: block
+		text-transform: uppercase
+		font-family: 'baloo_daregular', sans-serif
+		font-size: 18px
