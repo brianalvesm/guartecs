@@ -54,7 +54,8 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 15px 0; }
+  margin: 15px 0;
+  min-height: 58px; }
   .header-wrapper .social-media-icons {
     width: 56px; }
     .header-wrapper .social-media-icons img:first-child {
@@ -69,6 +70,32 @@ h1 {
   .header-tel img {
     position: relative;
     top: -5px; }
+
+.slider-home .slide--1 {
+  background-image: url("../images/slide-1.jpg"); }
+
+.slider-home .slide--2 {
+  background-image: url("../images/slide-2.jpg"); }
+
+.slider-home .slide h1 {
+  color: white;
+  font-size: 56px;
+  line-height: 54px; }
+
+.slider-home .slide h2 {
+  color: #C9ECF7;
+  font-size: 42px;
+  line-height: 42px; }
+
+.slider-home .slide .slide-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  height: 840px;
+  text-align: left; }
+  .slider-home .slide .slide-content .btn {
+    width: 325px; }
 
 .sec {
   text-align: center;
