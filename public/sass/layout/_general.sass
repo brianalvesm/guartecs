@@ -61,8 +61,67 @@ h1
 		font-family: 'baloo_daregular', sans-serif
 		font-size: 50px
 		color: $color-primary
+	h2
+		font-family: 'baloo_daregular', sans-serif
+		font-size: 32px
+		color: $color-primary
 	p
 		line-height: 1.4
+	&--diferenciais
+		background-color: $color-secondary
+		.card
+			background: none
+			.card-section
+				background: #fefefe
+		.diferenciais-figure
+			overflow: hidden
+			border-radius: 20px 20px 0 0
+			width: 580px
+			height: 250px
+	&--galeria
+		background: $color-secondary
+		background: linear-gradient(to bottom, $color-secondary 0%, white 100%)
+		background: -moz-linear-gradient(top, $color-secondary 0%, white 100%)
+		background: -webkit-linear-gradient(top, $color-secondary 0%, white 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-secondary', endColorstr='white',GradientType=1)
+		.gallery-container
+			display: flex
+			flex-wrap: wrap
+			.gallery-figure
+				width: 380px
+				height: 280px
+				margin: 10px 10px 0 0
+				overflow: hidden
+				position: relative
+				figcaption
+					background: $color-primary
+					opacity: 0.9
+					color: white
+					font-family: 'baloo_daregular', sans-serif
+					font-size: 22px
+					width: 100%
+					height: 40px
+					position: absolute
+					bottom: 0
+					padding: 5px
+
+// COMPONENTS
+.card
+	border: none
+	.card-section p
+		font-size: 16px
+
+.btn
+	width: 300px
+	height: 60px
+	border-radius: 60px
+	background: $btn-color
+	color: white
+	text-transform: uppercase
+	font-family: 'baloo_daregular', sans-serif
+	font-size: 18px
+	padding: 18px
+	margin: auto
 
 // Footer
 .newsletter
