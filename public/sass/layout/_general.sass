@@ -77,29 +77,57 @@ h1
 		top: -5px
 
 // Slider
-.slider-home .slide
-	&--1
-		background-image: url('../images/slide-1.jpg')
-	&--2
-		background-image: url('../images/slide-2.jpg')
-	h1
-		color: white
-		font-size: 56px
-		line-height: 54px
-	h2
-		color: #C9ECF7
-		font-size: 42px
-		line-height: 42px
-	.slide-content
-		display: flex
-		flex-wrap: wrap
-		flex-direction: column
-		justify-content: center
+.slider-home
+	.slide
 		height: 840px
-		text-align: left
-		.btn
-			width: 325px
+		overflow: hidden
+		background:
+			position: center
+			repeat: no-repeat
+			size: cover
+		&--1
+			background-image: url('../images/slide-1.jpg')
+		&--2
+			background-image: url('../images/slide-2.jpg')
+		h1
+			color: white
+			font-size: 56px
+			line-height: 54px
+		h2
+			color: #C9ECF7
+			font-size: 42px
+			line-height: 42px
+		.slide-content
+			display: flex
+			flex-wrap: wrap
+			flex-direction: column
+			justify-content: center
+			height: 800px
+			text-align: left
+			.btn
+				width: 325px
 
+button.slick-next,
+button.slick-next:hover
+	position: absolute
+	top: 41%
+	right: 54px
+	width: 47px
+	height: 75px
+	background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png")
+	background-size: 95px
+
+button.slick-prev,
+button.slick-prev:hover
+	position: absolute
+	top: 41%
+	left: 15px
+	z-index: 1
+	width: 47px
+	height: 75px
+	background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png")
+	background-size: 95px
+	background-position-x: right
 
 // SECTIONS
 .sec
@@ -116,6 +144,15 @@ h1
 		color: $color-primary
 	p
 		line-height: 1.4
+	&--slide
+		height: 840px
+		overflow: hidden
+		position: relative
+		z-index: 0
+		.slide-mask
+			position: absolute
+			bottom: 0
+			z-index: 1
 	&--diferenciais
 		background-color: $color-secondary
 		.card--diferenciais
