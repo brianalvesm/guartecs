@@ -175,15 +175,57 @@ button.slick-prev
 			position: absolute
 			bottom: 0
 			z-index: 1
+	&--cerca
+		position: relative
+		.dog-with-kid
+			position: absolute
+			bottom: 0
+			left: 50%
+			margin-left: -248px
+		.card
+			position: relative
+			width: 400px
+			margin: 50px auto
+			padding-bottom: 40px
+			background-color: $color-secondary
+			overflow: visible
+			.alu-icon
+				position: absolute
+				top: 12px
+				left: 12px
+			.btn
+				width: 200px
+				height: 40px
+				padding: 10px
+				font-size: 14px
+				position: absolute
+				bottom: -20px
+				left: 50%
+				margin-left: -100px
 	&--diferenciais
 		background-color: $color-secondary
 		.card--diferenciais
-			.card-section p
-				max-width: 420px
+			position: relative
+			overflow: visible
+			margin-bottom: 60px
+			.card-section
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+				background: #fefefe
+				height: 356px
+				p
+					max-width: 420px
 			.btn
 				width: 300px
 				height: 60px
 				padding: 18px
+				font-size: 18px
+				position: absolute
+				bottom: -30px
+				left: 50%
+				margin-left: -150px
 		.diferenciais-figure
 			overflow: hidden
 			border-radius: 10px 10px 0 0
@@ -222,11 +264,10 @@ button.slick-prev
 	box-shadow: 6px 0 32px 0 rgba(0,0,0, 0.1)
 	margin: 10px
 	border-radius: 10px
+	overflow: visible
+	background-color: white
 	.card-section
-		background: #fefefe
-		padding: 20px 40px 60px
 		p
-			margin: auto
 			font-size: 15px
 		h2
 			margin-bottom: 20px
