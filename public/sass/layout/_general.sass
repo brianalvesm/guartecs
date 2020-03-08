@@ -84,11 +84,11 @@ h1
 		background:
 			position: center
 			repeat: no-repeat
-			size: cover
+			size: auto
 		&--1
-			background-image: url('../images/slide-1.jpg')
+			background-image: url('../images/slide-1-crop.jpg')
 		&--2
-			background-image: url('../images/slide-2.jpg')
+			background-image: url('../images/slide-2-crop.jpg')
 		h1
 			color: white
 			font-size: 56px
@@ -107,27 +107,27 @@ h1
 			.btn
 				width: 325px
 
-button.slick-next,
-button.slick-next:hover
-	position: absolute
-	top: 41%
-	right: 54px
-	width: 47px
-	height: 75px
-	background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png")
-	background-size: 95px
-
 button.slick-prev,
-button.slick-prev:hover
+button.slick-next
+	font-size: 0
+	line-height: 0
+	cursor: pointer
+	background-size: 58px
 	position: absolute
-	top: 41%
-	left: 15px
+	height: 58px
+	width: 58px
+	top: 40%
 	z-index: 1
-	width: 47px
-	height: 75px
-	background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png")
-	background-size: 95px
-	background-position-x: right
+
+button.slick-next
+	right: 250px
+	background-image: url('../images/slide-arrow.png')
+	-webkit-transform: scaleX(-1)
+	transform: scaleX(-1)
+
+button.slick-prev
+	left: 250px
+	background-image: url('../images/slide-arrow.png')
 
 // SECTIONS
 .sec
