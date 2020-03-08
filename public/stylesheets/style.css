@@ -1,7 +1,8 @@
 body, html {
   margin: 0;
   height: 100%;
-  font: normal normal 1rem/1.5 "open_sans", sans-serif; }
+  font: normal normal 1rem/1.5 "open_sans", sans-serif;
+  background-color: white; }
 
 a {
   color: #00B7FF; }
@@ -84,7 +85,8 @@ h1 {
   .slider-home .slide h1 {
     color: white;
     font-size: 56px;
-    line-height: 54px; }
+    line-height: 54px;
+    margin-bottom: 45px; }
   .slider-home .slide h2 {
     color: #C9ECF7;
     font-size: 42px;
@@ -120,6 +122,26 @@ button.slick-next {
 button.slick-prev {
   left: 250px;
   background-image: url("../images/slide-arrow.png"); }
+
+.slick-dots {
+  list-style: none;
+  position: relative;
+  bottom: 200px;
+  z-index: 2; }
+  .slick-dots li {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    border: none; }
+    .slick-dots li button {
+      font-family: "baloo_daregular", sans-serif;
+      font-size: 24px;
+      color: white; }
+    .slick-dots li.slick-active {
+      border: 2px solid #58BEED; }
+      .slick-dots li.slick-active button {
+        color: #58BEED; }
 
 .sec {
   text-align: center;
