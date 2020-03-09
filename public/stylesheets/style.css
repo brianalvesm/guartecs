@@ -194,7 +194,8 @@ button.slick-prev {
   text-transform: uppercase;
   font-family: "baloo_daregular", sans-serif;
   font-size: 18px;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  box-shadow: 0 15px 34px 0 rgba(0, 0, 0, 0.2); }
   .btn--secondary {
     background: #E4283D; }
 
@@ -206,9 +207,37 @@ button.slick-prev {
   .selos li {
     display: inline-block; }
 
+.simulador {
+  margin: 40px 0; }
+
 .newsletter {
   background-color: #F3EEE4;
-  color: #E4283D; }
+  height: 120px;
+  padding: 26px 0; }
+  .newsletter .input-group-button {
+    position: relative; }
+  .newsletter input {
+    height: 66px !important;
+    border-radius: 33px !important; }
+    .newsletter input[type="email"] {
+      width: 500px; }
+      .newsletter input[type="email"]::placeholder {
+        color: #E4283D;
+        padding-left: 40px; }
+    .newsletter input[type="submit"] {
+      position: absolute;
+      right: -84px;
+      width: 168px;
+      color: white;
+      background-color: #E4283D;
+      font-family: "baloo_daregular", sans-serif;
+      font-size: 14px;
+      text-transform: uppercase; }
+  .newsletter span {
+    color: #E4283D;
+    font-family: "baloo_daregular", sans-serif;
+    font-size: 24px;
+    margin-left: 32px; }
 
 footer {
   background-color: #E4283D;
@@ -241,7 +270,8 @@ footer {
     font-family: "baloo_daregular", sans-serif;
     font-size: 32px;
     line-height: 32px;
-    color: #E4283D; }
+    color: #E4283D;
+    margin-bottom: 32px; }
   .sec p {
     line-height: 1.4; }
   .sec--slide {
@@ -318,7 +348,7 @@ footer {
     background: linear-gradient(to bottom, #F9F5ED 0%, white 100%);
     background: -moz-linear-gradient(top, #F9F5ED 0%, white 100%);
     background: -webkit-linear-gradient(top, #F9F5ED 0%, white 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-secondary', endColorstr='white',GradientType=1); }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-beige', endColorstr='white',GradientType=1); }
     .sec--galeria .gallery-container {
       display: flex;
       flex-wrap: wrap; }
@@ -339,10 +369,34 @@ footer {
           position: absolute;
           bottom: 0;
           padding: 5px; }
+  .sec--sobre .grid-container {
+    background-image: url("../images/guartecs-sobre-bg.png");
+    background-repeat: no-repeat;
+    background-position: center; }
+  .sec--sobre h2 {
+    position: relative; }
+    .sec--sobre h2:before, .sec--sobre h2:after {
+      display: block;
+      content: "";
+      position: absolute;
+      background-image: url("../images/sobre-section-friso.png");
+      background-repeat: no-repeat;
+      width: 320px;
+      height: 1px; }
+    .sec--sobre h2:before {
+      left: 0;
+      top: 16px; }
+    .sec--sobre h2:after {
+      right: 0;
+      bottom: 16px; }
   .sec--video {
     min-height: 856px;
     background-image: url("../images/video-bg.png");
     background-repeat: no-repeat; }
+    .sec--video .grid-container {
+      height: 796px; }
+      .sec--video .grid-container .grid-x {
+        height: 100%; }
   .sec--video-footer {
     height: 280px;
     background: #58BEED;

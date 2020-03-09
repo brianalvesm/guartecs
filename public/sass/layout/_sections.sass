@@ -6,12 +6,13 @@
 	h1
 		font-family: $font-baloo
 		font-size: 50px
-		color: $color-primary
+		color: $color-red
 	h2
 		font-family: $font-baloo
 		font-size: 32px
 		line-height: 32px
-		color: $color-primary
+		color: $color-red
+		margin-bottom: 32px
 	p
 		line-height: 1.4
 	&--slide
@@ -37,7 +38,7 @@
 			width: 400px
 			margin: 50px auto
 			padding-bottom: 40px
-			background-color: $color-secondary
+			background-color: $color-beige
 			overflow: visible
 			.alu-icon
 				position: absolute
@@ -55,7 +56,7 @@
 			@media only screen and (max-width: 40rem)
 				width: auto
 	&--diferenciais
-		background-color: $color-secondary
+		background-color: $color-beige
 		.card--diferenciais
 			position: relative
 			overflow: visible
@@ -84,11 +85,11 @@
 			// width: 580px
 			height: 250px
 	&--galeria
-		background: $color-secondary
-		background: linear-gradient(to bottom, $color-secondary 0%, white 100%)
-		background: -moz-linear-gradient(top, $color-secondary 0%, white 100%)
-		background: -webkit-linear-gradient(top, $color-secondary 0%, white 100%)
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-secondary', endColorstr='white',GradientType=1)
+		background: $color-beige
+		background: linear-gradient(to bottom, $color-beige 0%, white 100%)
+		background: -moz-linear-gradient(top, $color-beige 0%, white 100%)
+		background: -webkit-linear-gradient(top, $color-beige 0%, white 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-beige', endColorstr='white',GradientType=1)
 		.gallery-container
 			display: flex
 			flex-wrap: wrap
@@ -99,7 +100,7 @@
 				overflow: hidden
 				position: relative
 				figcaption
-					background: $color-primary
+					background: $color-red
 					opacity: 0.9
 					color: white
 					font-family: $font-baloo
@@ -109,18 +110,46 @@
 					position: absolute
 					bottom: 0
 					padding: 5px
+	&--sobre
+		.grid-container
+			background:
+				image: url('../images/guartecs-sobre-bg.png')
+				repeat: no-repeat
+				position: center
+		h2
+			position: relative
+			&:before,
+			&:after
+				display: block
+				content: ""
+				position: absolute
+				background:
+					image: url('../images/sobre-section-friso.png')
+					repeat: no-repeat
+				width: 320px
+				height: 1px
+			&:before
+				left: 0
+				top: 16px
+			&:after
+				right: 0
+				bottom: 16px
 	&--video
 		min-height: 856px
 		background:
 			image: url('../images/video-bg.png')
 			repeat: no-repeat
+		.grid-container
+			height: 796px
+			.grid-x
+				height: 100%
 	&--video-footer
 		height: 280px
-		background: $blue
+		background: $color-blue
 		position: relative
 		.girl
 			position: absolute
 			bottom: 0
 			left: 0
 	&--sobrasa b
-		color: $color-primary
+		color: $color-red

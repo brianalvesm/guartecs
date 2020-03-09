@@ -39,7 +39,7 @@ h1
 
 // Navigation
 .main-menu
-	background-color: $color-primary
+	background-color: $color-red
 	ul
 		margin: 10px 0
 		text-align: center
@@ -67,7 +67,7 @@ h1
 			padding-right: 20px
 
 .header-tel
-	color: $color-primary
+	color: $color-red
 	font-family: $font-baloo
 	font-size: 22px
 	// A ideia aqui é alinhar verticalmente o bloco de texto e ao mesmo tempo alinhar o ícone ao lado
@@ -174,9 +174,9 @@ button.slick-prev
 			font-size: 24px
 			color: white
 		&.slick-active
-			border: 2px solid $blue
+			border: 2px solid $color-blue
 			button
-				color: $blue
+				color: $color-blue
 
 // COMPONENTS
 .card
@@ -199,14 +199,15 @@ button.slick-prev
 .btn
 	display: inline-block
 	border-radius: 60px
-	background: $blue
+	background: $color-blue
 	color: white
 	text-transform: uppercase
 	font-family: $font-baloo
 	font-size: 18px
 	padding: 10px 20px
+	box-shadow: 0 15px 34px 0 rgba(0,0,0,0.2)
 	&--secondary
-		background: $color-primary
+		background: $color-red
 
 .selos
 	list-style: none
@@ -216,13 +217,42 @@ button.slick-prev
 	li
 		display: inline-block
 
+.simulador
+	margin: 40px 0
+
 // Footer
 .newsletter
 	background-color: #F3EEE4
-	color: $color-primary
+	height: 120px
+	padding: 26px 0
+	.input-group-button
+		position: relative
+	input
+		// Fix - Sobrescrevendo regras do Foundation para estilizar os inputs da newsletter
+		height: 66px !important
+		border-radius: 33px !important
+		&[type="email"]
+			width: 500px
+			&::placeholder
+				color: $color-red
+				padding-left: 40px
+		&[type="submit"]
+			position: absolute
+			right: -84px
+			width: 168px
+			color: white
+			background-color: $color-red
+			font-family: $font-baloo
+			font-size: 14px
+			text-transform: uppercase
+	span
+		color: $color-red
+		font-family: $font-baloo
+		font-size: 24px
+		margin-left: 32px
 
 footer
-	background-color: $color-primary
+	background-color: $color-red
 	color: white
 	height: 380px
 	overflow: auto
