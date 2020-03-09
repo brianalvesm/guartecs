@@ -72,6 +72,33 @@ h1 {
     position: relative;
     top: -5px; }
 
+.slider-depoimentos .card {
+  padding: 25px 15px 50px;
+  position: relative;
+  overflow: visible; }
+  .slider-depoimentos .card p {
+    font-size: 16px;
+    height: 265px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; }
+  .slider-depoimentos .card h3 {
+    font-family: "baloo_daregular", sans-serif;
+    font-size: 24px;
+    color: #2C2C30;
+    margin-bottom: 0; }
+  .slider-depoimentos .card span {
+    font-size: 10px;
+    text-transform: uppercase; }
+  .slider-depoimentos .card img {
+    position: absolute;
+    bottom: -38px;
+    left: 50%;
+    margin-left: -38px; }
+
+.slider-depoimentos .slick-list {
+  overflow: visible; }
+
 .slider-home .slide {
   height: 840px;
   overflow: hidden;
@@ -143,17 +170,77 @@ button.slick-prev {
       .slick-dots li.slick-active button {
         color: #58BEED; }
 
+.card {
+  border: none;
+  box-shadow: 6px 0 32px 0 rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  border-radius: 10px;
+  overflow: visible;
+  background-color: white; }
+  .card .card-section p {
+    font-size: 15px; }
+  .card .card-section h2 {
+    margin-bottom: 20px; }
+  .card .card-section h3 {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 0; }
+
+.btn {
+  display: inline-block;
+  border-radius: 60px;
+  background: #58BEED;
+  color: white;
+  text-transform: uppercase;
+  font-family: "baloo_daregular", sans-serif;
+  font-size: 18px;
+  padding: 10px 20px; }
+  .btn--secondary {
+    background: #E4283D; }
+
+.selos {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .selos li {
+    display: inline-block; }
+
+.newsletter {
+  background-color: #F3EEE4;
+  color: #E4283D; }
+
+footer {
+  background-color: #E4283D;
+  color: white;
+  height: 380px;
+  overflow: auto; }
+  footer .footer-content {
+    margin: 75px auto; }
+  footer .all-rights-reserved {
+    border-top: 1px solid white; }
+
+.footer-menu ul {
+  column-count: 2;
+  column-width: 150px; }
+  .footer-menu ul li {
+    display: block;
+    text-transform: uppercase;
+    font-family: "baloo_daregular", sans-serif;
+    font-size: 18px; }
+
 .sec {
   text-align: center;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  padding: 30px 0; }
   .sec h1 {
     font-family: "baloo_daregular", sans-serif;
     font-size: 50px;
     color: #E4283D; }
   .sec h2 {
     font-family: "baloo_daregular", sans-serif;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 32px;
+    line-height: 32px;
     color: #E4283D; }
   .sec p {
     line-height: 1.4; }
@@ -161,13 +248,15 @@ button.slick-prev {
     height: 840px;
     overflow: hidden;
     position: relative;
-    z-index: 0; }
+    z-index: 0;
+    padding: 0; }
     .sec--slide .slide-mask {
       position: absolute;
       bottom: 0;
       z-index: 1; }
   .sec--cerca {
-    position: relative; }
+    position: relative;
+    padding-bottom: 0; }
     .sec--cerca .dog-with-kid {
       position: absolute;
       bottom: 0;
@@ -193,6 +282,9 @@ button.slick-prev {
         bottom: -20px;
         left: 50%;
         margin-left: -100px; }
+      @media only screen and (max-width: 40rem) {
+        .sec--cerca .card {
+          width: auto; } }
   .sec--diferenciais {
     background-color: #F9F5ED; }
     .sec--diferenciais .card--diferenciais {
@@ -247,52 +339,17 @@ button.slick-prev {
           position: absolute;
           bottom: 0;
           padding: 5px; }
-
-.card {
-  border: none;
-  box-shadow: 6px 0 32px 0 rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  border-radius: 10px;
-  overflow: visible;
-  background-color: white; }
-  .card .card-section p {
-    font-size: 15px; }
-  .card .card-section h2 {
-    margin-bottom: 20px; }
-  .card .card-section h3 {
-    font-size: 21px;
-    font-weight: bold;
-    margin-bottom: 0; }
-
-.btn {
-  display: inline-block;
-  border-radius: 60px;
-  background: #58BEED;
-  color: white;
-  text-transform: uppercase;
-  font-family: "baloo_daregular", sans-serif;
-  font-size: 18px;
-  padding: 10px 20px; }
-
-.newsletter {
-  background-color: #F3EEE4;
-  color: #E4283D; }
-
-footer {
-  background-color: #E4283D;
-  color: white;
-  height: 380px;
-  overflow: auto; }
-  footer .footer-content {
-    margin: 75px auto; }
-  footer .all-rights-reserved {
-    border-top: 1px solid white; }
-
-.footer-menu ul {
-  column-count: 2;
-  column-width: 150px; }
-  .footer-menu ul li {
-    display: block;
-    text-transform: uppercase;
-    font-family: "baloo_daregular", sans-serif;
-    font-size: 18px; }
+  .sec--video {
+    min-height: 856px;
+    background-image: url("../images/video-bg.png");
+    background-repeat: no-repeat; }
+  .sec--video-footer {
+    height: 280px;
+    background: #58BEED;
+    position: relative; }
+    .sec--video-footer .girl {
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+  .sec--sobrasa b {
+    color: #E4283D; }

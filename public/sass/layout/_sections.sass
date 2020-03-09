@@ -1,0 +1,126 @@
+// SECTIONS
+.sec
+	text-align: center
+	font-size: 1.5rem
+	padding: 30px 0
+	h1
+		font-family: $font-baloo
+		font-size: 50px
+		color: $color-primary
+	h2
+		font-family: $font-baloo
+		font-size: 32px
+		line-height: 32px
+		color: $color-primary
+	p
+		line-height: 1.4
+	&--slide
+		height: 840px
+		overflow: hidden
+		position: relative
+		z-index: 0
+		padding: 0
+		.slide-mask
+			position: absolute
+			bottom: 0
+			z-index: 1
+	&--cerca
+		position: relative
+		padding-bottom: 0
+		.dog-with-kid
+			position: absolute
+			bottom: 0
+			left: 50%
+			margin-left: -248px
+		.card
+			position: relative
+			width: 400px
+			margin: 50px auto
+			padding-bottom: 40px
+			background-color: $color-secondary
+			overflow: visible
+			.alu-icon
+				position: absolute
+				top: 12px
+				left: 12px
+			.btn
+				width: 200px
+				height: 40px
+				padding: 10px
+				font-size: 14px
+				position: absolute
+				bottom: -20px
+				left: 50%
+				margin-left: -100px
+			@media only screen and (max-width: 40rem)
+				width: auto
+	&--diferenciais
+		background-color: $color-secondary
+		.card--diferenciais
+			position: relative
+			overflow: visible
+			margin-bottom: 60px
+			.card-section
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+				background: #fefefe
+				height: 356px
+				p
+					max-width: 420px
+			.btn
+				width: 300px
+				height: 60px
+				padding: 18px
+				font-size: 18px
+				position: absolute
+				bottom: -30px
+				left: 50%
+				margin-left: -150px
+		.diferenciais-figure
+			overflow: hidden
+			border-radius: 10px 10px 0 0
+			// width: 580px
+			height: 250px
+	&--galeria
+		background: $color-secondary
+		background: linear-gradient(to bottom, $color-secondary 0%, white 100%)
+		background: -moz-linear-gradient(top, $color-secondary 0%, white 100%)
+		background: -webkit-linear-gradient(top, $color-secondary 0%, white 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-secondary', endColorstr='white',GradientType=1)
+		.gallery-container
+			display: flex
+			flex-wrap: wrap
+			.gallery-figure
+				width: 380px
+				height: 280px
+				margin: 10px 10px 0 0
+				overflow: hidden
+				position: relative
+				figcaption
+					background: $color-primary
+					opacity: 0.9
+					color: white
+					font-family: $font-baloo
+					font-size: 22px
+					width: 100%
+					height: 40px
+					position: absolute
+					bottom: 0
+					padding: 5px
+	&--video
+		min-height: 856px
+		background:
+			image: url('../images/video-bg.png')
+			repeat: no-repeat
+	&--video-footer
+		height: 280px
+		background: $blue
+		position: relative
+		.girl
+			position: absolute
+			bottom: 0
+			left: 0
+	&--sobrasa b
+		color: $color-primary

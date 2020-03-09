@@ -78,6 +78,33 @@ h1
 		top: -5px
 
 // Slider
+.slider-depoimentos
+	.card
+		padding: 25px 15px 50px
+		position: relative
+		overflow: visible
+		p
+			font-size: 16px
+			height: 265px
+			display: flex
+			align-items: center
+			margin-bottom: 0
+		h3
+			font-family: $font-baloo
+			font-size: 24px
+			color: #2C2C30
+			margin-bottom: 0
+		span
+			font-size: 10px
+			text-transform: uppercase
+		img
+			position: absolute
+			bottom: -38px
+			left: 50%
+			margin-left: -38px
+	.slick-list
+		overflow: visible
+
 .slider-home
 	.slide
 		height: 840px
@@ -151,113 +178,6 @@ button.slick-prev
 			button
 				color: $blue
 
-// SECTIONS
-.sec
-	text-align: center
-	font-size: 1.5rem
-	h1
-		font-family: $font-baloo
-		font-size: 50px
-		color: $color-primary
-	h2
-		font-family: $font-baloo
-		font-size: 28px
-		line-height: 28px
-		color: $color-primary
-	p
-		line-height: 1.4
-	&--slide
-		height: 840px
-		overflow: hidden
-		position: relative
-		z-index: 0
-		.slide-mask
-			position: absolute
-			bottom: 0
-			z-index: 1
-	&--cerca
-		position: relative
-		.dog-with-kid
-			position: absolute
-			bottom: 0
-			left: 50%
-			margin-left: -248px
-		.card
-			position: relative
-			width: 400px
-			margin: 50px auto
-			padding-bottom: 40px
-			background-color: $color-secondary
-			overflow: visible
-			.alu-icon
-				position: absolute
-				top: 12px
-				left: 12px
-			.btn
-				width: 200px
-				height: 40px
-				padding: 10px
-				font-size: 14px
-				position: absolute
-				bottom: -20px
-				left: 50%
-				margin-left: -100px
-	&--diferenciais
-		background-color: $color-secondary
-		.card--diferenciais
-			position: relative
-			overflow: visible
-			margin-bottom: 60px
-			.card-section
-				display: flex
-				flex-direction: column
-				align-items: center
-				justify-content: center
-				background: #fefefe
-				height: 356px
-				p
-					max-width: 420px
-			.btn
-				width: 300px
-				height: 60px
-				padding: 18px
-				font-size: 18px
-				position: absolute
-				bottom: -30px
-				left: 50%
-				margin-left: -150px
-		.diferenciais-figure
-			overflow: hidden
-			border-radius: 10px 10px 0 0
-			// width: 580px
-			height: 250px
-	&--galeria
-		background: $color-secondary
-		background: linear-gradient(to bottom, $color-secondary 0%, white 100%)
-		background: -moz-linear-gradient(top, $color-secondary 0%, white 100%)
-		background: -webkit-linear-gradient(top, $color-secondary 0%, white 100%)
-		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-secondary', endColorstr='white',GradientType=1)
-		.gallery-container
-			display: flex
-			flex-wrap: wrap
-			.gallery-figure
-				width: 380px
-				height: 280px
-				margin: 10px 10px 0 0
-				overflow: hidden
-				position: relative
-				figcaption
-					background: $color-primary
-					opacity: 0.9
-					color: white
-					font-family: $font-baloo
-					font-size: 22px
-					width: 100%
-					height: 40px
-					position: absolute
-					bottom: 0
-					padding: 5px
-
 // COMPONENTS
 .card
 	border: none
@@ -285,6 +205,16 @@ button.slick-prev
 	font-family: $font-baloo
 	font-size: 18px
 	padding: 10px 20px
+	&--secondary
+		background: $color-primary
+
+.selos
+	list-style: none
+	display: flex
+	justify-content: space-evenly
+	align-items: center
+	li
+		display: inline-block
 
 // Footer
 .newsletter
