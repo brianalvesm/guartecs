@@ -37,6 +37,13 @@ h1
   font-weight: normal
   font-style: italic
 
+// Helpers
+.text-left
+	text-align: left
+
+.text-right
+	text-align: right
+
 // Navigation
 .main-menu
 	background-color: $color-red
@@ -65,6 +72,8 @@ h1
 		width: 56px
 		img:first-child
 			padding-right: 20px
+	.btn
+		box-shadow: none
 
 .header-tel
 	color: $color-red
@@ -208,6 +217,9 @@ button.slick-prev
 	box-shadow: 0 15px 34px 0 rgba(0,0,0,0.2)
 	&--secondary
 		background: $color-red
+	&--tertiary
+		background: white
+		color: $color-blue
 
 .selos
 	list-style: none
@@ -219,6 +231,31 @@ button.slick-prev
 
 .simulador
 	margin: 40px 0
+
+// Forms
+.main
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	select option,
+	textarea
+		height: 70px
+		padding: 20px
+		border-radius: 10px
+		&::placeholder
+			text-transform: uppercase
+	textarea
+		height: 230px
+	[type="submit"]
+		width: 280px
+		color: white
+		background-color: $color-red
+		font-family: $font-baloo
+		font-size: 18px
+		text-transform: uppercase
+		height: 66px !important
+		border-radius: 33px !important
 
 // Footer
 .newsletter
@@ -236,6 +273,8 @@ button.slick-prev
 			&::placeholder
 				color: $color-red
 				padding-left: 40px
+			@media only screen and (max-width: 40rem)
+				width: initial
 		&[type="submit"]
 			position: absolute
 			right: -84px
@@ -250,11 +289,12 @@ button.slick-prev
 		font-family: $font-baloo
 		font-size: 24px
 		margin-left: 32px
+	@media only screen and (max-width: 40rem)
+		height: initial
 
 footer
 	background-color: $color-red
 	color: white
-	height: 380px
 	overflow: auto
 	.footer-content
 		margin: 75px auto
@@ -269,3 +309,24 @@ footer
 		text-transform: uppercase
 		font-family: $font-baloo
 		font-size: 18px
+
+.footer-tel,
+.footer-email
+	font-family: $font-baloo
+	font-size: 20px
+	text-transform: uppercase
+	img
+		padding-right: 36px
+
+.footer-tel
+	padding-bottom: 10px
+
+.footer-wrapper
+	display: flex
+	justify-content: space-between
+	align-items: center
+	min-height: 72px
+	.social-media-icons
+		width: 56px
+		img:first-child
+			padding-right: 20px

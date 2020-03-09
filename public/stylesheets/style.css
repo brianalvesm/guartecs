@@ -35,6 +35,12 @@ h1 {
   font-weight: normal;
   font-style: italic; }
 
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
 .main-menu {
   background-color: #E4283D; }
   .main-menu ul {
@@ -61,6 +67,8 @@ h1 {
     width: 56px; }
     .header-wrapper .social-media-icons img:first-child {
       padding-right: 20px; }
+  .header-wrapper .btn {
+    box-shadow: none; }
 
 .header-tel {
   color: #E4283D;
@@ -198,6 +206,9 @@ button.slick-prev {
   box-shadow: 0 15px 34px 0 rgba(0, 0, 0, 0.2); }
   .btn--secondary {
     background: #E4283D; }
+  .btn--tertiary {
+    background: white;
+    color: #58BEED; }
 
 .selos {
   list-style: none;
@@ -209,6 +220,36 @@ button.slick-prev {
 
 .simulador {
   margin: 40px 0; }
+
+.main input[type="text"],
+.main input[type="email"],
+.main input[type="tel"],
+.main select,
+.main select option,
+.main textarea {
+  height: 70px;
+  padding: 20px;
+  border-radius: 10px; }
+  .main input[type="text"]::placeholder,
+  .main input[type="email"]::placeholder,
+  .main input[type="tel"]::placeholder,
+  .main select::placeholder,
+  .main select option::placeholder,
+  .main textarea::placeholder {
+    text-transform: uppercase; }
+
+.main textarea {
+  height: 230px; }
+
+.main [type="submit"] {
+  width: 280px;
+  color: white;
+  background-color: #E4283D;
+  font-family: "baloo_daregular", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  height: 66px !important;
+  border-radius: 33px !important; }
 
 .newsletter {
   background-color: #F3EEE4;
@@ -224,6 +265,9 @@ button.slick-prev {
       .newsletter input[type="email"]::placeholder {
         color: #E4283D;
         padding-left: 40px; }
+      @media only screen and (max-width: 40rem) {
+        .newsletter input[type="email"] {
+          width: initial; } }
     .newsletter input[type="submit"] {
       position: absolute;
       right: -84px;
@@ -238,11 +282,13 @@ button.slick-prev {
     font-family: "baloo_daregular", sans-serif;
     font-size: 24px;
     margin-left: 32px; }
+  @media only screen and (max-width: 40rem) {
+    .newsletter {
+      height: initial; } }
 
 footer {
   background-color: #E4283D;
   color: white;
-  height: 380px;
   overflow: auto; }
   footer .footer-content {
     margin: 75px auto; }
@@ -257,6 +303,28 @@ footer {
     text-transform: uppercase;
     font-family: "baloo_daregular", sans-serif;
     font-size: 18px; }
+
+.footer-tel,
+.footer-email {
+  font-family: "baloo_daregular", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase; }
+  .footer-tel img,
+  .footer-email img {
+    padding-right: 36px; }
+
+.footer-tel {
+  padding-bottom: 10px; }
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72px; }
+  .footer-wrapper .social-media-icons {
+    width: 56px; }
+    .footer-wrapper .social-media-icons img:first-child {
+      padding-right: 20px; }
 
 .sec {
   text-align: center;
@@ -339,6 +407,8 @@ footer {
         bottom: -30px;
         left: 50%;
         margin-left: -150px; }
+    .sec--diferenciais .card--qualidade .card-section {
+      padding: 35px 1rem; }
     .sec--diferenciais .diferenciais-figure {
       overflow: hidden;
       border-radius: 10px 10px 0 0;
@@ -398,12 +468,42 @@ footer {
       .sec--video .grid-container .grid-x {
         height: 100%; }
   .sec--video-footer {
-    height: 280px;
     background: #58BEED;
-    position: relative; }
-    .sec--video-footer .girl {
+    padding: 0; }
+    .sec--video-footer .grid-container {
+      position: relative; }
+      .sec--video-footer .grid-container .girl {
+        position: absolute;
+        bottom: 0;
+        left: 0; }
+      .sec--video-footer .grid-container .grid-x {
+        padding: 60px 0; }
+    .sec--video-footer ul.video-footer-content {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0; }
+      .sec--video-footer ul.video-footer-content li {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center; }
+      .sec--video-footer ul.video-footer-content img {
+        max-height: 40px; }
+      .sec--video-footer ul.video-footer-content span {
+        color: white;
+        font-family: "baloo_daregular", sans-serif;
+        font-size: 48px; }
+      .sec--video-footer ul.video-footer-content p {
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 0; }
+    .sec--video-footer .btn {
+      font-family: "baloo_daregular", sans-serif;
+      font-size: 16px;
       position: absolute;
-      bottom: 0;
-      left: 0; }
+      bottom: -22px;
+      right: 0;
+      padding: 10px 32px; }
   .sec--sobrasa b {
     color: #E4283D; }

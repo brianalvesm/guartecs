@@ -1,5 +1,5 @@
 <%- include('partials/header') %>
-	<main>
+	<main class="main">
 		<section class="sec sec--slide">
 			<div class="slider-home">
 			  <div class="slide slide--1">
@@ -116,7 +116,7 @@
 				</div>
 				<div class="grid-x">
 					<div class="cell">
-						<div class="card">
+						<div class="card card--qualidade">
 							<div class="card-section">
 								<h2>Qualidade</h2>
 								<p>A Guartecs obteve certificações junto ao SENAI São Paulo  das telas nacionais e importadas.<br>
@@ -214,7 +214,31 @@
 			</div>
 		</section>
 		<section class="sec sec--video-footer">
-			<img src="images/girl.png" class="girl">
+			<div class="grid-container">
+				<img src="images/girl-crop.png" class="girl">
+				<div class="grid-x">
+					<div class="cell large-9 large-offset-3">
+						<ul class="video-footer-content">
+							<li>
+								<img src="images/icons/icon-messenger-user-avatar.png">
+								<span>+240.000</span>
+								<p>METROS DE CERCAS</p>
+							</li>
+							<li>
+								<img src="images/icons/icon-thumb-up-gesture.png">
+								<span>+13.000</span>
+								<p>CLIENTES SATISFEITOS</p>
+							</li>
+							<li>
+								<img src="images/icons/icon-map-point-pointer.png">
+								<span>+368</span>
+								<p>CIDADES ATENDIDAS</p>
+							</li>
+						</ul>
+						<div class="btn btn--tertiary">Confira</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section class="sec sec--simulador">
 			<div class="grid-container">
@@ -280,7 +304,7 @@
 						<h1>Quer mais informações?</h1>
 						<p>Preencha o formulário que em breve responderemos sua dúvidas.</p>
 						<form>
-							<div class="grid-x">
+							<div class="grid-x grid-margin-x">
 								<div class="cell large-12">
 									<input type="text" name="" placeholder="Seu nome">
 								</div>
@@ -288,18 +312,22 @@
 									<input type="email" name="" placeholder="Seu email">
 								</div>
 								<div class="cell large-6">
-									<input type="tel" name="">
+									<input type="tel" name="" placeholder="Seu telefone/celular">
 								</div>
 								<div class="cell large-12">
-									<input type="text" name="" placeholder="Estado">
+									<select>
+										<option value="estado">Estado</option>
+									</select>
 								</div>
 								<div class="cell large-12">
-									<input type="text" name="" placeholder="Cidade">
+									<select>
+										<option value="cidade">Cidade</option>
+									</select>
 								</div>
 								<div class="cell large-12">
 									<textarea placeholder="Deixe sua mensagem"></textarea>
 								</div>
-								<div class="cell large-12">
+								<div class="cell large-12 text-right">
 									<input type="submit" class="button" value="Enviar">
 								</div>
 							</div>
