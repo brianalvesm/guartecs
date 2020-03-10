@@ -1,0 +1,84 @@
+// Carousel
+.carousel-depoimentos
+	.card
+		padding: 25px 15px 50px
+		position: relative
+		overflow: visible
+		p
+			font-size: 16px
+			height: 265px
+			display: flex
+			align-items: center
+			margin-bottom: 0
+		h3
+			font-family: $font-baloo
+			font-size: 24px
+			color: #2C2C30
+			margin-bottom: 0
+		span
+			font-size: 10px
+			text-transform: uppercase
+		img
+			position: absolute
+			bottom: -38px
+			left: 50%
+			margin-left: -38px
+	.slick-list
+		overflow: visible
+
+.orbit.carousel-home
+
+	.slide-content
+		position: absolute
+		top: 100px
+		text-align: left
+		h1
+			color: white
+			font-size: 56px
+			line-height: 54px
+			margin-bottom: 45px
+		h2
+			color: #C9ECF7
+			font-size: 42px
+			line-height: 42px
+		.btn
+			width: 325px
+
+	.orbit-previous,
+	.orbit-next
+		font-size: 0
+		line-height: 0
+		cursor: pointer
+		background-size: 58px
+		position: absolute
+		height: 58px
+		width: 58px
+		top: 40%
+		z-index: 1
+
+	.orbit-next
+		right: 50px
+		background-image: url('../images/slide-arrow-right.png')
+
+	.orbit-previous
+		left: 50px
+		background-image: url('../images/slide-arrow-left.png')
+
+	.orbit-bullets
+		margin-top: 0
+		margin-bottom: 0
+		top: -130px
+		z-index: 2
+		button
+			background-color: transparent
+			font-family: $font-baloo
+			font-size: 24px
+			color: white
+			width: 46px
+			height: 46px
+			border-radius: 23px
+			border: none
+			&.is-active
+				background-color: transparent
+				border: 2px solid $color-blue
+				color: $color-blue
