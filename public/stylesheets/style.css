@@ -604,7 +604,9 @@ nav[role=navigation] li a {
       .sec--video-footer .grid-container .girl {
         left: 50%;
         margin-left: -180px;
-        top: -300px; } }
+        top: -300px;
+        -webkit-mask-image: linear-gradient(to top, transparent 0%, black 15%);
+        mask-image: linear-gradient(to top, transparent 0%, black 15%); } }
     .sec--video-footer ul.video-footer-content {
       list-style: none;
       display: flex;
