@@ -22,9 +22,6 @@
     left: 50%;
     margin-left: -38px; }
 
-.carousel-depoimentos .slick-list {
-  overflow: visible; }
-
 .orbit.carousel-home .slide-content {
   position: absolute;
   top: 100px;
@@ -32,12 +29,12 @@
   .orbit.carousel-home .slide-content h1 {
     color: white;
     font-size: 56px;
-    line-height: 54px;
+    line-height: 1.2;
     margin-bottom: 45px; }
   .orbit.carousel-home .slide-content h2 {
     color: #C9ECF7;
     font-size: 42px;
-    line-height: 42px; }
+    line-height: 1.2; }
   .orbit.carousel-home .slide-content .btn {
     width: 325px; }
 
@@ -79,6 +76,22 @@
       background-color: transparent;
       border: 2px solid #58BEED;
       color: #58BEED; }
+
+@media only screen and (max-width: 40.1rem) {
+  .orbit-image {
+    min-width: max-content; }
+  .orbit-previous,
+  .orbit-next {
+    display: none; }
+  .orbit.carousel-home .slide-content h1 {
+    font-size: 48px;
+    margin-bottom: 16px; }
+  .orbit.carousel-home .slide-content h2 {
+    font-size: 38px;
+    margin-bottom: 16px; }
+  .orbit.carousel-home .slide-content .btn {
+    font-size: 14px;
+    width: initial; } }
 
 body, html {
   margin: 0;
@@ -123,6 +136,18 @@ h1 {
 .text-right {
   text-align: right; }
 
+.switch-mobile div:first-child {
+  display: block; }
+
+.switch-mobile div:last-child {
+  display: none; }
+
+@media only screen and (max-width: 40.1rem) {
+  .switch-mobile div:first-child {
+    display: none; }
+  .switch-mobile div:last-child {
+    display: block; } }
+
 .main-menu {
   background-color: #E4283D; }
   .main-menu ul {
@@ -139,6 +164,10 @@ h1 {
       .main-menu ul li:last-child {
         border-right: none; }
 
+@media only screen and (max-width: 40.1rem) {
+  .main-menu ul li {
+    display: block; } }
+
 .header-wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -149,7 +178,7 @@ h1 {
     width: 56px; }
     .header-wrapper .social-media-icons img:first-child {
       padding-right: 20px; }
-  .header-wrapper .btn {
+  .header-wrapper .btn-orcamento {
     box-shadow: none; }
 
 .header-tel {
@@ -157,10 +186,47 @@ h1 {
   font-family: "baloo_daregular", sans-serif;
   font-size: 22px;
   position: relative;
-  top: 5px; }
-  .header-tel img {
-    position: relative;
-    top: -5px; }
+  top: 5px;
+  padding-left: 32px; }
+  .header-tel:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../images/icons/whatsapp.png");
+    width: 32px;
+    height: 32px;
+    top: 0;
+    left: -5px; }
+
+@media only screen and (max-width: 40.1rem) {
+  .header-wrapper .btn-orcamento {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9;
+    font-size: 16px;
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    box-shadow: 0 15px 34px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .header-wrapper .social-media-icons {
+    display: none; }
+  .header-tel {
+    line-height: 1.2; } }
+
+@media only screen and (max-width: 26rem) {
+  .header-tel {
+    height: 32px;
+    font-size: 12px;
+    padding-left: 20px; }
+    .header-tel:before {
+      background-size: 20px;
+      width: 20px;
+      height: 20px;
+      top: 5px; } }
 
 .card {
   border: none;
@@ -249,7 +315,7 @@ h1 {
       .newsletter input[type="email"]::placeholder {
         color: #E4283D;
         padding-left: 40px; }
-      @media only screen and (max-width: 40rem) {
+      @media only screen and (max-width: 40.1rem) {
         .newsletter input[type="email"] {
           width: initial; } }
     .newsletter input[type="submit"] {
@@ -266,7 +332,7 @@ h1 {
     font-family: "baloo_daregular", sans-serif;
     font-size: 24px;
     margin-left: 32px; }
-  @media only screen and (max-width: 40rem) {
+  @media only screen and (max-width: 40.1rem) {
     .newsletter {
       height: initial; } }
 
@@ -310,6 +376,49 @@ footer {
     .footer-wrapper .social-media-icons img:first-child {
       padding-right: 20px; }
 
+a.menu-link {
+  float: right;
+  display: block; }
+
+nav[role=navigation] {
+  clear: both;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.js nav[role=navigation] {
+  overflow: hidden;
+  max-height: 0; }
+
+nav[role=navigation].active {
+  max-height: 15em; }
+
+nav[role=navigation] ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #808080; }
+
+nav[role=navigation] li a {
+  display: block;
+  padding: 0.8em;
+  border-bottom: 1px solid #808080; }
+
+@media screen and (min-width: 40.1rem) {
+  a.menu-link {
+    display: none; }
+  .js nav[role=navigation] {
+    max-height: none; }
+  nav[role=navigation] ul {
+    margin: 0 0 0 -0.25em;
+    border: 0; }
+  nav[role=navigation] li {
+    display: inline-block;
+    margin: 0 0.25em; }
+  nav[role=navigation] li a {
+    border: 0; } }
+
 .sec {
   text-align: center;
   font-size: 1.5rem;
@@ -317,7 +426,8 @@ footer {
   .sec h1 {
     font-family: "baloo_daregular", sans-serif;
     font-size: 50px;
-    color: #E4283D; }
+    color: #E4283D;
+    line-height: 1; }
   .sec h2 {
     font-family: "baloo_daregular", sans-serif;
     font-size: 32px;
@@ -334,10 +444,28 @@ footer {
     .sec--slide .slide-mask {
       position: absolute;
       bottom: 0;
-      z-index: 1; }
+      z-index: 1;
+      background-image: url("../images/slide-mask-shadow.png");
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      background-position-x: center;
+      background-size: cover;
+      height: 215px;
+      width: 100%; }
   .sec--cerca {
     position: relative;
     padding-bottom: 0; }
+    .sec--cerca .slide-mask {
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      background-image: url("../images/slide-mask-2.png");
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      background-position-x: center;
+      background-size: contain;
+      height: 215px;
+      width: 100%; }
     .sec--cerca .dog-with-kid {
       position: absolute;
       bottom: 0;
@@ -363,7 +491,11 @@ footer {
         bottom: -20px;
         left: 50%;
         margin-left: -100px; }
-      @media only screen and (max-width: 40rem) {
+    @media only screen and (max-width: 40.1rem) {
+      .sec--cerca {
+        padding-bottom: 400px; }
+        .sec--cerca .slide-mask {
+          background-size: cover; }
         .sec--cerca .card {
           width: auto; } }
   .sec--diferenciais {

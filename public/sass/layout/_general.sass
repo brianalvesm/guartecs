@@ -44,6 +44,17 @@ h1
 .text-right
 	text-align: right
 
+.switch-mobile div
+  &:first-child
+    display: block
+  &:last-child
+    display: none
+  @media only screen and (max-width: 40.1rem)
+    &:first-child
+      display: none
+    &:last-child
+      display: block
+
 // Navigation
 .main-menu
 	background-color: $color-red
@@ -61,6 +72,10 @@ h1
 			&:last-child
 				border-right: none
 
+@media only screen and (max-width: 40.1rem)
+	.main-menu ul li
+		display: block
+
 // Header
 .header-wrapper
 	display: flex
@@ -72,19 +87,57 @@ h1
 		width: 56px
 		img:first-child
 			padding-right: 20px
-	.btn
+	.btn-orcamento
 		box-shadow: none
 
 .header-tel
 	color: $color-red
 	font-family: $font-baloo
 	font-size: 22px
-	// A ideia aqui é alinhar verticalmente o bloco de texto e ao mesmo tempo alinhar o ícone ao lado
 	position: relative
 	top: 5px
-	img
-		position: relative
-		top: -5px
+	padding-left: 32px
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		background-image: url('../images/icons/whatsapp.png')
+		width: 32px
+		height: 32px
+		top: 0
+		left: -5px
+
+// Header Mobile version -- small screens
+@media only screen and (max-width: 40.1rem)
+	.header-wrapper
+		.btn-orcamento
+			position: fixed
+			bottom: 10px
+			right: 10px
+			z-index: 9
+			font-size: 16px
+			height: 120px
+			width: 120px
+			border-radius: 60px
+			box-shadow: 0 15px 34px 0 rgba(0,0,0,0.2)
+			display: flex
+			align-items: center
+			justify-content: center
+		.social-media-icons
+			display: none
+	.header-tel
+		line-height: 1.2
+
+@media only screen and (max-width: 26rem)
+	.header-tel
+		height: 32px
+		font-size: 12px
+		padding-left: 20px
+		&:before
+			background-size: 20px
+			width: 20px
+			height: 20px
+			top: 5px
 
 // COMPONENTS
 .card
@@ -172,7 +225,7 @@ h1
 			&::placeholder
 				color: $color-red
 				padding-left: 40px
-			@media only screen and (max-width: 40rem)
+			@media only screen and (max-width: 40.1rem)
 				width: initial
 		&[type="submit"]
 			position: absolute
@@ -188,7 +241,7 @@ h1
 		font-family: $font-baloo
 		font-size: 24px
 		margin-left: 32px
-	@media only screen and (max-width: 40rem)
+	@media only screen and (max-width: 40.1rem)
 		height: initial
 
 footer
