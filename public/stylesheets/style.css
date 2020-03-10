@@ -1,10 +1,11 @@
 .carousel-depoimentos .card {
   padding: 25px 15px 50px;
   position: relative;
-  overflow: visible; }
+  overflow: visible;
+  margin: 50px 5px; }
   .carousel-depoimentos .card p {
     font-size: 16px;
-    height: 265px;
+    min-height: 265px;
     display: flex;
     align-items: center;
     margin-bottom: 0; }
@@ -21,6 +22,21 @@
     bottom: -38px;
     left: 50%;
     margin-left: -38px; }
+
+.carousel-depoimentos .owl-carousel .owl-item {
+  opacity: 0.4; }
+  .carousel-depoimentos .owl-carousel .owl-item.active {
+    opacity: 1; }
+  .carousel-depoimentos .owl-carousel .owl-item:first-child .card {
+    margin-left: 25px; }
+  .carousel-depoimentos .owl-carousel .owl-item:last-child .card {
+    margin-right: 25px; }
+  .carousel-depoimentos .owl-carousel .owl-item .card img {
+    width: 76px; }
+
+@media only screen and (max-width: 40.1rem) {
+  .carousel-depoimentos .card p {
+    font-size: 13px; } }
 
 .orbit.carousel-home .slide-content {
   position: absolute;
@@ -432,8 +448,7 @@ nav[role=navigation] li a {
     font-family: "baloo_daregular", sans-serif;
     font-size: 32px;
     line-height: 32px;
-    color: #E4283D;
-    margin-bottom: 32px; }
+    color: #E4283D; }
   .sec p {
     line-height: 1.4; }
   .sec--slide {

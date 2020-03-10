@@ -4,9 +4,10 @@
 		padding: 25px 15px 50px
 		position: relative
 		overflow: visible
+		margin: 50px 5px
 		p
 			font-size: 16px
-			height: 265px
+			min-height: 265px
 			display: flex
 			align-items: center
 			margin-bottom: 0
@@ -23,6 +24,19 @@
 			bottom: -38px
 			left: 50%
 			margin-left: -38px
+	.owl-carousel .owl-item
+		opacity: 0.4
+		&.active
+			opacity: 1
+		&:first-child .card
+			margin-left: 25px
+		&:last-child .card
+			margin-right: 25px
+		.card img
+			width: 76px
+	@media only screen and (max-width: 40.1rem)
+		.card p
+			font-size: 13px
 
 .orbit.carousel-home
 	.slide-content

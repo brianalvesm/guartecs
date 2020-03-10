@@ -10,6 +10,28 @@ $(document).ready(function(){
 	  return false;
 	});
 
+	(function ($) {
+    $('.owl-carousel').owlCarousel({
+	    items:3,
+	    margin:10,
+	    responsive : {
+			  // breakpoint from 0 up
+			  0 : {
+			  		items:1,
+			  		center:true,
+			  		loop:true,
+			  		stagePadding: 60
+			  },
+			  // breakpoint from 480 up
+			  1024 : {
+			  		items:3,
+			      center:false,
+			  		loop:false
+			  }
+			}
+    });
+  })(jQuery);
+
 	var removeFloat = function() {
 		if ($(window).width() < 640) {
 			$('.remove-float-left-mobile').removeClass('float-left');
