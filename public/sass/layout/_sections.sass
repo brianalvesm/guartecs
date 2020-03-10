@@ -35,7 +35,7 @@
 			width: 100%
 	&--cerca
 		position: relative
-		padding-bottom: 0
+		padding-bottom: 200px
 		.slide-mask
 			position: absolute
 			bottom: 0
@@ -119,6 +119,7 @@
 		.gallery-container
 			display: flex
 			flex-wrap: wrap
+			justify-content: center
 			.gallery-figure
 				width: 380px
 				height: 280px
@@ -160,6 +161,9 @@
 			&:after
 				right: 0
 				bottom: 16px
+		@media only screen and (max-width: 40.1rem)
+			p
+				font-size: 22px
 	&--video
 		min-height: 856px
 		background:
@@ -169,6 +173,8 @@
 			height: 796px
 			.grid-x
 				height: 100%
+		@media only screen and (max-width: 40.1rem)
+			background-position-x: center
 	&--video-footer
 		// height: 280px
 		background: $color-blue
@@ -181,6 +187,11 @@
 				left: 0
 			.grid-x
 				padding: 60px 0
+		@media only screen and (max-width: 40.1rem)
+			.grid-container .girl
+				left: 50%
+				margin-left: -180px
+				top: -300px
 		ul.video-footer-content
 			list-style: none
 			display: flex

@@ -454,7 +454,7 @@ nav[role=navigation] li a {
       width: 100%; }
   .sec--cerca {
     position: relative;
-    padding-bottom: 0; }
+    padding-bottom: 200px; }
     .sec--cerca .slide-mask {
       position: absolute;
       bottom: 0;
@@ -536,7 +536,8 @@ nav[role=navigation] li a {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-beige', endColorstr='white',GradientType=1); }
     .sec--galeria .gallery-container {
       display: flex;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      justify-content: center; }
       .sec--galeria .gallery-container .gallery-figure {
         width: 380px;
         height: 280px;
@@ -574,6 +575,9 @@ nav[role=navigation] li a {
     .sec--sobre h2:after {
       right: 0;
       bottom: 16px; }
+  @media only screen and (max-width: 40.1rem) {
+    .sec--sobre p {
+      font-size: 22px; } }
   .sec--video {
     min-height: 856px;
     background-image: url("../images/video-bg.png");
@@ -582,6 +586,9 @@ nav[role=navigation] li a {
       height: 796px; }
       .sec--video .grid-container .grid-x {
         height: 100%; }
+    @media only screen and (max-width: 40.1rem) {
+      .sec--video {
+        background-position-x: center; } }
   .sec--video-footer {
     background: #58BEED;
     padding: 0; }
@@ -593,6 +600,11 @@ nav[role=navigation] li a {
         left: 0; }
       .sec--video-footer .grid-container .grid-x {
         padding: 60px 0; }
+    @media only screen and (max-width: 40.1rem) {
+      .sec--video-footer .grid-container .girl {
+        left: 50%;
+        margin-left: -180px;
+        top: -300px; } }
     .sec--video-footer ul.video-footer-content {
       list-style: none;
       display: flex;
