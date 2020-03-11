@@ -38,19 +38,25 @@
   .carousel-depoimentos .card p {
     font-size: 13px; } }
 
+.orbit.carousel-home .orbit-wrapper {
+  position: relative; }
+
 .orbit.carousel-home .slide-content {
   position: absolute;
-  top: 100px;
-  text-align: left; }
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
   .orbit.carousel-home .slide-content h1 {
     color: white;
     font-size: 56px;
-    line-height: 1.2;
+    line-height: 1;
     margin-bottom: 45px; }
   .orbit.carousel-home .slide-content h2 {
     color: #C9ECF7;
     font-size: 42px;
-    line-height: 1.2; }
+    line-height: 1; }
   .orbit.carousel-home .slide-content .btn {
     width: 325px; }
 
@@ -65,14 +71,17 @@
   width: 58px;
   top: 40%;
   z-index: 1; }
+  .orbit.carousel-home .orbit-previous:hover,
+  .orbit.carousel-home .orbit-next:hover {
+    background-color: transparent; }
 
 .orbit.carousel-home .orbit-next {
   right: 50px;
-  background-image: url("../images/slide-arrow-right.png"); }
+  background-image: url("../images/arrow-right.png"); }
 
 .orbit.carousel-home .orbit-previous {
   left: 50px;
-  background-image: url("../images/slide-arrow-left.png"); }
+  background-image: url("../images/arrow-left.png"); }
 
 .orbit.carousel-home .orbit-bullets {
   margin-top: 0;
@@ -107,7 +116,7 @@
     margin-bottom: 16px; }
   .orbit.carousel-home .slide-content .btn {
     font-size: 14px;
-    width: initial; } }
+    width: fit-content; } }
 
 body, html {
   margin: 0;
@@ -164,12 +173,22 @@ h1 {
   .switch-mobile div:last-child {
     display: block; } }
 
-.main-menu {
-  background-color: #E4283D; }
-  .main-menu ul {
-    margin: 10px 0;
-    text-align: center; }
-    .main-menu ul li {
+@media only screen and (min-width: 40rem) {
+  .visible-mobile-small-only {
+    display: none; } }
+
+@media only screen and (max-width: 40rem) {
+  .visible-mobile-small-only {
+    display: block; } }
+
+nav[role=navigation].main-menu {
+  background-color: #E4283D;
+  box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.3); }
+  nav[role=navigation].main-menu ul {
+    margin: 8px 0;
+    text-align: center;
+    border-top: none; }
+    nav[role=navigation].main-menu ul li {
       display: inline-block;
       padding: 0 10px;
       border-right: 1px solid #F2617C;
@@ -177,8 +196,28 @@ h1 {
       font-family: "baloo_daregular", sans-serif;
       font-size: 18px;
       color: white; }
-      .main-menu ul li:last-child {
+      nav[role=navigation].main-menu ul li:last-child {
         border-right: none; }
+      @media only screen and (max-width: 40.1rem) {
+        nav[role=navigation].main-menu ul li {
+          display: block;
+          border-bottom: 1px solid #F2617C;
+          border-right: none;
+          text-align: left;
+          padding: 5px 0; }
+          nav[role=navigation].main-menu ul li:last-child {
+            border-bottom: none;
+            text-align: center;
+            padding: 40px 0; }
+            nav[role=navigation].main-menu ul li:last-child img {
+              margin-bottom: 15px; }
+          nav[role=navigation].main-menu ul li .social-media-icons {
+            width: 56px;
+            margin: 40px auto; }
+            nav[role=navigation].main-menu ul li .social-media-icons img:first-child {
+              padding-right: 20px; } }
+  nav[role=navigation].main-menu.active {
+    max-height: 40em; }
 
 @media only screen and (max-width: 40.1rem) {
   .main-menu ul li {
@@ -220,10 +259,10 @@ h1 {
     bottom: 10px;
     right: 10px;
     z-index: 9;
-    font-size: 16px;
-    height: 120px;
-    width: 120px;
-    border-radius: 60px;
+    font-size: 14px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
     box-shadow: 0 15px 34px 0 rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
@@ -286,6 +325,11 @@ h1 {
 
 .simulador {
   margin: 40px 0; }
+
+.paragraph {
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 32px auto; }
 
 .main input[type="text"],
 .main input[type="email"],
@@ -449,8 +493,6 @@ nav[role=navigation] li a {
     font-size: 32px;
     line-height: 32px;
     color: #E4283D; }
-  .sec p {
-    line-height: 1.4; }
   .sec--slide {
     overflow: hidden;
     position: relative;
