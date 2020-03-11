@@ -264,12 +264,28 @@
 		<section class="sec sec--simulador">
 			<div class="grid-container">
 				<div class="grid-x">
-					<div class="cell">
+					<div class="cell large-10 large-offset-1">
 						<h2>Simulador</h2>
 						<p>Ganhe um desenho em computador da sua futura cerca!<br>
 						Veja simulação de antes e depois, abaixo.</p>
 						<div class="btn btn--primary">Quero simular na minha casa</div>
-						<img src="images/simulador-flat.jpg" class="simulador">
+
+						<div class="simulador-wrapper">
+							<figure class="cd-image-container is-visible">
+							  <img src="images/cerca-simulador-depois.jpg" alt="Original Image">
+							  <div class="cd-resize-img">
+						      <img src="images/cerca-simulador-antes.jpg" alt="Modified Image">
+							  </div>
+							  <!-- <span class="cd-handle"></span> -->
+							</figure>
+							
+							<div class="slider simulador-handle" data-slider data-initial-start="50" data-end="100">
+							  <span class="slider-handle cd-handle"  data-slider-handle role="slider" tabindex="1"></span>
+							  <span class="slider-fill" data-slider-fill></span>
+							  <input type="hidden">
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>

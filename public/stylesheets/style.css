@@ -654,3 +654,56 @@ nav[role=navigation] li a {
       padding: 10px 32px; }
   .sec--sobrasa b {
     color: #E4283D; }
+
+.cd-image-container {
+  position: relative;
+  width: 90%;
+  max-width: 768px;
+  margin: 60px auto; }
+  .cd-image-container img {
+    display: block; }
+
+.cd-resize-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-right: 2px solid #58BEED; }
+  .cd-resize-img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: none; }
+  .is-visible .cd-resize-img {
+    width: 50%;
+    /* bounce in animation of the modified image */
+    /* @include animation(cd-bounce-in $bounce-in-duration) */ }
+
+.slider.simulador-handle {
+  background-color: #58BEED;
+  height: 0.2rem; }
+  .slider.simulador-handle .slider-handle.cd-handle {
+    background-color: transparent;
+    cursor: move;
+    opacity: 1; }
+    .slider.simulador-handle .slider-handle.cd-handle:hover {
+      background-color: transparent; }
+    .slider.simulador-handle .slider-handle.cd-handle:before {
+      content: "";
+      display: block;
+      background-image: url("../images/simulador-handle.png");
+      width: 350px;
+      height: 118px;
+      position: absolute;
+      margin-left: -175px;
+      margin-top: -46px; }
+  .slider.simulador-handle .slider-fill {
+    background-color: #58BEED;
+    height: 0.2rem; }
