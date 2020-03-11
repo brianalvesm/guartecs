@@ -175,7 +175,7 @@ h1 {
 
 @media only screen and (min-width: 40rem) {
   .visible-mobile-small-only {
-    display: none; } }
+    display: none !important; } }
 
 @media only screen and (max-width: 40rem) {
   .visible-mobile-small-only {
