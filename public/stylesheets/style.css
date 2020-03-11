@@ -326,6 +326,9 @@ nav[role=navigation].main-menu {
 .simulador {
   margin: 40px 0; }
 
+.arrow-down {
+  margin-bottom: 40px; }
+
 .paragraph {
   font-size: 24px;
   line-height: 1.4;
@@ -347,6 +350,9 @@ nav[role=navigation].main-menu {
   .main select option::placeholder,
   .main textarea::placeholder {
     text-transform: uppercase; }
+
+.main select {
+  color: #cacaca; }
 
 .main textarea {
   height: 230px; }
@@ -387,14 +393,27 @@ nav[role=navigation].main-menu {
       font-family: "baloo_daregular", sans-serif;
       font-size: 14px;
       text-transform: uppercase; }
-  .newsletter span {
+  .newsletter .newsletter-message span {
     color: #E4283D;
     font-family: "baloo_daregular", sans-serif;
     font-size: 24px;
     margin-left: 32px; }
   @media only screen and (max-width: 40.1rem) {
     .newsletter {
-      height: initial; } }
+      height: initial; }
+      .newsletter .input-group-button {
+        width: 100%; }
+      .newsletter input[type="email"] {
+        width: 100%; }
+      .newsletter input[type="submit"] {
+        right: 0;
+        width: 118px; }
+      .newsletter .newsletter-message {
+        text-align: center;
+        padding-bottom: 20px; }
+        .newsletter .newsletter-message span {
+          font-size: 20px;
+          margin-left: 22px; } }
 
 footer {
   background-color: #E4283D;
@@ -407,12 +426,18 @@ footer {
 
 .footer-menu ul {
   column-count: 2;
-  column-width: 150px; }
+  column-width: 150px;
+  margin: 0; }
   .footer-menu ul li {
     display: block;
     text-transform: uppercase;
     font-family: "baloo_daregular", sans-serif;
     font-size: 18px; }
+  @media only screen and (max-width: 40.1rem) {
+    .footer-menu ul {
+      column-count: 1;
+      column-width: auto;
+      margin: 20px 0; } }
 
 .footer-tel,
 .footer-email {
@@ -422,6 +447,13 @@ footer {
   .footer-tel img,
   .footer-email img {
     padding-right: 36px; }
+  @media only screen and (max-width: 40.1rem) {
+    .footer-tel,
+    .footer-email {
+      font-size: 16px; }
+      .footer-tel img,
+      .footer-email img {
+        padding-right: 16px; } }
 
 .footer-tel {
   padding-bottom: 10px; }
@@ -435,6 +467,13 @@ footer {
     width: 56px; }
     .footer-wrapper .social-media-icons img:first-child {
       padding-right: 20px; }
+  @media only screen and (max-width: 40.1rem) {
+    .footer-wrapper {
+      display: block;
+      padding: 15px; }
+      .footer-wrapper .social-media-icons {
+        width: 100%;
+        text-align: center; } }
 
 a.menu-link {
   float: right;
@@ -567,7 +606,7 @@ nav[role=navigation] li a {
         align-items: center;
         justify-content: center;
         background: #fefefe;
-        height: 356px; }
+        min-height: 356px; }
         .sec--diferenciais .card--diferenciais .card-section p {
           max-width: 420px; }
       .sec--diferenciais .card--diferenciais .btn {

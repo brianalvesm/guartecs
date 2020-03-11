@@ -211,6 +211,9 @@ nav[role=navigation].main-menu
 .simulador
 	margin: 40px 0
 
+.arrow-down
+	margin-bottom: 40px
+
 .paragraph
 	font-size: 24px
 	line-height: 1.4
@@ -229,6 +232,8 @@ nav[role=navigation].main-menu
 		border-radius: 10px
 		&::placeholder
 			text-transform: uppercase
+	select
+		color: #cacaca
 	textarea
 		height: 230px
 	[type="submit"]
@@ -268,13 +273,26 @@ nav[role=navigation].main-menu
 			font-family: $font-baloo
 			font-size: 14px
 			text-transform: uppercase
-	span
+	.newsletter-message span
 		color: $color-red
 		font-family: $font-baloo
 		font-size: 24px
 		margin-left: 32px
 	@media only screen and (max-width: 40.1rem)
 		height: initial
+		.input-group-button
+			width: 100%
+		input[type="email"]
+			width: 100%
+		input[type="submit"]
+			right: 0
+			width: 118px
+		.newsletter-message
+			text-align: center
+			padding-bottom: 20px
+			span
+				font-size: 20px
+				margin-left: 22px
 
 footer
 	background-color: $color-red
@@ -288,11 +306,16 @@ footer
 .footer-menu ul
 	column-count: 2
 	column-width: 150px
+	margin: 0
 	li
 		display: block
 		text-transform: uppercase
 		font-family: $font-baloo
 		font-size: 18px
+	@media only screen and (max-width: 40.1rem)
+		column-count: 1
+		column-width: auto
+		margin: 20px 0
 
 .footer-tel,
 .footer-email
@@ -301,6 +324,10 @@ footer
 	text-transform: uppercase
 	img
 		padding-right: 36px
+	@media only screen and (max-width: 40.1rem)
+		font-size: 16px
+		img
+			padding-right: 16px
 
 .footer-tel
 	padding-bottom: 10px
@@ -314,3 +341,9 @@ footer
 		width: 56px
 		img:first-child
 			padding-right: 20px
+	@media only screen and (max-width: 40.1rem)
+		display: block
+		padding: 15px
+		.social-media-icons
+			width: 100%
+			text-align: center
