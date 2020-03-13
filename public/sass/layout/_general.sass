@@ -264,6 +264,8 @@ header
 	background-color: #F3EEE4
 	height: 120px
 	padding: 26px 0
+	.input-group
+		justify-content: flex-end
 	.input-group-button
 		position: relative
 	input
@@ -279,7 +281,7 @@ header
 				width: initial
 		&[type="submit"]
 			position: absolute
-			right: -84px
+			right: 0
 			width: 168px
 			color: white
 			background-color: $color-red
@@ -298,7 +300,6 @@ header
 		input[type="email"]
 			width: 100%
 		input[type="submit"]
-			right: 0
 			width: 118px
 		.newsletter-message
 			text-align: center
