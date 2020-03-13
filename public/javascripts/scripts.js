@@ -11,7 +11,17 @@ $(document).ready(function(){
 	});
 
 	(function ($) {
-    $('.owl-carousel').owlCarousel({
+		$('.owl-heroslider').owlCarousel({
+	    items:1,
+	    margin:10,
+	    loop:true,
+	    nav:true,
+	    autoplay:true,
+			autoplayTimeout:3000,
+			autoplayHoverPause:true
+		});
+
+    $('.owl-depoimentos').owlCarousel({
 	    items:3,
 	    margin:10,
 	    responsive : {
@@ -22,7 +32,7 @@ $(document).ready(function(){
 			  		loop:true,
 			  		stagePadding: 60
 			  },
-			  // breakpoint from 480 up
+			  // breakpoint from 1024 up
 			  1024 : {
 			  		items:3,
 			      center:false,

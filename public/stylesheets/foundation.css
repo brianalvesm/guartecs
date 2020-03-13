@@ -3583,7 +3583,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   [data-whatinput='mouse'] .orbit-previous, [data-whatinput='mouse'] .orbit-next {
     outline: 0; }
   .orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus {
-    background-color: rgba(10, 10, 10, 0.5); }
+    /* background-color: rgba(10, 10, 10, 0.5); */ }
 
 .orbit-previous {
   left: 0; }
