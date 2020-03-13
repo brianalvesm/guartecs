@@ -1,16 +1,37 @@
 $(document).ready(function(){
-
-  $('body').addClass('js');
-  var $menu = $('#menu'),
-    $menulink = $('.menu-link');
-  
-	$menulink.click(function() {
-	  $menulink.toggleClass('active');
-	  $menu.toggleClass('active');
-	  return false;
-	});
-
 	(function ($) {
+
+	  $('body').addClass('js');
+	  var $menu = $('#menu'),
+	    $menulink = $('.menu-link');
+	  
+		$menulink.click(function() {
+		  $menulink.toggleClass('active');
+		  $menu.toggleClass('active');
+		  return false;
+		});
+
+		var removeFloat = function() {
+			if ($(window).width() < 640) {
+				$('.remove-float-left-mobile').removeClass('float-left');
+				$('.remove-float-right-mobile').removeClass('float-right');
+			} else {
+				$('.remove-float-left-mobile').addClass('float-left');
+				$('.remove-float-right-mobile').addClass('float-right');
+			}
+		};
+
+    var owlMobile = function() {
+			if ($(window).width() < 640) {
+		    $('.owl-galeria').owlCarousel({
+		  		items:1,
+		  		center:true,
+		  		loop:true,
+		  		stagePadding: 60
+		    });
+			}
+		};
+
 		$('.owl-heroslider').owlCarousel({
 	    items:1,
 	    margin:10,
@@ -40,22 +61,14 @@ $(document).ready(function(){
 			  }
 			}
     });
+
+		$(window).resize(function() {
+		  removeFloat();
+		  owlMobile();
+		});
+
+		removeFloat();
+		owlMobile();
+
   })(jQuery);
-
-	var removeFloat = function() {
-		if ($(window).width() < 640) {
-			$('.remove-float-left-mobile').removeClass('float-left');
-			$('.remove-float-right-mobile').removeClass('float-right');
-		} else {
-			$('.remove-float-left-mobile').addClass('float-left');
-			$('.remove-float-right-mobile').addClass('float-right');
-		}
-	};
-
-	$(window).resize(function() {
-	  removeFloat();
-	});
-
-	removeFloat();
-
 });
