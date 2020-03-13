@@ -22,8 +22,8 @@ function drags(dragElement, resizeElement, container) {
           xPosition = dragElement.offset().left + dragWidth - e.pageX,
           containerOffset = container.offset().left,
           containerWidth = container.outerWidth(),
-          minLeft = containerOffset + 10,
-          maxLeft = containerOffset + containerWidth - dragWidth - 10;
+          minLeft = containerOffset,
+          maxLeft = containerOffset + containerWidth - dragWidth;
         
       dragElement.parents().on("mousemove vmousemove", function(e) {
          leftValue = e.pageX + xPosition - dragWidth;

@@ -782,9 +782,11 @@ nav[role=navigation] li a {
     .sec h1 {
       font-size: 2.750rem; } }
 
+.simulador-wrapper {
+  margin: 1rem; }
+
 .cd-image-container {
   position: relative;
-  width: 90%;
   max-width: 768px;
   margin: 60px auto; }
   .cd-image-container img {
@@ -819,18 +821,26 @@ nav[role=navigation] li a {
   .slider.simulador-handle .slider-handle.cd-handle {
     background-color: transparent;
     cursor: move;
-    opacity: 1; }
+    opacity: 1;
+    width: 350px;
+    height: 118px; }
     .slider.simulador-handle .slider-handle.cd-handle:hover {
       background-color: transparent; }
     .slider.simulador-handle .slider-handle.cd-handle:before {
       content: "";
       display: block;
       background-image: url("../images/simulador-handle.png");
+      background-size: contain;
       width: 350px;
       height: 118px;
-      position: absolute;
-      margin-left: -175px;
-      margin-top: -46px; }
+      position: absolute; }
+    @media only screen and (max-width: 40.1rem) {
+      .slider.simulador-handle .slider-handle.cd-handle {
+        width: 175px;
+        height: 59px; }
+        .slider.simulador-handle .slider-handle.cd-handle:before {
+          width: 175px;
+          height: 59px; } }
   .slider.simulador-handle .slider-fill {
     background-color: #58BEED;
     height: 0.2rem; }

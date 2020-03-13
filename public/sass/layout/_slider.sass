@@ -1,5 +1,5 @@
 // breakpoints 
-$S:     320px   
+$S:     640px   
 $M:     768px     
 $L:     1170px     
 
@@ -38,10 +38,12 @@ $L:     1170px
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
+.simulador-wrapper
+  margin: 1rem
+
 .cd-image-container 
   position: relative
-  width: 90%
-  max-width: $M // breakpoints inside partials > _layout.scss
+  max-width: $M
   margin: 60px auto
   img 
     display: block
@@ -76,17 +78,24 @@ $L:     1170px
     background-color: transparent
     cursor: move
     opacity: 1
+    width: 350px
+    height: 118px
     &:hover
       background-color: transparent
     &:before
       content: ""
       display: block
       background-image: url('../images/simulador-handle.png')
+      background-size: contain
       width: 350px
       height: 118px
       position: absolute
-      margin-left: -175px
-      margin-top: -46px
+    @media only screen and (max-width: 40.1rem)
+      width: 175px
+      height: 59px
+      &:before
+        width: 175px
+        height: 59px
   .slider-fill
     background-color: $color-blue
     height: 0.2rem
