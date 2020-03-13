@@ -361,6 +361,7 @@ header {
 .selos {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center; }
   .selos li {
@@ -758,7 +759,10 @@ nav[role=navigation] li a {
         margin-bottom: 0; }
       @media only screen and (max-width: 40rem) {
         .sec--video-footer ul.video-footer-content {
-          flex-direction: column; } }
+          flex-wrap: wrap;
+          padding-top: 60px; }
+          .sec--video-footer ul.video-footer-content li {
+            padding: 15px; } }
     .sec--video-footer .btn {
       font-family: "baloo_daregular", sans-serif;
       font-size: 16px;
