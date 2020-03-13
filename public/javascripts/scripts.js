@@ -27,6 +27,7 @@ $(document).ready(function(){
 		  		items:1,
 		  		center:true,
 		  		loop:true,
+		  		nav:true,
 		  		stagePadding: 60
 		    });
 			}

@@ -1,3 +1,35 @@
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+  cursor: pointer;
+  position: absolute;
+  height: 58px;
+  width: 58px;
+  top: 35%;
+  z-index: 1; }
+  .owl-carousel .owl-prev:hover,
+  .owl-carousel .owl-next:hover {
+    background-color: transparent; }
+  .owl-carousel .owl-prev:before,
+  .owl-carousel .owl-next:before {
+    content: "";
+    display: block;
+    width: 58px;
+    height: 58px; }
+  .owl-carousel .owl-prev span,
+  .owl-carousel .owl-next span {
+    font-size: 0;
+    line-height: 0; }
+
+.owl-carousel .owl-next {
+  right: 1rem; }
+  .owl-carousel .owl-next:before {
+    background-image: url("../images/arrow-right.png"); }
+
+.owl-carousel .owl-prev {
+  left: 1rem; }
+  .owl-carousel .owl-prev:before {
+    background-image: url("../images/arrow-left.png"); }
+
 .owl-heroslider {
   position: relative; }
   .owl-heroslider:after {
@@ -31,38 +63,6 @@
       line-height: 1; }
     .owl-heroslider .slide-content .btn {
       width: 325px; }
-  .owl-heroslider .owl-prev,
-  .owl-heroslider .owl-next {
-    cursor: pointer;
-    background-size: 58px;
-    position: absolute;
-    height: 58px;
-    width: 58px;
-    top: 40%;
-    z-index: 1; }
-    .owl-heroslider .owl-prev:hover,
-    .owl-heroslider .owl-next:hover {
-      background-color: transparent; }
-    .owl-heroslider .owl-prev span,
-    .owl-heroslider .owl-next span {
-      font-size: 0;
-      line-height: 0; }
-  .owl-heroslider .owl-next {
-    right: 50px; }
-    .owl-heroslider .owl-next:before {
-      content: "";
-      display: block;
-      width: 58px;
-      height: 58px;
-      background-image: url("../images/arrow-right.png"); }
-  .owl-heroslider .owl-prev {
-    left: 50px; }
-    .owl-heroslider .owl-prev:before {
-      content: "";
-      display: block;
-      width: 58px;
-      height: 58px;
-      background-image: url("../images/arrow-left.png"); }
   .owl-heroslider .owl-dots {
     position: relative;
     width: 100%;
@@ -687,6 +687,10 @@ nav[role=navigation] li a {
           position: absolute;
           bottom: 0;
           padding: 5px; }
+        @media only screen and (max-width: 40.1rem) {
+          .sec--galeria .gallery-container .gallery-figure {
+            width: initial;
+            height: initial; } }
   .sec--sobre .grid-container {
     background-image: url("../images/guartecs-sobre-bg.png");
     background-repeat: no-repeat;

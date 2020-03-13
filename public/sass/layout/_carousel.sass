@@ -1,4 +1,32 @@
 // Carousel
+.owl-carousel
+	.owl-prev,
+	.owl-next
+		cursor: pointer
+		position: absolute
+		height: 58px
+		width: 58px
+		top: 35%
+		z-index: 1
+		&:hover
+			background-color: transparent
+		&:before
+			content: ""
+			display: block
+			width: 58px
+			height: 58px
+		span
+			font-size: 0
+			line-height: 0
+	.owl-next
+		right: 1rem
+		&:before
+			background-image: url('../images/arrow-right.png')
+	.owl-prev
+		left: 1rem
+		&:before
+			background-image: url('../images/arrow-left.png')
+
 .owl-heroslider
 	position: relative
 	&:after
@@ -33,36 +61,6 @@
 			line-height: 1
 		.btn
 			width: 325px
-	.owl-prev,
-	.owl-next
-		cursor: pointer
-		background-size: 58px
-		position: absolute
-		height: 58px
-		width: 58px
-		top: 40%
-		z-index: 1
-		&:hover
-			background-color: transparent
-		span
-			font-size: 0
-			line-height: 0
-	.owl-next
-		right: 50px
-		&:before
-			content: ""
-			display: block
-			width: 58px
-			height: 58px
-			background-image: url('../images/arrow-right.png')
-	.owl-prev
-		left: 50px
-		&:before
-			content: ""
-			display: block
-			width: 58px
-			height: 58px
-			background-image: url('../images/arrow-left.png')
 	.owl-dots
 		position: relative
 		width: 100%
