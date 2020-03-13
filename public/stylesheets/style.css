@@ -1,7 +1,18 @@
 .owl-heroslider {
   position: relative; }
-  .owl-heroslider .owl-item {
-    background-color: blue; }
+  .owl-heroslider:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background-image: url("../images/slide-mask-shadow.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-size: cover;
+    height: 215px;
+    width: 100%; }
   .owl-heroslider .slide-content {
     position: absolute;
     height: 100%;
@@ -43,8 +54,7 @@
       display: block;
       width: 58px;
       height: 58px;
-      background-image: url("../images/arrow-right.png");
-      position: absolute; }
+      background-image: url("../images/arrow-right.png"); }
   .owl-heroslider .owl-prev {
     left: 50px; }
     .owl-heroslider .owl-prev:before {
@@ -52,8 +62,33 @@
       display: block;
       width: 58px;
       height: 58px;
-      background-image: url("../images/arrow-left.png");
-      position: absolute; }
+      background-image: url("../images/arrow-left.png"); }
+  .owl-heroslider .owl-dots {
+    position: relative;
+    width: 100%;
+    top: -130px;
+    z-index: 2; }
+    .owl-heroslider .owl-dots .owl-dot {
+      background-color: transparent;
+      width: 46px;
+      height: 46px;
+      border-radius: 23px;
+      border: none; }
+      .owl-heroslider .owl-dots .owl-dot.active {
+        background-color: transparent;
+        border: 2px solid #58BEED;
+        color: #58BEED; }
+      .owl-heroslider .owl-dots .owl-dot:before {
+        font-family: "baloo_daregular", sans-serif;
+        font-size: 24px;
+        color: white;
+        display: block;
+        width: 42px;
+        height: 32px; }
+      .owl-heroslider .owl-dots .owl-dot:nth-child(1)::before {
+        content: "1"; }
+      .owl-heroslider .owl-dots .owl-dot:nth-child(2)::before {
+        content: "2"; }
   @media only screen and (max-width: 40.1rem) {
     .owl-heroslider .slide-content h1 {
       font-size: 48px;
@@ -110,28 +145,6 @@
 @media only screen and (max-width: 40.1rem) {
   .owl-depoimentos .card p {
     font-size: 13px; } }
-
-.orbit.carousel-home .orbit-wrapper {
-  position: relative; }
-
-.orbit.carousel-home .orbit-bullets {
-  margin-top: 0;
-  margin-bottom: 0;
-  top: -130px;
-  z-index: 2; }
-  .orbit.carousel-home .orbit-bullets button {
-    background-color: transparent;
-    font-family: "baloo_daregular", sans-serif;
-    font-size: 24px;
-    color: white;
-    width: 46px;
-    height: 46px;
-    border-radius: 23px;
-    border: none; }
-    .orbit.carousel-home .orbit-bullets button.is-active {
-      background-color: transparent;
-      border: 2px solid #58BEED;
-      color: #58BEED; }
 
 body, html {
   margin: 0;
@@ -262,6 +275,10 @@ header {
   .header-wrapper.logo-wrapper {
     justify-content: flex-start;
     padding-left: 22px; }
+    @media only screen and (max-width: 40.1rem) {
+      .header-wrapper.logo-wrapper {
+        padding-left: 0;
+        padding-right: 8px; } }
 
 .header-tel {
   color: #E4283D;
@@ -279,6 +296,16 @@ header {
     height: 32px;
     top: 0;
     left: -5px; }
+  @media only screen and (max-width: 26rem) {
+    .header-tel {
+      font-size: 12px;
+      padding-left: 20px;
+      top: 2px; }
+      .header-tel:before {
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+        top: 2px; } }
 
 @media only screen and (max-width: 40.1rem) {
   .header-wrapper .btn-orcamento {
@@ -298,17 +325,6 @@ header {
     display: none; }
   .header-tel {
     line-height: 1.2; } }
-
-@media only screen and (max-width: 26rem) {
-  .header-tel {
-    height: 32px;
-    font-size: 12px;
-    padding-left: 20px; }
-    .header-tel:before {
-      background-size: 20px;
-      width: 20px;
-      height: 20px;
-      top: 5px; } }
 
 .card {
   border: none;
@@ -564,17 +580,6 @@ nav[role=navigation] li a {
     position: relative;
     z-index: 0;
     padding: 0; }
-    .sec--slide .slide-mask {
-      position: absolute;
-      bottom: 0;
-      z-index: 1;
-      background-image: url("../images/slide-mask-shadow.png");
-      background-repeat: no-repeat;
-      background-position-y: bottom;
-      background-position-x: center;
-      background-size: cover;
-      height: 215px;
-      width: 100%; }
   .sec--cerca {
     position: relative;
     padding-bottom: 200px; }

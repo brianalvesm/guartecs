@@ -1,8 +1,20 @@
 // Carousel
 .owl-heroslider
 	position: relative
-	.owl-item
-		background-color: blue
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		bottom: 0
+		z-index: 1
+		background:
+			image: url('../images/slide-mask-shadow.png')
+			repeat: no-repeat
+			position-y: bottom
+			position-x: center
+			size: cover
+		height: 215px
+		width: 100%
 	.slide-content
 		position: absolute
 		height: 100%
@@ -43,7 +55,6 @@
 			width: 58px
 			height: 58px
 			background-image: url('../images/arrow-right.png')
-			position: absolute
 	.owl-prev
 		left: 50px
 		&:before
@@ -52,7 +63,32 @@
 			width: 58px
 			height: 58px
 			background-image: url('../images/arrow-left.png')
-			position: absolute
+	.owl-dots
+		position: relative
+		width: 100%
+		top: -130px
+		z-index: 2
+		.owl-dot
+			background-color: transparent
+			width: 46px
+			height: 46px
+			border-radius: 23px
+			border: none
+			&.active
+				background-color: transparent
+				border: 2px solid $color-blue
+				color: $color-blue
+			&:before
+				font-family: $font-baloo
+				font-size: 24px
+				color: white
+				display: block
+				width: 42px
+				height: 32px
+			&:nth-child(1)::before
+				content: "1"
+			&:nth-child(2)::before
+				content: "2"
 	@media only screen and (max-width: 40.1rem)
 		.slide-content
 			h1
@@ -109,25 +145,3 @@
 	@media only screen and (max-width: 40.1rem)
 		.card p
 			font-size: 13px
-
-.orbit.carousel-home
-	.orbit-wrapper
-		position: relative
-	.orbit-bullets
-		margin-top: 0
-		margin-bottom: 0
-		top: -130px
-		z-index: 2
-		button
-			background-color: transparent
-			font-family: $font-baloo
-			font-size: 24px
-			color: white
-			width: 46px
-			height: 46px
-			border-radius: 23px
-			border: none
-			&.is-active
-				background-color: transparent
-				border: 2px solid $color-blue
-				color: $color-blue

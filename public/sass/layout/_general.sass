@@ -127,6 +127,9 @@ header
 	&.logo-wrapper
 		justify-content: flex-start
 		padding-left: 22px
+		@media only screen and (max-width: 40.1rem)
+			padding-left: 0
+			padding-right: 8px
 
 .header-tel
 	color: $color-red
@@ -144,6 +147,15 @@ header
 		height: 32px
 		top: 0
 		left: -5px
+	@media only screen and (max-width: 26rem)
+		font-size: 12px
+		padding-left: 20px
+		top: 2px
+		&:before
+			background-size: 20px
+			width: 20px
+			height: 20px
+			top: 2px
 
 // Header Mobile version -- small screens
 @media only screen and (max-width: 40.1rem)
@@ -166,16 +178,6 @@ header
 	.header-tel
 		line-height: 1.2
 
-@media only screen and (max-width: 26rem)
-	.header-tel
-		height: 32px
-		font-size: 12px
-		padding-left: 20px
-		&:before
-			background-size: 20px
-			width: 20px
-			height: 20px
-			top: 5px
 
 // COMPONENTS
 .card
