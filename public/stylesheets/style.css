@@ -252,26 +252,28 @@ h1 {
         border-bottom: none; }
         .js nav[role=navigation].main-menu ul li a:hover, .js nav[role=navigation].main-menu ul li a:focus {
           color: #fefefe; }
-    @media only screen and (max-width: 40.1rem) {
-      .js nav[role=navigation].main-menu ul {
-        display: block; }
-        .js nav[role=navigation].main-menu ul li {
-          display: block;
-          border-bottom: 1px solid #F2617C;
-          border-right: none;
-          text-align: left;
-          padding: 5px 10px; }
-          .js nav[role=navigation].main-menu ul li:last-child {
-            border-bottom: none;
-            text-align: center;
-            padding: 40px 0; }
-            .js nav[role=navigation].main-menu ul li:last-child img {
-              margin-bottom: 15px; }
-          .js nav[role=navigation].main-menu ul li .social-media-icons {
-            width: 56px;
-            margin: 40px auto; }
-            .js nav[role=navigation].main-menu ul li .social-media-icons img:first-child {
-              padding-right: 20px; } }
+  @media only screen and (max-width: 40.1rem) {
+    .js nav[role=navigation].main-menu .grid-container {
+      padding: 0; }
+    .js nav[role=navigation].main-menu ul {
+      display: block; }
+      .js nav[role=navigation].main-menu ul li {
+        display: block;
+        border-bottom: 1px solid #F2617C;
+        border-right: none;
+        text-align: left;
+        padding: 5px 10px; }
+        .js nav[role=navigation].main-menu ul li:last-child {
+          border-bottom: none;
+          text-align: center;
+          padding: 40px 0; }
+          .js nav[role=navigation].main-menu ul li:last-child img {
+            margin-bottom: 15px; }
+        .js nav[role=navigation].main-menu ul li .social-media-icons {
+          width: 56px;
+          margin: 40px auto; }
+          .js nav[role=navigation].main-menu ul li .social-media-icons img:first-child {
+            padding-right: 20px; } }
   .js nav[role=navigation].main-menu.active {
     max-height: 40em; }
 
