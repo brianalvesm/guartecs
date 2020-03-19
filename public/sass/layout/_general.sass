@@ -76,27 +76,36 @@ h1
 	box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.3)
 	overflow: auto
 	ul
-		margin: 8px 0
+		margin: 0
 		text-align: center
 		border-top: none
+		font-size: 0
+		display: flex
+		justify-content: space-between
 		li
-			display: inline-block
-			padding: 0 10px
+			flex-grow: 1
+			padding: 8px 0
+			margin: 0
 			border-right: 1px solid #F2617C
 			text-transform: uppercase
 			font-family: $font-baloo
 			font-size: 18px
 			color: white
 			line-height: normal
-			&:last-child
+			&:nth-last-child(2)
 				border-right: none
+			&.active
+				background-color: $color-blue
+				box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.3)
 			a
 				padding: 0
 				color: white
 				&:hover,
 				&:focus
 					color: #fefefe
-			@media only screen and (max-width: 40.1rem)
+		@media only screen and (max-width: 40.1rem)
+			display: block
+			li
 				display: block
 				border-bottom: 1px solid #F2617C
 				border-right: none
@@ -120,6 +129,22 @@ h1
 	.main-menu ul li
 		display: block
 
+// Breadcrumbs
+.breadcrumbs
+	background-color: $color-beige
+	ul
+		margin: 0
+		list-style: none
+		li
+			padding: 15px 0
+			text-transform: unset
+			&:last-child a
+				color: $color-red
+			a
+				color: $color-blue
+				font-family: $font-baloo
+				font-size: 16px
+
 // Header
 header
 	background-color: white
@@ -141,7 +166,7 @@ header
 		box-shadow: none
 	&.logo-wrapper
 		justify-content: flex-start
-		padding-left: 22px
+		// padding-left: 22px
 		@media only screen and (max-width: 40.1rem)
 			padding-left: 0
 			padding-right: 8px

@@ -225,26 +225,35 @@ h1 {
   box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
   overflow: auto; }
   .js nav[role=navigation].main-menu ul {
-    margin: 8px 0;
+    margin: 0;
     text-align: center;
-    border-top: none; }
+    border-top: none;
+    font-size: 0;
+    display: flex;
+    justify-content: space-between; }
     .js nav[role=navigation].main-menu ul li {
-      display: inline-block;
-      padding: 0 10px;
+      flex-grow: 1;
+      padding: 8px 0;
+      margin: 0;
       border-right: 1px solid #F2617C;
       text-transform: uppercase;
       font-family: "baloo_daregular", sans-serif;
       font-size: 18px;
       color: white;
       line-height: normal; }
-      .js nav[role=navigation].main-menu ul li:last-child {
+      .js nav[role=navigation].main-menu ul li:nth-last-child(2) {
         border-right: none; }
+      .js nav[role=navigation].main-menu ul li.active {
+        background-color: #58BEED;
+        box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.3); }
       .js nav[role=navigation].main-menu ul li a {
         padding: 0;
         color: white; }
         .js nav[role=navigation].main-menu ul li a:hover, .js nav[role=navigation].main-menu ul li a:focus {
           color: #fefefe; }
-      @media only screen and (max-width: 40.1rem) {
+    @media only screen and (max-width: 40.1rem) {
+      .js nav[role=navigation].main-menu ul {
+        display: block; }
         .js nav[role=navigation].main-menu ul li {
           display: block;
           border-bottom: 1px solid #F2617C;
@@ -269,6 +278,21 @@ h1 {
   .main-menu ul li {
     display: block; } }
 
+.breadcrumbs {
+  background-color: #F9F5ED; }
+  .breadcrumbs ul {
+    margin: 0;
+    list-style: none; }
+    .breadcrumbs ul li {
+      padding: 15px 0;
+      text-transform: unset; }
+      .breadcrumbs ul li:last-child a {
+        color: #E4283D; }
+      .breadcrumbs ul li a {
+        color: #58BEED;
+        font-family: "baloo_daregular", sans-serif;
+        font-size: 16px; }
+
 header {
   background-color: white; }
   @media only screen and (max-width: 40.1rem) {
@@ -289,8 +313,7 @@ header {
   .header-wrapper .btn-orcamento {
     box-shadow: none; }
   .header-wrapper.logo-wrapper {
-    justify-content: flex-start;
-    padding-left: 22px; }
+    justify-content: flex-start; }
     @media only screen and (max-width: 40.1rem) {
       .header-wrapper.logo-wrapper {
         padding-left: 0;
