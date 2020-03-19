@@ -399,7 +399,8 @@ header {
   margin: 0 auto 32px; }
   @media only screen and (max-width: 40.1rem) {
     .paragraph {
-      font-size: 1.250rem; } }
+      font-size: 1.250rem;
+      margin: 32px auto; } }
 
 .sec {
   text-align: center;
@@ -689,7 +690,8 @@ nav[role=navigation] li a {
     font-size: 24px; }
 
 .page--empresa .sec .card .card-section {
-  padding: 40px 30px; }
+  padding: 0 30px;
+  margin: 40px auto; }
   .page--empresa .sec .card .card-section--variation {
     padding: 75px;
     font-family: "baloo_daregular", sans-serif;
@@ -714,6 +716,31 @@ nav[role=navigation] li a {
     left: 50%;
     margin-left: -50px;
     margin-top: 0; }
+
+.page--empresa .sec .ltda-disclaimer {
+  width: 37.500rem;
+  border-top: 1px dotted #2C2C30;
+  border-bottom: 1px dotted #2C2C30;
+  margin: auto;
+  padding: 30px 0;
+  color: #2C2C30; }
+  @media only screen and (max-width: 37.5rem) {
+    .page--empresa .sec .ltda-disclaimer {
+      width: 100%; } }
+
+@media only screen and (max-width: 40.1rem) {
+  .page--empresa .sec h1.title-blue {
+    margin: 60px auto; }
+  .page--empresa .sec .card--beige {
+    font-size: 18px; }
+  .page--empresa .sec .card .card-section {
+    margin: 0 auto;
+    padding: 40px 30px; }
+    .page--empresa .sec .card .card-section--variation {
+      padding: 60px 20px 20px;
+      font-size: 18px; }
+  .page--empresa .sec .card .cell.large-6:first-child .card-section {
+    border-right: none; } }
 
 .page--home .sec--slide {
   overflow: hidden;

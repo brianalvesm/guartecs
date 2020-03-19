@@ -20,7 +20,8 @@
 				font-family: $font-family
 				font-size: 24px
 		.card-section
-			padding: 40px 30px
+			padding: 0 30px
+			margin: 40px auto // This margin is to give proper space to the right border detail
 			&--variation
 				padding: 75px
 				font-family: $font-baloo
@@ -43,3 +44,26 @@
 			left: 50%
 			margin-left: -50px
 			margin-top: 0
+	.ltda-disclaimer
+		width: 37.500rem
+		border-top: 1px dotted #2C2C30
+		border-bottom: 1px dotted #2C2C30
+		margin: auto
+		padding: 30px 0
+		color: #2C2C30
+		@media only screen and (max-width: 37.500rem)
+			width: 100%
+	@media only screen and (max-width: 40.1rem)
+		h1.title-blue
+			margin: 60px auto
+		.card 
+			&--beige
+				font-size: 18px
+			.card-section
+				margin: 0 auto
+				padding: 40px 30px
+				&--variation
+					padding: 60px 20px 20px
+					font-size: 18px
+			.cell.large-6:first-child .card-section
+				border-right: none
