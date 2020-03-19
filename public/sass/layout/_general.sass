@@ -100,6 +100,7 @@ h1
 			a
 				padding: 0
 				color: white
+				border-bottom: none
 				&:hover,
 				&:focus
 					color: #fefefe
@@ -110,7 +111,7 @@ h1
 				border-bottom: 1px solid #F2617C
 				border-right: none
 				text-align: left
-				padding: 5px 0
+				padding: 5px 10px
 				&:last-child
 					border-bottom: none
 					text-align: center
@@ -144,6 +145,9 @@ h1
 				color: $color-blue
 				font-family: $font-baloo
 				font-size: 16px
+	@media only screen and (max-width: 40.1rem)
+		position: relative
+		top: 90px
 
 // Header
 header
