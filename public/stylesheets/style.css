@@ -191,6 +191,15 @@ h1 {
 .text-right {
   text-align: right; }
 
+.title-red {
+  color: #E4283D; }
+
+.title-blue {
+  color: #58BEED; }
+
+.title-white {
+  color: white; }
+
 .switch-mobile div:first-child {
   display: block; }
 
@@ -340,6 +349,10 @@ header {
   border-radius: 10px;
   overflow: visible;
   background-color: white; }
+  .card--beige {
+    background-color: #F9F5ED; }
+  .card--blue {
+    background-color: #58BEED; }
   .card .card-section p {
     font-size: 15px; }
   .card .card-section h2 {
@@ -383,7 +396,7 @@ header {
 .paragraph {
   font-size: 1.500rem;
   line-height: 1.4;
-  margin: 32px auto; }
+  margin: 0 auto 32px; }
   @media only screen and (max-width: 40.1rem) {
     .paragraph {
       font-size: 1.250rem; } }
@@ -391,19 +404,15 @@ header {
 .sec {
   text-align: center;
   font-size: 1.5rem;
-  padding: 30px 0; }
+  padding: 40px 0; }
   .sec h1 {
     font-family: "baloo_daregular", sans-serif;
     font-size: 3.125rem;
-    color: #E4283D;
     line-height: 1; }
-    .sec h1.title-blue {
-      color: #58BEED; }
   .sec h2 {
     font-family: "baloo_daregular", sans-serif;
     font-size: 32px;
-    line-height: 32px;
-    color: #E4283D; }
+    line-height: 32px; }
   @media only screen and (max-width: 40.1rem) {
     .sec h1 {
       font-size: 2.750rem; } }
@@ -656,8 +665,55 @@ nav[role=navigation] li a {
     background-color: #58BEED;
     height: 0.2rem; }
 
-.page--empresa .sec figure img {
+.page--empresa .sec h1.title-blue {
+  margin: 40px auto 60px; }
+
+.page--empresa .sec figure {
   max-width: 560px; }
+  .page--empresa .sec figure figcaption {
+    font-family: "baloo_daregular", sans-serif;
+    font-size: 16px;
+    text-align: left; }
+
+.page--empresa .sec .card--beige {
+  color: #E4283D;
+  font-family: "baloo_daregular", sans-serif;
+  font-size: 28px; }
+
+.page--empresa .sec .card--blue {
+  color: white;
+  position: relative;
+  overflow: visible; }
+  .page--empresa .sec .card--blue p.paragraph {
+    font-family: "open_sans", sans-serif;
+    font-size: 24px; }
+
+.page--empresa .sec .card .card-section {
+  padding: 40px 30px; }
+  .page--empresa .sec .card .card-section--variation {
+    padding: 75px;
+    font-family: "baloo_daregular", sans-serif;
+    font-size: 28px; }
+
+.page--empresa .sec .card .cell.large-6:first-child .card-section {
+  border-right: 2px solid white; }
+
+.page--empresa .sec .circled-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: white;
+  border: 4px solid #58BEED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto; }
+  .page--empresa .sec .circled-icon--over {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 0; }
 
 .page--home .sec--slide {
   overflow: hidden;
