@@ -238,6 +238,8 @@ header
 		background-color: $color-beige
 	&--blue
 		background-color: $color-blue
+	&--padding
+		padding: 50px 80px
 	.card-section
 		p
 			font-size: 15px
@@ -247,6 +249,9 @@ header
 			font-size: 21px
 			font-weight: bold
 			margin-bottom: 0
+	@media only screen and (max-width: 40.1rem)
+		&--padding
+			padding: 50px 20px
 
 .btn
 	display: inline-block
@@ -278,6 +283,7 @@ header
 
 .arrow-down
 	margin-bottom: 40px
+	align-self: center
 
 .paragraph
 	font-size: 1.500rem
@@ -286,6 +292,13 @@ header
 	@media only screen and (max-width: 40.1rem)
 		font-size: 1.250rem
 		margin: 32px auto
+
+.friso
+	display: block
+	height: 1px
+	width: 170px
+	border-bottom: 1px dotted #2C2C30
+	margin: 20px auto
 
 // SECTION
 .sec
@@ -330,6 +343,9 @@ main
 		text-transform: uppercase
 		height: 66px !important
 		border-radius: 33px !important
+	@media only screen and (max-width: 40.1rem)
+		&.bc-mobile-push
+			margin-top: 90px
 
 // Footer
 .newsletter
