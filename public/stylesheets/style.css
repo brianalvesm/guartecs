@@ -383,16 +383,18 @@ header {
     background-color: #F9F5ED; }
   .card--blue {
     background-color: #58BEED; }
+  .card--red {
+    background-color: #E4283D; }
   .card--padding {
     padding: 50px 80px; }
   .card .card-section p {
     font-size: 15px; }
-  .card .card-section h2 {
-    margin-bottom: 20px; }
   .card .card-section h3 {
     font-size: 21px;
     font-weight: bold;
     margin-bottom: 0; }
+  .card .card-section--extra-padding {
+    padding: 2rem; }
   @media only screen and (max-width: 40.1rem) {
     .card--padding {
       padding: 50px 20px; } }
@@ -743,6 +745,8 @@ nav[role=navigation] li a {
     padding: 75px;
     font-family: "baloo_daregular", sans-serif;
     font-size: 28px; }
+  .page--empresa .sec .card .card-section h2 {
+    margin-bottom: 20px; }
 
 .page--empresa .sec .card .cell.large-6:first-child .card-section {
   border-right: 2px solid white; }
