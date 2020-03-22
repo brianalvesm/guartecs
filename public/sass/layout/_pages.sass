@@ -35,9 +35,17 @@
 			position: absolute
 			top: -150px
 			z-index: 2
+		.prod-img-wrapper
+			position: absolute
+			width: 1180px
+			left: 50%
+			margin-left: -590px
 		.prod-img
 			position: relative
 			display: inline-flex
+			margin-right: 40px
+			&:last-child
+				margin-right: 0
 			&:before
 				content: ""
 				display: block
@@ -49,6 +57,18 @@
 				top: 50%
 				margin-top: -29px
 				margin-left: -29px
+			&--aberta:after
+				content: "ABERTA"
+			&--fechada:after
+				content: "FECHADA"
+			&--aberta:after,
+			&--fechada:after
+				z-index: 1
+				position: absolute
+				right: 10px
+				top: 50%
+				margin-top: -12px
+				font-size: 16px
 			&--one:before
 				background:
 					image: url('../images/icon-one.png')
@@ -57,3 +77,5 @@
 				background:
 					image: url('../images/icon-two.png')
 					repeat: no-repeat
+		.card
+			margin-bottom: 140px
