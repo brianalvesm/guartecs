@@ -1,0 +1,59 @@
+// PAGINA - Seja um parceiro
+
+.page
+	&--parceiro .sec
+		.card
+			overflow: visible
+			position: relative
+		.arrow-down
+			position: absolute
+			top: -25px
+	&--portoes-de-seguranca .sec
+		position: relative
+		&--hero
+			background:
+				image: url('../images/pag-produtos-portoes-seguranca-large.jpg')
+				repeat: no-repeat
+				position: center
+				size: cover
+			height: 400px
+			&:after
+				content: ""
+				display: block
+				position: absolute
+				bottom: 0
+				z-index: 1
+				background:
+					image: url('../images/slide-mask.png')
+					repeat: no-repeat
+					position-y: bottom
+					position-x: center
+					size: cover
+				height: 215px
+				width: 100%
+		.arrow-down
+			position: absolute
+			top: -150px
+			z-index: 2
+		.prod-img
+			position: relative
+			display: inline-flex
+			&:before
+				content: ""
+				display: block
+				position: absolute
+				z-index: 1
+				width: 58px
+				height: 58px
+				left: 0
+				top: 50%
+				margin-top: -29px
+				margin-left: -29px
+			&--one:before
+				background:
+					image: url('../images/icon-one.png')
+					repeat: no-repeat
+			&--two:before
+				background:
+					image: url('../images/icon-two.png')
+					repeat: no-repeat

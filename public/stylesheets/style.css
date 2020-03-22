@@ -200,6 +200,12 @@ h1 {
 .title-white {
   color: white; }
 
+.margin-bottom-20 {
+  margin-bottom: 20px; }
+
+.margin-bottom-40 {
+  margin-bottom: 40px; }
+
 .switch-mobile div:first-child {
   display: block; }
 
@@ -281,22 +287,23 @@ h1 {
   .main-menu ul li {
     display: block; } }
 
-.breadcrumbs {
-  background-color: #F9F5ED; }
-  .breadcrumbs ul {
+div.breadcrumbs {
+  background-color: #F9F5ED;
+  margin: 0; }
+  div.breadcrumbs ul {
     margin: 0;
     list-style: none; }
-    .breadcrumbs ul li {
+    div.breadcrumbs ul li {
       padding: 15px 0;
       text-transform: unset; }
-      .breadcrumbs ul li:last-child a {
+      div.breadcrumbs ul li:last-child a {
         color: #E4283D; }
-      .breadcrumbs ul li a {
+      div.breadcrumbs ul li a {
         color: #58BEED;
         font-family: "baloo_daregular", sans-serif;
         font-size: 16px; }
   @media only screen and (max-width: 40.1rem) {
-    .breadcrumbs {
+    div.breadcrumbs {
       position: relative;
       top: 90px; } }
 
@@ -388,13 +395,13 @@ header {
   .card--padding {
     padding: 50px 80px; }
   .card .card-section p {
-    font-size: 15px; }
+    font-size: 1rem; }
   .card .card-section h3 {
     font-size: 21px;
     font-weight: bold;
     margin-bottom: 0; }
   .card .card-section--extra-padding {
-    padding: 2rem; }
+    padding: 2rem 4rem; }
   @media only screen and (max-width: 40.1rem) {
     .card--padding {
       padding: 50px 20px; } }
@@ -651,6 +658,60 @@ nav[role=navigation] li a {
     margin: 0 0.25em; }
   nav[role=navigation] li a {
     border: 0; } }
+
+.page--parceiro .sec .card {
+  overflow: visible;
+  position: relative; }
+
+.page--parceiro .sec .arrow-down {
+  position: absolute;
+  top: -25px; }
+
+.page--portoes-de-seguranca .sec {
+  position: relative; }
+  .page--portoes-de-seguranca .sec--hero {
+    background-image: url("../images/pag-produtos-portoes-seguranca-large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px; }
+    .page--portoes-de-seguranca .sec--hero:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      background-image: url("../images/slide-mask.png");
+      background-repeat: no-repeat;
+      background-position-y: bottom;
+      background-position-x: center;
+      background-size: cover;
+      height: 215px;
+      width: 100%; }
+  .page--portoes-de-seguranca .sec .arrow-down {
+    position: absolute;
+    top: -150px;
+    z-index: 2; }
+  .page--portoes-de-seguranca .sec .prod-img {
+    position: relative;
+    display: inline-flex; }
+    .page--portoes-de-seguranca .sec .prod-img:before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      width: 58px;
+      height: 58px;
+      left: 0;
+      top: 50%;
+      margin-top: -29px;
+      margin-left: -29px; }
+    .page--portoes-de-seguranca .sec .prod-img--one:before {
+      background-image: url("../images/icon-one.png");
+      background-repeat: no-repeat; }
+    .page--portoes-de-seguranca .sec .prod-img--two:before {
+      background-image: url("../images/icon-two.png");
+      background-repeat: no-repeat; }
 
 .simulador-wrapper {
   margin: 1rem; }
@@ -995,14 +1056,3 @@ nav[role=navigation] li a {
 
 .page--home .sec--sobrasa {
   color: #E4283D; }
-
-.page--parceiro .sec .card {
-  overflow: visible;
-  position: relative; }
-
-.page--parceiro .sec .arrow-down {
-  position: absolute;
-  top: -25px; }
-
-.page--parceiro .sec h1.title-blue {
-  margin-bottom: 40px; }
