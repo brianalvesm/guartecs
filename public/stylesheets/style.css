@@ -695,6 +695,10 @@ nav[role=navigation] li a {
       width: 100%; }
   .page--portoes-de-seguranca .sec--content {
     padding-top: 0; }
+  .page--portoes-de-seguranca .sec span.numbers {
+    font-family: "baloo_daregular", sans-serif;
+    font-size: 24px;
+    color: #E4283D; }
   .page--portoes-de-seguranca .sec .arrow-down {
     position: absolute;
     top: -150px;
