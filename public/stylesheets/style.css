@@ -1015,10 +1015,6 @@ header {
     padding: 18px;
     font-size: 18px; }
   @media only screen and (max-width: 40.1rem) {
-    .page--portoes-de-seguranca .sec .card-overflow-wrapper .btn--secondary,
-    .page--cercas-removiveis .sec .card-overflow-wrapper .btn--secondary,
-    .page--gradil .sec .card-overflow-wrapper .btn--secondary {
-      top: -20px; }
     .page--portoes-de-seguranca .sec .large-6:first-child,
     .page--cercas-removiveis .sec .large-6:first-child,
     .page--gradil .sec .large-6:first-child {
