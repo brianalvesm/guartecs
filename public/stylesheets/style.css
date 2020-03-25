@@ -220,11 +220,26 @@
   font-size: 18px;
   padding: 10px 20px;
   box-shadow: 0 15px 34px 0 rgba(0, 0, 0, 0.2); }
+  .btn a {
+    color: white; }
+    .btn a:hover, .btn a:focus {
+      color: white;
+      text-decoration: underline; }
   .btn--secondary {
     background: #E4283D; }
   .btn--tertiary {
     background: white;
     color: #58BEED; }
+
+.highlight {
+  border: 2px solid #E4283D;
+  border-radius: 100px;
+  padding: 20px 40px;
+  position: relative; }
+  .highlight .btn {
+    position: absolute;
+    left: 50%;
+    margin-left: -120px; }
 
 .selos {
   list-style: none;
@@ -252,8 +267,8 @@
     line-height: 1; }
   .sec h2 {
     font-family: "baloo_daregular", sans-serif;
-    font-size: 32px;
-    line-height: 32px; }
+    font-size: 38px;
+    line-height: 38px; }
   @media only screen and (max-width: 40.1rem) {
     .sec h1 {
       font-size: 2.750rem; } }
@@ -547,6 +562,9 @@ h1 {
 
 .margin-bottom-40 {
   margin-bottom: 40px; }
+
+.margin-bottom-0 {
+  margin-bottom: 0; }
 
 .switch-mobile div:first-child {
   display: block; }
@@ -946,104 +964,20 @@ header {
   position: absolute;
   top: -25px; }
 
-.page--portoes-de-seguranca .sec {
-  position: relative; }
-  .page--portoes-de-seguranca .sec .card {
-    overflow: visible; }
-  .page--portoes-de-seguranca .sec--hero {
-    background-image: url("../images/pag-produtos-portoes-seguranca-large.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 400px;
-    padding-bottom: 0; }
-    .page--portoes-de-seguranca .sec--hero:after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: 0;
-      z-index: 1;
-      background-image: url("../images/slide-mask.png");
-      background-repeat: no-repeat;
-      background-position-y: bottom;
-      background-position-x: center;
-      background-size: cover;
-      height: 215px;
-      width: 100%; }
-  .page--portoes-de-seguranca .sec--content {
-    padding-top: 0; }
-  .page--portoes-de-seguranca .sec span.numbers {
-    font-family: "baloo_daregular", sans-serif;
-    font-size: 24px;
-    color: #E4283D; }
-  .page--portoes-de-seguranca .sec .arrow-down {
-    position: absolute;
-    top: -150px;
-    margin-left: -30px;
-    z-index: 2; }
-  .page--portoes-de-seguranca .sec .prod-img-wrapper {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    top: 100px; }
-  .page--portoes-de-seguranca .sec .prod-img {
-    position: relative;
-    margin-right: 40px;
-    box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.2); }
-    .page--portoes-de-seguranca .sec .prod-img:last-child {
-      margin-right: 0; }
-    .page--portoes-de-seguranca .sec .prod-img:before {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 1;
-      width: 58px;
-      height: 58px;
-      left: 0;
-      top: 50%;
-      margin-top: -29px;
-      margin-left: -29px; }
-    .page--portoes-de-seguranca .sec .prod-img--aberta:after {
-      content: "ABERTA"; }
-    .page--portoes-de-seguranca .sec .prod-img--fechada:after {
-      content: "FECHADA"; }
-    .page--portoes-de-seguranca .sec .prod-img--aberta:after, .page--portoes-de-seguranca .sec .prod-img--fechada:after {
-      z-index: 1;
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      margin-top: -12px;
-      font-size: 16px; }
-    .page--portoes-de-seguranca .sec .prod-img--one:before {
-      background-image: url("../images/icon-one.png");
-      background-repeat: no-repeat; }
-    .page--portoes-de-seguranca .sec .prod-img--two:before {
-      background-image: url("../images/icon-two.png");
-      background-repeat: no-repeat; }
-  .page--portoes-de-seguranca .sec .card {
-    margin-bottom: 140px; }
-  @media only screen and (max-width: 40.1rem) {
-    .page--portoes-de-seguranca .sec--hero {
-      background-position: -150vw center;
-      height: 350px; }
-    .page--portoes-de-seguranca .sec .prod-img-wrapper {
-      flex-direction: column; }
-    .page--portoes-de-seguranca .sec .prod-img {
-      margin-right: 0;
-      margin-bottom: 40px; }
-      .page--portoes-de-seguranca .sec .prod-img:last-child {
-        margin-bottom: 0; } }
-
+.page--portoes-de-seguranca .sec,
+.page--cercas-removiveis .sec,
 .page--gradil .sec {
   position: relative; }
+  .page--portoes-de-seguranca .sec--hero,
+  .page--cercas-removiveis .sec--hero,
   .page--gradil .sec--hero {
-    background-image: url("../images/pag-produtos-gradil.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 400px;
     padding-bottom: 0; }
+    .page--portoes-de-seguranca .sec--hero:after,
+    .page--cercas-removiveis .sec--hero:after,
     .page--gradil .sec--hero:after {
       content: "";
       display: block;
@@ -1057,27 +991,107 @@ header {
       background-size: cover;
       height: 215px;
       width: 100%; }
+  .page--portoes-de-seguranca .sec--content,
+  .page--cercas-removiveis .sec--content,
+  .page--gradil .sec--content {
+    padding-top: 0; }
+  .page--portoes-de-seguranca .sec .arrow-down,
+  .page--cercas-removiveis .sec .arrow-down,
   .page--gradil .sec .arrow-down {
     position: absolute;
     top: -150px;
     margin-left: -30px;
     z-index: 2; }
-  .page--gradil .sec--content {
-    padding-top: 0; }
-  .page--gradil .sec .card {
-    overflow: visible; }
-    .page--gradil .sec .card .card-section {
-      max-height: 332px; }
-  .page--gradil .sec .btn--secondary {
+  .page--portoes-de-seguranca .sec .card-overflow-wrapper .card-section,
+  .page--cercas-removiveis .sec .card-overflow-wrapper .card-section,
+  .page--gradil .sec .card-overflow-wrapper .card-section {
+    padding-bottom: 60px; }
+  .page--portoes-de-seguranca .sec .card-overflow-wrapper .btn--secondary,
+  .page--cercas-removiveis .sec .card-overflow-wrapper .btn--secondary,
+  .page--gradil .sec .card-overflow-wrapper .btn--secondary {
     position: relative;
-    top: 50px;
+    top: -40px;
     width: 300px;
     height: 60px;
     padding: 18px;
     font-size: 18px; }
     @media only screen and (max-width: 40.1rem) {
-      .page--gradil .sec .btn--secondary {
+      .page--portoes-de-seguranca .sec .card-overflow-wrapper .btn--secondary,
+      .page--cercas-removiveis .sec .card-overflow-wrapper .btn--secondary,
+      .page--gradil .sec .card-overflow-wrapper .btn--secondary {
         top: 25px; } }
+
+.page--portoes-de-seguranca .sec--hero {
+  background-image: url("../images/pag-produtos-portoes-seguranca-large.jpg"); }
+
+.page--portoes-de-seguranca .sec .card {
+  overflow: visible;
+  margin-bottom: 140px; }
+
+.page--portoes-de-seguranca .sec span.numbers {
+  font-family: "baloo_daregular", sans-serif;
+  font-size: 24px;
+  color: #E4283D; }
+
+.page--portoes-de-seguranca .sec .prod-img-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  top: 100px; }
+
+.page--portoes-de-seguranca .sec .prod-img {
+  position: relative;
+  margin-right: 40px;
+  box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.2); }
+  .page--portoes-de-seguranca .sec .prod-img:last-child {
+    margin-right: 0; }
+  .page--portoes-de-seguranca .sec .prod-img:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 58px;
+    height: 58px;
+    left: 0;
+    top: 50%;
+    margin-top: -29px;
+    margin-left: -29px; }
+  .page--portoes-de-seguranca .sec .prod-img--aberta:after {
+    content: "ABERTA"; }
+  .page--portoes-de-seguranca .sec .prod-img--fechada:after {
+    content: "FECHADA"; }
+  .page--portoes-de-seguranca .sec .prod-img--aberta:after, .page--portoes-de-seguranca .sec .prod-img--fechada:after {
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -12px;
+    font-size: 16px; }
+  .page--portoes-de-seguranca .sec .prod-img--one:before {
+    background-image: url("../images/icon-one.png");
+    background-repeat: no-repeat; }
+  .page--portoes-de-seguranca .sec .prod-img--two:before {
+    background-image: url("../images/icon-two.png");
+    background-repeat: no-repeat; }
+
+@media only screen and (max-width: 40.1rem) {
+  .page--portoes-de-seguranca .sec--hero {
+    background-position: -150vw center;
+    height: 350px; }
+  .page--portoes-de-seguranca .sec .prod-img-wrapper {
+    flex-direction: column; }
+  .page--portoes-de-seguranca .sec .prod-img {
+    margin-right: 0;
+    margin-bottom: 40px; }
+    .page--portoes-de-seguranca .sec .prod-img:last-child {
+      margin-bottom: 0; } }
+
+.page--cercas-removiveis .sec--hero {
+  background-image: url("../images/pag-produtos-cercas-removiveis-large.jpg"); }
+
+.page--gradil .sec--hero {
+  background-image: url("../images/pag-produtos-gradil.jpg"); }
 
 .page--empresa .sec h1.title-blue {
   margin: 40px auto 60px; }

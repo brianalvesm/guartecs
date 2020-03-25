@@ -179,7 +179,7 @@
 		&--sobrasa
 			b
 			color: $color-red
-	// PAGINAS HOME & GALERIA
+	// PAGINAS HOME & GALERIA - Estilos em comum
 	&--home .sec,
 	&--galeria .sec
 		&--galeria
@@ -215,14 +215,13 @@
 		.arrow-down
 			position: absolute
 			top: -25px
-	//PAGINA PORTÕES DE SEGURANÇA 
-	&--portoes-de-seguranca .sec
+	// SUBPAGINAS DE PRODUTOS - Estilos em comum 
+	&--portoes-de-seguranca .sec,
+	&--cercas-removiveis .sec,
+	&--gradil .sec
 		position: relative
-		.card
-			overflow: visible
 		&--hero
 			background:
-				image: url('../images/pag-produtos-portoes-seguranca-large.jpg')
 				repeat: no-repeat
 				position: center
 				size: cover
@@ -244,15 +243,34 @@
 				width: 100%
 		&--content
 			padding-top: 0
-		span.numbers
-			font-family: $font-baloo
-			font-size: 24px
-			color: $color-red
 		.arrow-down
 			position: absolute
 			top: -150px
 			margin-left: -30px
 			z-index: 2
+		.card-overflow-wrapper
+			.card-section
+				padding-bottom: 60px
+			.btn--secondary
+				position: relative
+				top: -40px
+				width: 300px
+				height: 60px
+				padding: 18px
+				font-size: 18px
+				@media only screen and (max-width: 40.1rem)
+					top: 25px
+	// PAGINA PRODUTOS > PORTÕES DE SEGURANÇA 
+	&--portoes-de-seguranca .sec
+		&--hero
+			background-image: url('../images/pag-produtos-portoes-seguranca-large.jpg')
+		.card
+			overflow: visible
+			margin-bottom: 140px
+		span.numbers
+			font-family: $font-baloo
+			font-size: 24px
+			color: $color-red
 		.prod-img-wrapper
 			position: relative
 			display: flex
@@ -297,8 +315,6 @@
 				background:
 					image: url('../images/icon-two.png')
 					repeat: no-repeat
-		.card
-			margin-bottom: 140px
 		@media only screen and (max-width: 40.1rem)
 			&--hero
 				background-position: -150vw center
@@ -310,51 +326,14 @@
 				margin-bottom: 40px
 				&:last-child
 					margin-bottom: 0
-	// PAGINA GRADIL
-	&--gradil .sec
-		position: relative
+	// PAGINA PRODUTOS > CERCAS REMOVIVEIS
+	&--cercas-removiveis .sec
 		&--hero
-			background:
-				image: url('../images/pag-produtos-gradil.jpg')
-				repeat: no-repeat
-				position: center
-				size: cover
-			height: 400px
-			padding-bottom: 0
-			&:after
-				content: ""
-				display: block
-				position: absolute
-				bottom: 0
-				z-index: 1
-				background:
-					image: url('../images/slide-mask.png')
-					repeat: no-repeat
-					position-y: bottom
-					position-x: center
-					size: cover
-				height: 215px
-				width: 100%
-		.arrow-down
-			position: absolute
-			top: -150px
-			margin-left: -30px
-			z-index: 2
-		&--content
-			padding-top: 0
-		.card
-			overflow: visible
-			.card-section
-				max-height: 332px
-		.btn--secondary
-			position: relative
-			top: 50px
-			width: 300px
-			height: 60px
-			padding: 18px
-			font-size: 18px
-			@media only screen and (max-width: 40.1rem)
-				top: 25px
+			background-image: url('../images/pag-produtos-cercas-removiveis-large.jpg')
+	// PAGINA PRODUTOS > GRADIL
+	&--gradil .sec
+		&--hero
+			background-image: url('../images/pag-produtos-gradil.jpg')
 	// PAGINA EMPRESA
 	&--empresa .sec
 		h1.title-blue
@@ -425,3 +404,6 @@
 						font-size: 18px
 				.cell.large-6:first-child .card-section
 					border-right: none
+
+
+// Anotação: alterar espaçamento vertical do card section para flex. Assim, não precisa ficar se preocupando em aumentar o padding para alinhar os cards 
