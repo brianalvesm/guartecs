@@ -1,0 +1,29 @@
+// FORMS
+form
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	select option,
+	textarea
+		height: 70px
+		padding: 20px
+		border-radius: 10px
+		&::placeholder
+			text-transform: uppercase
+	select
+		color: #cacaca
+	textarea
+		height: 230px
+	[type="submit"]
+		width: 280px
+		color: white
+		background-color: $color-red
+		font-family: $font-baloo
+		font-size: 18px
+		text-transform: uppercase
+		height: 66px !important
+		border-radius: 33px !important
+	@media only screen and (max-width: 40.1rem)
+		&.bc-mobile-push
+			margin-top: 90px

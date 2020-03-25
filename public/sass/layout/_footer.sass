@@ -1,0 +1,107 @@
+// Footer
+.newsletter
+	background-color: #F3EEE4
+	height: 120px
+	padding: 26px 0
+	.input-group
+		justify-content: flex-end
+	.input-group-button
+		position: relative
+	input
+		// Fix - Sobrescrevendo regras do Foundation para estilizar os inputs da newsletter
+		height: 66px !important
+		border-radius: 33px !important
+		&[type="email"]
+			width: 500px
+			&::placeholder
+				color: $color-red
+				padding-left: 40px
+			@media only screen and (max-width: 40.1rem)
+				width: initial
+		&[type="submit"]
+			position: absolute
+			right: 0
+			width: 168px
+			color: white
+			background-color: $color-red
+			font-family: $font-baloo
+			font-size: 14px
+			text-transform: uppercase
+	.newsletter-message span
+		color: $color-red
+		font-family: $font-baloo
+		font-size: 24px
+		margin-left: 32px
+	@media only screen and (max-width: 40.1rem)
+		height: initial
+		.input-group-button
+			width: 100%
+		input[type="email"]
+			width: 100%
+		input[type="submit"]
+			width: 118px
+		.newsletter-message
+			text-align: center
+			padding-bottom: 20px
+			span
+				font-size: 20px
+				margin-left: 22px
+
+footer
+	background-color: $color-red
+	color: white
+	overflow: auto
+	.footer-content
+		margin: 75px auto
+	.all-rights-reserved
+		border-top: 1px solid white
+
+.footer-menu ul
+	column-count: 2
+	column-width: 150px
+	margin: 0
+	li
+		display: block
+		text-transform: uppercase
+		font-family: $font-baloo
+		font-size: 18px
+		a
+			color: white
+			&:hover,
+			&:focus
+				text-decoration: underline
+	@media only screen and (max-width: 40.1rem)
+		column-count: 1
+		column-width: auto
+		margin: 20px 0
+
+.footer-tel,
+.footer-email
+	font-family: $font-baloo
+	font-size: 20px
+	text-transform: uppercase
+	img
+		padding-right: 36px
+	@media only screen and (max-width: 40.1rem)
+		font-size: 16px
+		img
+			padding-right: 16px
+
+.footer-tel
+	padding-bottom: 10px
+
+.footer-wrapper
+	display: flex
+	justify-content: space-between
+	align-items: center
+	min-height: 72px
+	.social-media-icons
+		width: 56px
+		img:first-child
+			padding-right: 20px
+	@media only screen and (max-width: 40.1rem)
+		display: block
+		padding: 15px
+		.social-media-icons
+			width: 100%
+			text-align: center
