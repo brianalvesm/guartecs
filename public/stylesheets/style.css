@@ -240,6 +240,9 @@
     position: absolute;
     left: 50%;
     margin-left: -120px; }
+  @media only screen and (max-width: 40.1rem) {
+    .highlight {
+      border-radius: 50px; } }
 
 .selos {
   list-style: none;
@@ -524,10 +527,6 @@ form [type="submit"] {
   text-transform: uppercase;
   height: 66px !important;
   border-radius: 33px !important; }
-
-@media only screen and (max-width: 40.1rem) {
-  form.bc-mobile-push {
-    margin-top: 90px; } }
 
 body, html {
   margin: 0;
@@ -1015,11 +1014,15 @@ header {
     height: 60px;
     padding: 18px;
     font-size: 18px; }
-    @media only screen and (max-width: 40.1rem) {
-      .page--portoes-de-seguranca .sec .card-overflow-wrapper .btn--secondary,
-      .page--cercas-removiveis .sec .card-overflow-wrapper .btn--secondary,
-      .page--gradil .sec .card-overflow-wrapper .btn--secondary {
-        top: 25px; } }
+  @media only screen and (max-width: 40.1rem) {
+    .page--portoes-de-seguranca .sec .card-overflow-wrapper .btn--secondary,
+    .page--cercas-removiveis .sec .card-overflow-wrapper .btn--secondary,
+    .page--gradil .sec .card-overflow-wrapper .btn--secondary {
+      top: -20px; }
+    .page--portoes-de-seguranca .sec .large-6:first-child,
+    .page--cercas-removiveis .sec .large-6:first-child,
+    .page--gradil .sec .large-6:first-child {
+      margin-bottom: 40px; } }
 
 .page--portoes-de-seguranca .sec--hero {
   background-image: url("../images/pag-produtos-portoes-seguranca-large.jpg"); }
@@ -1168,3 +1171,7 @@ header {
       font-size: 18px; }
   .page--empresa .sec .card .cell.large-6:first-child .card-section {
     border-right: none; } }
+
+@media only screen and (max-width: 40.1rem) {
+  .page.bc-mobile-push {
+    margin-top: 90px; } }

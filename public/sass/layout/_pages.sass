@@ -258,8 +258,11 @@
 				height: 60px
 				padding: 18px
 				font-size: 18px
-				@media only screen and (max-width: 40.1rem)
-					top: 25px
+		@media only screen and (max-width: 40.1rem)
+			.card-overflow-wrapper .btn--secondary
+				top: -20px
+			.large-6:first-child
+				margin-bottom: 40px
 	// PAGINA PRODUTOS > PORTÕES DE SEGURANÇA 
 	&--portoes-de-seguranca .sec
 		&--hero
@@ -404,6 +407,6 @@
 						font-size: 18px
 				.cell.large-6:first-child .card-section
 					border-right: none
-
-
-// Anotação: alterar espaçamento vertical do card section para flex. Assim, não precisa ficar se preocupando em aumentar o padding para alinhar os cards 
+	@media only screen and (max-width: 40.1rem)
+		&.bc-mobile-push
+			margin-top: 90px
