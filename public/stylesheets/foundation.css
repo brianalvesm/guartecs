@@ -3448,7 +3448,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     right: 10%; }
 
 .accordion {
-  margin-left: 0;
+  margin: 0 5px 0 5px;
   background: #fefefe;
   list-style-type: none; }
   .accordion[disabled] .accordion-title {
@@ -3464,7 +3464,11 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   position: relative;
   display: block;
   padding: 1.25rem 1rem;
-  border: 1px solid #e6e6e6;
+  border-width: 2px;
+  border-style: dotted;
+  border-color: #2C2C30; 
+  border-right: 0;
+  border-left: 0;
   border-bottom: 0;
   font-size: 0.75rem;
   line-height: 1;
@@ -3477,8 +3481,9 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   .accordion-title::before {
     position: absolute;
     top: 50%;
-    right: 1rem;
-    margin-top: -0.5rem;
+    left: 1rem;
+    margin-top: -0.8rem;
+    color: #58BEED;
     content: "+"; }
   .is-active > .accordion-title::before {
     content: "–"; }
@@ -3486,7 +3491,6 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 .accordion-content {
   display: none;
   padding: 1rem;
-  border: 1px solid #e6e6e6;
   border-bottom: 0;
   background-color: #fefefe;
   color: #0a0a0a; }

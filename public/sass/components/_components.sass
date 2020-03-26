@@ -94,5 +94,29 @@
 		font-size: 38px
 		line-height: 38px
 	@media only screen and (max-width: 40.1rem)
+		padding: 20px 0
 		h1
 			font-size: 2.750rem
+
+// Accordion
+.accordion-title
+	font-family: $font-baloo
+	text-align: left
+	h4
+		padding-left: 30px
+		margin-bottom: 0
+	&:before
+		font-family: $font-baloo
+		font-size: 28px
+.accordion-content
+	text-align: left
+	font-size: 18px
+	position: relative
+	.btn
+		box-shadow: none
+		position: absolute
+		right: 10px
+		top: 50%
+		margin-top: -24px
+		@media only screen and (max-width: 40.1rem)
+			font-size: 12px

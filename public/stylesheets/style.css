@@ -29,7 +29,7 @@
   @media only screen and (max-width: 40.1rem) {
     .paragraph {
       font-size: 1.250rem;
-      margin: 32px auto; } }
+      margin: 16px auto; } }
 
 .owl-carousel .owl-prev,
 .owl-carousel .owl-next {
@@ -273,8 +273,34 @@
     font-size: 38px;
     line-height: 38px; }
   @media only screen and (max-width: 40.1rem) {
-    .sec h1 {
-      font-size: 2.750rem; } }
+    .sec {
+      padding: 20px 0; }
+      .sec h1 {
+        font-size: 2.750rem; } }
+
+.accordion-title {
+  font-family: "baloo_daregular", sans-serif;
+  text-align: left; }
+  .accordion-title h4 {
+    padding-left: 30px;
+    margin-bottom: 0; }
+  .accordion-title:before {
+    font-family: "baloo_daregular", sans-serif;
+    font-size: 28px; }
+
+.accordion-content {
+  text-align: left;
+  font-size: 18px;
+  position: relative; }
+  .accordion-content .btn {
+    box-shadow: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -24px; }
+    @media only screen and (max-width: 40.1rem) {
+      .accordion-content .btn {
+        font-size: 12px; } }
 
 a.menu-link {
   float: right;
@@ -534,12 +560,15 @@ body, html {
   font: normal normal 1rem/1.5 "open_sans", sans-serif;
   background-color: white; }
 
-a {
+main a {
   color: #00B7FF; }
 
-h1 {
+main h1 {
   color: #222;
   margin-top: 0; }
+
+main h3 {
+  font-size: 2.000rem; }
 
 .text-left {
   text-align: left; }
@@ -589,8 +618,8 @@ h1 {
   margin: 40px 0; }
 
 .arrow-down {
-  margin-bottom: 40px;
-  align-self: center; }
+  align-self: center;
+  margin: 40px 0; }
 
 .js nav[role=navigation].main-menu {
   background-color: #E4283D;
@@ -1167,6 +1196,9 @@ header {
       font-size: 18px; }
   .page--empresa .sec .card .cell.large-6:first-child .card-section {
     border-right: none; } }
+
+.page--clientes-atendidos .title-blue {
+  font-family: "baloo_daregular", sans-serif; }
 
 @media only screen and (max-width: 40.1rem) {
   .page.bc-mobile-push {
