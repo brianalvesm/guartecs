@@ -617,10 +617,6 @@ main h3 {
 .simulador {
   margin: 40px 0; }
 
-.arrow-down {
-  align-self: center;
-  margin: 40px 0; }
-
 .js nav[role=navigation].main-menu {
   background-color: #E4283D;
   box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
@@ -829,6 +825,9 @@ header {
 
 .page--home .sec--diferenciais {
   background-color: #F9F5ED; }
+  .page--home .sec--diferenciais .arrow-down {
+    align-self: center;
+    margin-bottom: 40px; }
   .page--home .sec--diferenciais .card--diferenciais {
     position: relative;
     overflow: visible;
@@ -1199,6 +1198,12 @@ header {
 
 .page--clientes-atendidos .title-blue {
   font-family: "baloo_daregular", sans-serif; }
+
+.page--clientes-atendidos h1 {
+  margin-bottom: 0; }
+
+.page--clientes-atendidos .arrow-down {
+  margin: 40px 0; }
 
 @media only screen and (max-width: 40.1rem) {
   .page.bc-mobile-push {
