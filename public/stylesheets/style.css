@@ -961,7 +961,8 @@ header {
 
 .page--home .sec--galeria .gallery-container,
 .page--galeria .sec--galeria .gallery-container,
-.page--caracteristicas .sec--galeria .gallery-container {
+.page--caracteristicas .sec--galeria .gallery-container,
+.page--blog .sec--galeria .gallery-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
@@ -970,7 +971,9 @@ header {
   .page--galeria .sec--galeria .gallery-container .gallery-figure,
   .page--galeria .sec--galeria .gallery-container .gallery-card,
   .page--caracteristicas .sec--galeria .gallery-container .gallery-figure,
-  .page--caracteristicas .sec--galeria .gallery-container .gallery-card {
+  .page--caracteristicas .sec--galeria .gallery-container .gallery-card,
+  .page--blog .sec--galeria .gallery-container .gallery-figure,
+  .page--blog .sec--galeria .gallery-container .gallery-card {
     width: 380px;
     margin: 10px 10px 0 0;
     overflow: hidden;
@@ -980,7 +983,9 @@ header {
     .page--galeria .sec--galeria .gallery-container .gallery-figure figcaption,
     .page--galeria .sec--galeria .gallery-container .gallery-card figcaption,
     .page--caracteristicas .sec--galeria .gallery-container .gallery-figure figcaption,
-    .page--caracteristicas .sec--galeria .gallery-container .gallery-card figcaption {
+    .page--caracteristicas .sec--galeria .gallery-container .gallery-card figcaption,
+    .page--blog .sec--galeria .gallery-container .gallery-figure figcaption,
+    .page--blog .sec--galeria .gallery-container .gallery-card figcaption {
       background: #E4283D;
       opacity: 0.9;
       color: white;
@@ -997,7 +1002,9 @@ header {
       .page--galeria .sec--galeria .gallery-container .gallery-figure,
       .page--galeria .sec--galeria .gallery-container .gallery-card,
       .page--caracteristicas .sec--galeria .gallery-container .gallery-figure,
-      .page--caracteristicas .sec--galeria .gallery-container .gallery-card {
+      .page--caracteristicas .sec--galeria .gallery-container .gallery-card,
+      .page--blog .sec--galeria .gallery-container .gallery-figure,
+      .page--blog .sec--galeria .gallery-container .gallery-card {
         width: initial;
         height: initial; } }
 
@@ -1214,20 +1221,31 @@ header {
   .page--empresa .sec .card .cell.large-6:first-child .card-section {
     border-right: none; } }
 
-.page--clientes-atendidos .title-blue {
+.page--clientes-atendidos .sec .title-blue {
   font-family: "baloo_daregular", sans-serif; }
 
-.page--clientes-atendidos h1 {
+.page--clientes-atendidos .sec h1 {
   margin-bottom: 0; }
 
-.page--clientes-atendidos .arrow-down {
+.page--clientes-atendidos .sec .arrow-down {
   margin: 40px 0; }
 
-.page--caracteristicas .card {
+.page--caracteristicas .sec .card,
+.page--blog .sec .card {
   max-width: 380px;
   margin: 10px 10px 0 0; }
-  .page--caracteristicas .card h3 {
+  .page--caracteristicas .sec .card h3,
+  .page--blog .sec .card h3 {
     text-transform: uppercase; }
+
+.page--blog .sec .card h3 {
+  font-size: 20px;
+  margin-top: 16px;
+  min-height: 40px; }
+
+.page--blog .sec span {
+  color: #A5A5A5;
+  font-size: 16px; }
 
 @media only screen and (max-width: 40.1rem) {
   .page.bc-mobile-push {

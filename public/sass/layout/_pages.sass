@@ -189,10 +189,11 @@
 		&--sobrasa
 			b
 			color: $color-red
-	// HOME & GALERIA - Estilos em comum
+	// PAGINAS com estilos em comum
 	&--home .sec,
 	&--galeria .sec,
-	&--caracteristicas .sec
+	&--caracteristicas .sec,
+	&--blog .sec
 		&--galeria
 			.gallery-container
 				display: flex
@@ -417,7 +418,7 @@
 				.cell.large-6:first-child .card-section
 					border-right: none
 	// CLIENTES ATENDIDOS
-	&--clientes-atendidos
+	&--clientes-atendidos .sec
 		.title-blue
 			font-family: $font-baloo
 		h1
@@ -425,12 +426,21 @@
 		.arrow-down
 			margin: 40px 0
 	// CARACTERISTICAS
-	&--caracteristicas
+	&--caracteristicas .sec,
+	&--blog .sec
 		.card
 			max-width: 380px
 			margin: 10px 10px 0 0
 			h3
 				text-transform: uppercase
+	&--blog .sec
+		.card h3
+			font-size: 20px
+			margin-top: 16px
+			min-height: 40px
+		span
+			color: #A5A5A5
+			font-size: 16px
 	@media only screen and (max-width: 40.1rem)
 		&.bc-mobile-push
 			margin-top: 90px
