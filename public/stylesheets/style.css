@@ -53,9 +53,6 @@ main h3 {
       font-size: 1.250rem;
       margin: 16px auto; } }
 
-.owl-carousel .owl-stage-outer {
-  padding: 40px 0; }
-
 .owl-carousel .owl-prev,
 .owl-carousel .owl-next {
   cursor: pointer;
@@ -885,6 +882,9 @@ header {
     background-repeat: no-repeat;
     width: 320px;
     height: 1px; }
+    @media only screen and (max-width: 40.1rem) {
+      .page--home .sec--sobre h2:before, .page--home .sec--sobre h2:after {
+        width: 60px; } }
   .page--home .sec--sobre h2:before {
     left: 0;
     top: 16px; }
