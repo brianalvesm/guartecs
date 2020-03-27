@@ -1,6 +1,6 @@
 // PAGINAS
 .page
-	// PAGINA HOME
+	// HOME
 	&--home .sec
 		&--slide
 			overflow: hidden
@@ -71,6 +71,11 @@
 					min-height: 356px
 					p
 						max-width: 420px
+					h3
+						font-family: $font-family
+						font-size: 21px
+						font-weight: bold
+						margin-bottom: 0
 				.btn
 					width: 300px
 					height: 60px
@@ -182,17 +187,18 @@
 		&--sobrasa
 			b
 			color: $color-red
-	// PAGINAS HOME & GALERIA - Estilos em comum
+	// HOME & GALERIA - Estilos em comum
 	&--home .sec,
-	&--galeria .sec
+	&--galeria .sec,
+	&--caracteristicas .sec
 		&--galeria
 			.gallery-container
 				display: flex
 				flex-wrap: wrap
 				justify-content: center
-				.gallery-figure
+				.gallery-figure,
+				.gallery-card
 					width: 380px
-					height: 280px
 					margin: 10px 10px 0 0
 					overflow: hidden
 					position: relative
@@ -210,7 +216,7 @@
 					@media only screen and (max-width: 40.1rem)
 						width: initial
 						height: initial
-	// PAGINA PARCEIRO
+	// PARCEIRO
 	&--parceiro .sec
 		.card
 			overflow: visible
@@ -264,7 +270,7 @@
 		@media only screen and (max-width: 40.1rem)
 			.large-6:first-child
 				margin-bottom: 40px
-	// PAGINA PRODUTOS > PORTÕES DE SEGURANÇA 
+	// PRODUTOS > PORTÕES DE SEGURANÇA 
 	&--portoes-de-seguranca .sec
 		&--hero
 			background-image: url('../images/pag-produtos-portoes-seguranca-large.jpg')
@@ -330,15 +336,15 @@
 				margin-bottom: 40px
 				&:last-child
 					margin-bottom: 0
-	// PAGINA PRODUTOS > CERCAS REMOVIVEIS
+	// PRODUTOS > CERCAS REMOVIVEIS
 	&--cercas-removiveis .sec
 		&--hero
 			background-image: url('../images/pag-produtos-cercas-removiveis-large.jpg')
-	// PAGINA PRODUTOS > GRADIL
+	// PRODUTOS > GRADIL
 	&--gradil .sec
 		&--hero
 			background-image: url('../images/pag-produtos-gradil.jpg')
-	// PAGINA EMPRESA
+	// EMPRESA
 	&--empresa .sec
 		h1.title-blue
 			margin: 40px auto 60px
@@ -416,6 +422,13 @@
 			margin-bottom: 0
 		.arrow-down
 			margin: 40px 0
+	// CARACTERISTICAS
+	&--caracteristicas
+		.card
+			max-width: 380px
+			margin: 10px 10px 0 0
+			h3
+				text-transform: uppercase
 	@media only screen and (max-width: 40.1rem)
 		&.bc-mobile-push
 			margin-top: 90px

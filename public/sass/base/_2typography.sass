@@ -23,10 +23,29 @@
   font-weight: normal
   font-style: italic
 
+main
+  h1, h2, h3
+    font-family: $font-baloo
+    line-height: 1
+    margin-top: 0
+  h1
+    font-size: 3.125rem // 50px
+  h2
+    font-size: 2.375rem // 38px
+  h3
+    font-size: 1.750rem // 28px
+  @media only screen and (max-width: 40.1rem)
+    h1
+      font-size: 2.750rem // 44px
+    h2
+      font-size: 2.000rem // 32px
+    h3
+      font-size: 1.375rem // 22px
+
 .paragraph
-  font-size: 1.500rem
+  font-size: 1.500rem // 24px
   line-height: 1.4
   margin: 0 auto 32px
   @media only screen and (max-width: 40.1rem)
-    font-size: 1.250rem
+    font-size: 1.250rem // 20px
     margin: 16px auto

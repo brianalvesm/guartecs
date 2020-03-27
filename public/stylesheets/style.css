@@ -22,6 +22,28 @@
   font-weight: normal;
   font-style: italic; }
 
+main h1, main h2, main h3 {
+  font-family: "baloo_daregular", sans-serif;
+  line-height: 1;
+  margin-top: 0; }
+
+main h1 {
+  font-size: 3.125rem; }
+
+main h2 {
+  font-size: 2.375rem; }
+
+main h3 {
+  font-size: 1.750rem; }
+
+@media only screen and (max-width: 40.1rem) {
+  main h1 {
+    font-size: 2.750rem; }
+  main h2 {
+    font-size: 2.000rem; }
+  main h3 {
+    font-size: 1.375rem; } }
+
 .paragraph {
   font-size: 1.500rem;
   line-height: 1.4;
@@ -30,6 +52,9 @@
     .paragraph {
       font-size: 1.250rem;
       margin: 16px auto; } }
+
+.owl-carousel .owl-stage-outer {
+  padding: 40px 0; }
 
 .owl-carousel .owl-prev,
 .owl-carousel .owl-next {
@@ -198,10 +223,6 @@
     padding: 50px 80px; }
   .card .card-section p {
     font-size: 1rem; }
-  .card .card-section h3 {
-    font-size: 21px;
-    font-weight: bold;
-    margin-bottom: 0; }
   .card .card-section--extra-padding {
     padding: 2rem 4rem; }
   @media only screen and (max-width: 40.1rem) {
@@ -264,19 +285,9 @@
   text-align: center;
   font-size: 1.5rem;
   padding: 40px 0; }
-  .sec h1 {
-    font-family: "baloo_daregular", sans-serif;
-    font-size: 3.125rem;
-    line-height: 1; }
-  .sec h2 {
-    font-family: "baloo_daregular", sans-serif;
-    font-size: 38px;
-    line-height: 38px; }
   @media only screen and (max-width: 40.1rem) {
     .sec {
-      padding: 20px 0; }
-      .sec h1 {
-        font-size: 2.750rem; } }
+      padding: 20px 0; } }
 
 .accordion-title {
   font-family: "baloo_daregular", sans-serif;
@@ -560,16 +571,6 @@ body, html {
   font: normal normal 1rem/1.5 "open_sans", sans-serif;
   background-color: white; }
 
-main a {
-  color: #00B7FF; }
-
-main h1 {
-  color: #222;
-  margin-top: 0; }
-
-main h3 {
-  font-size: 2.000rem; }
-
 .text-left {
   text-align: left; }
 
@@ -841,6 +842,11 @@ header {
       min-height: 356px; }
       .page--home .sec--diferenciais .card--diferenciais .card-section p {
         max-width: 420px; }
+      .page--home .sec--diferenciais .card--diferenciais .card-section h3 {
+        font-family: "open_sans", sans-serif;
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 0; }
     .page--home .sec--diferenciais .card--diferenciais .btn {
       width: 300px;
       height: 60px;
@@ -954,19 +960,27 @@ header {
   color: #E4283D; }
 
 .page--home .sec--galeria .gallery-container,
-.page--galeria .sec--galeria .gallery-container {
+.page--galeria .sec--galeria .gallery-container,
+.page--caracteristicas .sec--galeria .gallery-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
   .page--home .sec--galeria .gallery-container .gallery-figure,
-  .page--galeria .sec--galeria .gallery-container .gallery-figure {
+  .page--home .sec--galeria .gallery-container .gallery-card,
+  .page--galeria .sec--galeria .gallery-container .gallery-figure,
+  .page--galeria .sec--galeria .gallery-container .gallery-card,
+  .page--caracteristicas .sec--galeria .gallery-container .gallery-figure,
+  .page--caracteristicas .sec--galeria .gallery-container .gallery-card {
     width: 380px;
-    height: 280px;
     margin: 10px 10px 0 0;
     overflow: hidden;
     position: relative; }
     .page--home .sec--galeria .gallery-container .gallery-figure figcaption,
-    .page--galeria .sec--galeria .gallery-container .gallery-figure figcaption {
+    .page--home .sec--galeria .gallery-container .gallery-card figcaption,
+    .page--galeria .sec--galeria .gallery-container .gallery-figure figcaption,
+    .page--galeria .sec--galeria .gallery-container .gallery-card figcaption,
+    .page--caracteristicas .sec--galeria .gallery-container .gallery-figure figcaption,
+    .page--caracteristicas .sec--galeria .gallery-container .gallery-card figcaption {
       background: #E4283D;
       opacity: 0.9;
       color: white;
@@ -979,7 +993,11 @@ header {
       padding: 5px; }
     @media only screen and (max-width: 40.1rem) {
       .page--home .sec--galeria .gallery-container .gallery-figure,
-      .page--galeria .sec--galeria .gallery-container .gallery-figure {
+      .page--home .sec--galeria .gallery-container .gallery-card,
+      .page--galeria .sec--galeria .gallery-container .gallery-figure,
+      .page--galeria .sec--galeria .gallery-container .gallery-card,
+      .page--caracteristicas .sec--galeria .gallery-container .gallery-figure,
+      .page--caracteristicas .sec--galeria .gallery-container .gallery-card {
         width: initial;
         height: initial; } }
 
@@ -1204,6 +1222,12 @@ header {
 
 .page--clientes-atendidos .arrow-down {
   margin: 40px 0; }
+
+.page--caracteristicas .card {
+  max-width: 380px;
+  margin: 10px 10px 0 0; }
+  .page--caracteristicas .card h3 {
+    text-transform: uppercase; }
 
 @media only screen and (max-width: 40.1rem) {
   .page.bc-mobile-push {
