@@ -445,6 +445,67 @@
 	&--como-comprar
 		.tracado-cerca img
 			padding: 0 20px 25px
+		.comprar-cards-wrapper
+			display: flex
+			flex-wrap: wrap
+			.card
+				margin-top: 100px
+				max-width: 380px
+				align-items: center
+				overflow: visible
+				position: relative
+				padding-top: 150px
+				img
+					width: fit-content
+					position: absolute
+					top: -80px
+				.title-red
+					font-family: $font-baloo
+				.card-section
+					background-color: $color-beige
+					width: 100%
+					min-height: 230px
+					display: flex
+					flex-direction: column
+					justify-content: center
+		.card--beige img
+		 max-width: 800px
+		 width: 100%
+		 margin: auto
+		.pagamento-facilitado
+			max-width: 750px
+			margin: auto
+			.title-red
+				font-family: $font-baloo
+				display: inline
+				position: relative
+				&:before,
+				&:after,
+					content: ""
+					display: block
+					width: 190px
+					height: 1px
+					border-bottom: 1px dotted #2C2C30
+					position: absolute
+					top: 20px
+				&:before
+					left: -200px
+				&:after
+					left: 260px
+			img
+				display: block
+				margin: 30px auto
+			.friso
+				width: 600px
+				height: 1px
+				border-bottom: 1px dotted #2C2C30
 	@media only screen and (max-width: 40.1rem)
 		&.bc-mobile-push
 			margin-top: 90px
+		&--como-comprar
+			.pagamento-facilitado
+				.title-red:before,
+				.title-red:after
+					content: none
+				.friso
+					width: 100%

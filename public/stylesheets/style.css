@@ -1248,6 +1248,67 @@ header {
 .page--como-comprar .tracado-cerca img {
   padding: 0 20px 25px; }
 
+.page--como-comprar .comprar-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  .page--como-comprar .comprar-cards-wrapper .card {
+    margin-top: 100px;
+    max-width: 380px;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    padding-top: 150px; }
+    .page--como-comprar .comprar-cards-wrapper .card img {
+      width: fit-content;
+      position: absolute;
+      top: -80px; }
+    .page--como-comprar .comprar-cards-wrapper .card .title-red {
+      font-family: "baloo_daregular", sans-serif; }
+    .page--como-comprar .comprar-cards-wrapper .card .card-section {
+      background-color: #F9F5ED;
+      width: 100%;
+      min-height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+
+.page--como-comprar .card--beige img {
+  max-width: 800px;
+  width: 100%;
+  margin: auto; }
+
+.page--como-comprar .pagamento-facilitado {
+  max-width: 750px;
+  margin: auto; }
+  .page--como-comprar .pagamento-facilitado .title-red {
+    font-family: "baloo_daregular", sans-serif;
+    display: inline;
+    position: relative; }
+    .page--como-comprar .pagamento-facilitado .title-red:before, .page--como-comprar .pagamento-facilitado .title-red:after {
+      content: "";
+      display: block;
+      width: 190px;
+      height: 1px;
+      border-bottom: 1px dotted #2C2C30;
+      position: absolute;
+      top: 20px; }
+    .page--como-comprar .pagamento-facilitado .title-red:before {
+      left: -200px; }
+    .page--como-comprar .pagamento-facilitado .title-red:after {
+      left: 260px; }
+  .page--como-comprar .pagamento-facilitado img {
+    display: block;
+    margin: 30px auto; }
+  .page--como-comprar .pagamento-facilitado .friso {
+    width: 600px;
+    height: 1px;
+    border-bottom: 1px dotted #2C2C30; }
+
 @media only screen and (max-width: 40.1rem) {
   .page.bc-mobile-push {
-    margin-top: 90px; } }
+    margin-top: 90px; }
+  .page--como-comprar .pagamento-facilitado .title-red:before,
+  .page--como-comprar .pagamento-facilitado .title-red:after {
+    content: none; }
+  .page--como-comprar .pagamento-facilitado .friso {
+    width: 100%; } }
