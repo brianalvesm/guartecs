@@ -1,7 +1,7 @@
 // PAGINAS
 .page
 	// HOME
-	&--home
+	&--home .sec
 		&--slide
 			overflow: hidden
 			position: relative
@@ -190,10 +190,10 @@
 			b
 			color: $color-red
 	// PAGINAS com estilos em comum
-	&--home,
-	&--galeria,
-	&--caracteristicas,
-	&--blog
+	&--home .sec,
+	&--galeria .sec,
+	&--caracteristicas .sec,
+	&--blog .sec
 		&--galeria
 			.gallery-container
 				display: flex
@@ -228,9 +228,9 @@
 			position: absolute
 			top: -25px
 	// SUBPAGINAS DE PRODUTOS - Estilos em comum 
-	&--portoes-de-seguranca,
-	&--cercas-removiveis,
-	&--gradil
+	&--portoes-de-seguranca .sec,
+	&--cercas-removiveis .sec,
+	&--gradil .sec
 		position: relative
 		&--hero
 			background:
@@ -274,7 +274,7 @@
 			.large-6:first-child
 				margin-bottom: 40px
 	// PRODUTOS > Portões de segurança 
-	&--portoes-de-seguranca
+	&--portoes-de-seguranca .sec
 		&--hero
 			background-image: url('../images/pag-produtos-portoes-seguranca-large.jpg')
 		.card
@@ -340,11 +340,11 @@
 				&:last-child
 					margin-bottom: 0
 	// PRODUTOS > Cercas removíveis
-	&--cercas-removiveis
+	&--cercas-removiveis .sec
 		&--hero
 			background-image: url('../images/pag-produtos-cercas-removiveis-large.jpg')
 	// PRODUTOS > Gradil
-	&--gradil
+	&--gradil .sec
 		&--hero
 			background-image: url('../images/pag-produtos-gradil.jpg')
 	// EMPRESA
