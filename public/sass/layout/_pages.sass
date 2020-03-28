@@ -1,7 +1,7 @@
 // PAGINAS
 .page
 	// HOME
-	&--home .sec
+	&--home
 		&--slide
 			overflow: hidden
 			position: relative
@@ -190,10 +190,10 @@
 			b
 			color: $color-red
 	// PAGINAS com estilos em comum
-	&--home .sec,
-	&--galeria .sec,
-	&--caracteristicas .sec,
-	&--blog .sec
+	&--home,
+	&--galeria,
+	&--caracteristicas,
+	&--blog
 		&--galeria
 			.gallery-container
 				display: flex
@@ -220,7 +220,7 @@
 						width: initial
 						height: initial
 	// PARCEIRO
-	&--parceiro .sec
+	&--parceiro
 		.card
 			overflow: visible
 			position: relative
@@ -228,9 +228,9 @@
 			position: absolute
 			top: -25px
 	// SUBPAGINAS DE PRODUTOS - Estilos em comum 
-	&--portoes-de-seguranca .sec,
-	&--cercas-removiveis .sec,
-	&--gradil .sec
+	&--portoes-de-seguranca,
+	&--cercas-removiveis,
+	&--gradil
 		position: relative
 		&--hero
 			background:
@@ -273,8 +273,8 @@
 		@media only screen and (max-width: 40.1rem)
 			.large-6:first-child
 				margin-bottom: 40px
-	// PRODUTOS > PORTÕES DE SEGURANÇA 
-	&--portoes-de-seguranca .sec
+	// PRODUTOS > Portões de segurança 
+	&--portoes-de-seguranca
 		&--hero
 			background-image: url('../images/pag-produtos-portoes-seguranca-large.jpg')
 		.card
@@ -339,16 +339,16 @@
 				margin-bottom: 40px
 				&:last-child
 					margin-bottom: 0
-	// PRODUTOS > CERCAS REMOVIVEIS
-	&--cercas-removiveis .sec
+	// PRODUTOS > Cercas removíveis
+	&--cercas-removiveis
 		&--hero
 			background-image: url('../images/pag-produtos-cercas-removiveis-large.jpg')
-	// PRODUTOS > GRADIL
-	&--gradil .sec
+	// PRODUTOS > Gradil
+	&--gradil
 		&--hero
 			background-image: url('../images/pag-produtos-gradil.jpg')
 	// EMPRESA
-	&--empresa .sec
+	&--empresa
 		h1.title-blue
 			margin: 40px auto 60px
 		figure
@@ -418,22 +418,23 @@
 				.cell.large-6:first-child .card-section
 					border-right: none
 	// CLIENTES ATENDIDOS
-	&--clientes-atendidos .sec
+	&--clientes-atendidos
 		.title-blue
 			font-family: $font-baloo
 		h1
 			margin-bottom: 0
 		.arrow-down
 			margin: 40px 0
-	// CARACTERISTICAS
-	&--caracteristicas .sec,
-	&--blog .sec
+	// CARACTERISTICAS & Blog
+	&--caracteristicas,
+	&--blog
 		.card
 			max-width: 380px
 			margin: 10px 10px 0 0
 			h3
 				text-transform: uppercase
-	&--blog .sec
+	// BLOG
+	&--blog
 		.card h3
 			font-size: 20px
 			margin-top: 16px
@@ -441,6 +442,9 @@
 		span
 			color: #A5A5A5
 			font-size: 16px
+	&--como-comprar
+		.tracado-cerca img
+			padding: 0 20px 25px
 	@media only screen and (max-width: 40.1rem)
 		&.bc-mobile-push
 			margin-top: 90px

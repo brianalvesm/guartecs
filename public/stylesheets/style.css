@@ -768,16 +768,16 @@ header {
   .header-tel {
     line-height: 1.2; } }
 
-.page--home .sec--slide {
+.page--home--slide {
   overflow: hidden;
   position: relative;
   z-index: 0;
   padding: 0; }
 
-.page--home .sec--cerca {
+.page--home--cerca {
   position: relative;
   padding-bottom: 200px; }
-  .page--home .sec--cerca .slide-mask {
+  .page--home--cerca .slide-mask {
     position: absolute;
     bottom: 0;
     z-index: 1;
@@ -788,23 +788,23 @@ header {
     background-size: contain;
     height: 215px;
     width: 100%; }
-  .page--home .sec--cerca .dog-with-kid {
+  .page--home--cerca .dog-with-kid {
     position: absolute;
     bottom: 0;
     left: 50%;
     margin-left: -248px; }
-  .page--home .sec--cerca .card {
+  .page--home--cerca .card {
     position: relative;
     width: 400px;
     margin: 50px auto;
     padding-bottom: 40px;
     background-color: #F9F5ED;
     overflow: visible; }
-    .page--home .sec--cerca .card .alu-icon {
+    .page--home--cerca .card .alu-icon {
       position: absolute;
       top: 12px;
       left: 12px; }
-    .page--home .sec--cerca .card .btn {
+    .page--home--cerca .card .btn {
       width: 200px;
       height: 40px;
       padding: 10px;
@@ -814,37 +814,37 @@ header {
       left: 50%;
       margin-left: -100px; }
   @media only screen and (max-width: 40.1rem) {
-    .page--home .sec--cerca {
+    .page--home--cerca {
       padding-bottom: 400px; }
-      .page--home .sec--cerca .slide-mask {
+      .page--home--cerca .slide-mask {
         background-size: cover; }
-      .page--home .sec--cerca .card {
+      .page--home--cerca .card {
         width: auto; } }
 
-.page--home .sec--diferenciais {
+.page--home--diferenciais {
   background-color: #F9F5ED; }
-  .page--home .sec--diferenciais .arrow-down {
+  .page--home--diferenciais .arrow-down {
     align-self: center;
     margin-bottom: 40px; }
-  .page--home .sec--diferenciais .card--diferenciais {
+  .page--home--diferenciais .card--diferenciais {
     position: relative;
     overflow: visible;
     margin-bottom: 60px; }
-    .page--home .sec--diferenciais .card--diferenciais .card-section {
+    .page--home--diferenciais .card--diferenciais .card-section {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       background: #fefefe;
       min-height: 356px; }
-      .page--home .sec--diferenciais .card--diferenciais .card-section p {
+      .page--home--diferenciais .card--diferenciais .card-section p {
         max-width: 420px; }
-      .page--home .sec--diferenciais .card--diferenciais .card-section h3 {
+      .page--home--diferenciais .card--diferenciais .card-section h3 {
         font-family: "open_sans", sans-serif;
         font-size: 21px;
         font-weight: bold;
         margin-bottom: 0; }
-    .page--home .sec--diferenciais .card--diferenciais .btn {
+    .page--home--diferenciais .card--diferenciais .btn {
       width: 300px;
       height: 60px;
       padding: 18px;
@@ -853,28 +853,28 @@ header {
       bottom: -30px;
       left: 50%;
       margin-left: -150px; }
-  .page--home .sec--diferenciais .card--qualidade .card-section {
+  .page--home--diferenciais .card--qualidade .card-section {
     padding: 35px 1rem; }
-  .page--home .sec--diferenciais .diferenciais-figure {
+  .page--home--diferenciais .diferenciais-figure {
     overflow: hidden;
     border-radius: 10px 10px 0 0;
     height: 250px; }
 
-.page--home .sec--galeria {
+.page--home--galeria {
   background: #F9F5ED;
   background: linear-gradient(to bottom, #F9F5ED 0%, white 100%);
   background: -moz-linear-gradient(top, #F9F5ED 0%, white 100%);
   background: -webkit-linear-gradient(top, #F9F5ED 0%, white 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-beige', endColorstr='white',GradientType=1); }
 
-.page--home .sec--sobre .grid-container {
+.page--home--sobre .grid-container {
   background-image: url("../images/guartecs-sobre-bg.png");
   background-repeat: no-repeat;
   background-position: center; }
 
-.page--home .sec--sobre h2 {
+.page--home--sobre h2 {
   position: relative; }
-  .page--home .sec--sobre h2:before, .page--home .sec--sobre h2:after {
+  .page--home--sobre h2:before, .page--home--sobre h2:after {
     display: block;
     content: "";
     position: absolute;
@@ -883,72 +883,72 @@ header {
     width: 320px;
     height: 1px; }
     @media only screen and (max-width: 40.1rem) {
-      .page--home .sec--sobre h2:before, .page--home .sec--sobre h2:after {
+      .page--home--sobre h2:before, .page--home--sobre h2:after {
         width: 60px; } }
-  .page--home .sec--sobre h2:before {
+  .page--home--sobre h2:before {
     left: 0;
     top: 16px; }
-  .page--home .sec--sobre h2:after {
+  .page--home--sobre h2:after {
     right: 0;
     bottom: 16px; }
 
-.page--home .sec--video {
+.page--home--video {
   min-height: 856px;
   background-image: url("../images/video-bg.png");
   background-repeat: no-repeat; }
-  .page--home .sec--video .grid-container {
+  .page--home--video .grid-container {
     height: 796px; }
-    .page--home .sec--video .grid-container .grid-x {
+    .page--home--video .grid-container .grid-x {
       height: 100%; }
   @media only screen and (max-width: 40.1rem) {
-    .page--home .sec--video {
+    .page--home--video {
       background-position-x: center; } }
 
-.page--home .sec--video-footer {
+.page--home--video-footer {
   background: #58BEED;
   padding: 0; }
-  .page--home .sec--video-footer .grid-container {
+  .page--home--video-footer .grid-container {
     position: relative; }
-    .page--home .sec--video-footer .grid-container .girl {
+    .page--home--video-footer .grid-container .girl {
       position: absolute;
       bottom: 0;
       left: 0; }
-    .page--home .sec--video-footer .grid-container .grid-x {
+    .page--home--video-footer .grid-container .grid-x {
       padding: 60px 0; }
   @media only screen and (max-width: 40.1rem) {
-    .page--home .sec--video-footer .grid-container .girl {
+    .page--home--video-footer .grid-container .girl {
       left: 50%;
       margin-left: -180px;
       top: -300px;
       -webkit-mask-image: linear-gradient(to top, transparent 0%, black 15%);
       mask-image: linear-gradient(to top, transparent 0%, black 15%); } }
-  .page--home .sec--video-footer ul.video-footer-content {
+  .page--home--video-footer ul.video-footer-content {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     margin: 0; }
-    .page--home .sec--video-footer ul.video-footer-content li {
+    .page--home--video-footer ul.video-footer-content li {
       display: inline-flex;
       flex-direction: column;
       align-items: center; }
-    .page--home .sec--video-footer ul.video-footer-content img {
+    .page--home--video-footer ul.video-footer-content img {
       max-height: 40px; }
-    .page--home .sec--video-footer ul.video-footer-content span {
+    .page--home--video-footer ul.video-footer-content span {
       color: white;
       font-family: "baloo_daregular", sans-serif;
       font-size: 48px; }
-    .page--home .sec--video-footer ul.video-footer-content p {
+    .page--home--video-footer ul.video-footer-content p {
       color: white;
       font-size: 16px;
       text-transform: uppercase;
       margin-bottom: 0; }
     @media only screen and (max-width: 40rem) {
-      .page--home .sec--video-footer ul.video-footer-content {
+      .page--home--video-footer ul.video-footer-content {
         flex-wrap: wrap;
         padding-top: 60px; }
-        .page--home .sec--video-footer ul.video-footer-content li {
+        .page--home--video-footer ul.video-footer-content li {
           padding: 15px; } }
-  .page--home .sec--video-footer .btn {
+  .page--home--video-footer .btn {
     font-family: "baloo_daregular", sans-serif;
     font-size: 16px;
     position: absolute;
@@ -956,36 +956,27 @@ header {
     right: 0;
     padding: 10px 32px; }
 
-.page--home .sec--sobrasa {
+.page--home--sobrasa {
   color: #E4283D; }
 
-.page--home .sec--galeria .gallery-container,
-.page--galeria .sec--galeria .gallery-container,
-.page--caracteristicas .sec--galeria .gallery-container,
-.page--blog .sec--galeria .gallery-container {
+.page--home--galeria .gallery-container, .page--galeria--galeria .gallery-container, .page--caracteristicas--galeria .gallery-container, .page--blog--galeria .gallery-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  .page--home .sec--galeria .gallery-container .gallery-figure,
-  .page--home .sec--galeria .gallery-container .gallery-card,
-  .page--galeria .sec--galeria .gallery-container .gallery-figure,
-  .page--galeria .sec--galeria .gallery-container .gallery-card,
-  .page--caracteristicas .sec--galeria .gallery-container .gallery-figure,
-  .page--caracteristicas .sec--galeria .gallery-container .gallery-card,
-  .page--blog .sec--galeria .gallery-container .gallery-figure,
-  .page--blog .sec--galeria .gallery-container .gallery-card {
+  .page--home--galeria .gallery-container .gallery-figure,
+  .page--home--galeria .gallery-container .gallery-card, .page--galeria--galeria .gallery-container .gallery-figure,
+  .page--galeria--galeria .gallery-container .gallery-card, .page--caracteristicas--galeria .gallery-container .gallery-figure,
+  .page--caracteristicas--galeria .gallery-container .gallery-card, .page--blog--galeria .gallery-container .gallery-figure,
+  .page--blog--galeria .gallery-container .gallery-card {
     width: 380px;
     margin: 10px 10px 0 0;
     overflow: hidden;
     position: relative; }
-    .page--home .sec--galeria .gallery-container .gallery-figure figcaption,
-    .page--home .sec--galeria .gallery-container .gallery-card figcaption,
-    .page--galeria .sec--galeria .gallery-container .gallery-figure figcaption,
-    .page--galeria .sec--galeria .gallery-container .gallery-card figcaption,
-    .page--caracteristicas .sec--galeria .gallery-container .gallery-figure figcaption,
-    .page--caracteristicas .sec--galeria .gallery-container .gallery-card figcaption,
-    .page--blog .sec--galeria .gallery-container .gallery-figure figcaption,
-    .page--blog .sec--galeria .gallery-container .gallery-card figcaption {
+    .page--home--galeria .gallery-container .gallery-figure figcaption,
+    .page--home--galeria .gallery-container .gallery-card figcaption, .page--galeria--galeria .gallery-container .gallery-figure figcaption,
+    .page--galeria--galeria .gallery-container .gallery-card figcaption, .page--caracteristicas--galeria .gallery-container .gallery-figure figcaption,
+    .page--caracteristicas--galeria .gallery-container .gallery-card figcaption, .page--blog--galeria .gallery-container .gallery-figure figcaption,
+    .page--blog--galeria .gallery-container .gallery-card figcaption {
       background: #E4283D;
       opacity: 0.9;
       color: white;
@@ -997,40 +988,31 @@ header {
       bottom: 0;
       padding: 5px; }
     @media only screen and (max-width: 40.1rem) {
-      .page--home .sec--galeria .gallery-container .gallery-figure,
-      .page--home .sec--galeria .gallery-container .gallery-card,
-      .page--galeria .sec--galeria .gallery-container .gallery-figure,
-      .page--galeria .sec--galeria .gallery-container .gallery-card,
-      .page--caracteristicas .sec--galeria .gallery-container .gallery-figure,
-      .page--caracteristicas .sec--galeria .gallery-container .gallery-card,
-      .page--blog .sec--galeria .gallery-container .gallery-figure,
-      .page--blog .sec--galeria .gallery-container .gallery-card {
+      .page--home--galeria .gallery-container .gallery-figure,
+      .page--home--galeria .gallery-container .gallery-card, .page--galeria--galeria .gallery-container .gallery-figure,
+      .page--galeria--galeria .gallery-container .gallery-card, .page--caracteristicas--galeria .gallery-container .gallery-figure,
+      .page--caracteristicas--galeria .gallery-container .gallery-card, .page--blog--galeria .gallery-container .gallery-figure,
+      .page--blog--galeria .gallery-container .gallery-card {
         width: initial;
         height: initial; } }
 
-.page--parceiro .sec .card {
+.page--parceiro .card {
   overflow: visible;
   position: relative; }
 
-.page--parceiro .sec .arrow-down {
+.page--parceiro .arrow-down {
   position: absolute;
   top: -25px; }
 
-.page--portoes-de-seguranca .sec,
-.page--cercas-removiveis .sec,
-.page--gradil .sec {
+.page--portoes-de-seguranca, .page--cercas-removiveis, .page--gradil {
   position: relative; }
-  .page--portoes-de-seguranca .sec--hero,
-  .page--cercas-removiveis .sec--hero,
-  .page--gradil .sec--hero {
+  .page--portoes-de-seguranca--hero, .page--cercas-removiveis--hero, .page--gradil--hero {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 400px;
     padding-bottom: 0; }
-    .page--portoes-de-seguranca .sec--hero:after,
-    .page--cercas-removiveis .sec--hero:after,
-    .page--gradil .sec--hero:after {
+    .page--portoes-de-seguranca--hero:after, .page--cercas-removiveis--hero:after, .page--gradil--hero:after {
       content: "";
       display: block;
       position: absolute;
@@ -1043,24 +1025,16 @@ header {
       background-size: cover;
       height: 215px;
       width: 100%; }
-  .page--portoes-de-seguranca .sec--content,
-  .page--cercas-removiveis .sec--content,
-  .page--gradil .sec--content {
+  .page--portoes-de-seguranca--content, .page--cercas-removiveis--content, .page--gradil--content {
     padding-top: 0; }
-  .page--portoes-de-seguranca .sec .arrow-down,
-  .page--cercas-removiveis .sec .arrow-down,
-  .page--gradil .sec .arrow-down {
+  .page--portoes-de-seguranca .arrow-down, .page--cercas-removiveis .arrow-down, .page--gradil .arrow-down {
     position: absolute;
     top: -150px;
     margin-left: -30px;
     z-index: 2; }
-  .page--portoes-de-seguranca .sec .card-overflow-wrapper .card-section,
-  .page--cercas-removiveis .sec .card-overflow-wrapper .card-section,
-  .page--gradil .sec .card-overflow-wrapper .card-section {
+  .page--portoes-de-seguranca .card-overflow-wrapper .card-section, .page--cercas-removiveis .card-overflow-wrapper .card-section, .page--gradil .card-overflow-wrapper .card-section {
     padding-bottom: 60px; }
-  .page--portoes-de-seguranca .sec .card-overflow-wrapper .btn--secondary,
-  .page--cercas-removiveis .sec .card-overflow-wrapper .btn--secondary,
-  .page--gradil .sec .card-overflow-wrapper .btn--secondary {
+  .page--portoes-de-seguranca .card-overflow-wrapper .btn--secondary, .page--cercas-removiveis .card-overflow-wrapper .btn--secondary, .page--gradil .card-overflow-wrapper .btn--secondary {
     position: relative;
     top: -40px;
     width: 300px;
@@ -1068,37 +1042,35 @@ header {
     padding: 18px;
     font-size: 18px; }
   @media only screen and (max-width: 40.1rem) {
-    .page--portoes-de-seguranca .sec .large-6:first-child,
-    .page--cercas-removiveis .sec .large-6:first-child,
-    .page--gradil .sec .large-6:first-child {
+    .page--portoes-de-seguranca .large-6:first-child, .page--cercas-removiveis .large-6:first-child, .page--gradil .large-6:first-child {
       margin-bottom: 40px; } }
 
-.page--portoes-de-seguranca .sec--hero {
+.page--portoes-de-seguranca--hero {
   background-image: url("../images/pag-produtos-portoes-seguranca-large.jpg"); }
 
-.page--portoes-de-seguranca .sec .card {
+.page--portoes-de-seguranca .card {
   overflow: visible;
   margin-bottom: 140px; }
 
-.page--portoes-de-seguranca .sec span.numbers {
+.page--portoes-de-seguranca span.numbers {
   font-family: "baloo_daregular", sans-serif;
   font-size: 24px;
   color: #E4283D; }
 
-.page--portoes-de-seguranca .sec .prod-img-wrapper {
+.page--portoes-de-seguranca .prod-img-wrapper {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   top: 100px; }
 
-.page--portoes-de-seguranca .sec .prod-img {
+.page--portoes-de-seguranca .prod-img {
   position: relative;
   margin-right: 40px;
   box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.2); }
-  .page--portoes-de-seguranca .sec .prod-img:last-child {
+  .page--portoes-de-seguranca .prod-img:last-child {
     margin-right: 0; }
-  .page--portoes-de-seguranca .sec .prod-img:before {
+  .page--portoes-de-seguranca .prod-img:before {
     content: "";
     display: block;
     position: absolute;
@@ -1109,79 +1081,79 @@ header {
     top: 50%;
     margin-top: -29px;
     margin-left: -29px; }
-  .page--portoes-de-seguranca .sec .prod-img--aberta:after {
+  .page--portoes-de-seguranca .prod-img--aberta:after {
     content: "ABERTA"; }
-  .page--portoes-de-seguranca .sec .prod-img--fechada:after {
+  .page--portoes-de-seguranca .prod-img--fechada:after {
     content: "FECHADA"; }
-  .page--portoes-de-seguranca .sec .prod-img--aberta:after, .page--portoes-de-seguranca .sec .prod-img--fechada:after {
+  .page--portoes-de-seguranca .prod-img--aberta:after, .page--portoes-de-seguranca .prod-img--fechada:after {
     z-index: 1;
     position: absolute;
     right: 10px;
     top: 50%;
     margin-top: -12px;
     font-size: 16px; }
-  .page--portoes-de-seguranca .sec .prod-img--one:before {
+  .page--portoes-de-seguranca .prod-img--one:before {
     background-image: url("../images/icon-one.png");
     background-repeat: no-repeat; }
-  .page--portoes-de-seguranca .sec .prod-img--two:before {
+  .page--portoes-de-seguranca .prod-img--two:before {
     background-image: url("../images/icon-two.png");
     background-repeat: no-repeat; }
 
 @media only screen and (max-width: 40.1rem) {
-  .page--portoes-de-seguranca .sec--hero {
+  .page--portoes-de-seguranca--hero {
     background-position: -150vw center;
     height: 350px; }
-  .page--portoes-de-seguranca .sec .prod-img-wrapper {
+  .page--portoes-de-seguranca .prod-img-wrapper {
     flex-direction: column; }
-  .page--portoes-de-seguranca .sec .prod-img {
+  .page--portoes-de-seguranca .prod-img {
     margin-right: 0;
     margin-bottom: 40px; }
-    .page--portoes-de-seguranca .sec .prod-img:last-child {
+    .page--portoes-de-seguranca .prod-img:last-child {
       margin-bottom: 0; } }
 
-.page--cercas-removiveis .sec--hero {
+.page--cercas-removiveis--hero {
   background-image: url("../images/pag-produtos-cercas-removiveis-large.jpg"); }
 
-.page--gradil .sec--hero {
+.page--gradil--hero {
   background-image: url("../images/pag-produtos-gradil.jpg"); }
 
-.page--empresa .sec h1.title-blue {
+.page--empresa h1.title-blue {
   margin: 40px auto 60px; }
 
-.page--empresa .sec figure {
+.page--empresa figure {
   max-width: 560px; }
-  .page--empresa .sec figure figcaption {
+  .page--empresa figure figcaption {
     font-family: "baloo_daregular", sans-serif;
     font-size: 16px;
     text-align: left; }
 
-.page--empresa .sec .card--beige {
+.page--empresa .card--beige {
   color: #E4283D;
   font-family: "baloo_daregular", sans-serif;
   font-size: 28px; }
 
-.page--empresa .sec .card--blue {
+.page--empresa .card--blue {
   color: white;
   position: relative;
   overflow: visible; }
-  .page--empresa .sec .card--blue p.paragraph {
+  .page--empresa .card--blue p.paragraph {
     font-family: "open_sans", sans-serif;
     font-size: 24px; }
 
-.page--empresa .sec .card .card-section {
+.page--empresa .card .card-section {
   padding: 0 30px;
   margin: 40px auto; }
-  .page--empresa .sec .card .card-section--variation {
+  .page--empresa .card .card-section--variation {
     padding: 75px;
     font-family: "baloo_daregular", sans-serif;
     font-size: 28px; }
-  .page--empresa .sec .card .card-section h2 {
+  .page--empresa .card .card-section h2 {
     margin-bottom: 20px; }
 
-.page--empresa .sec .card .cell.large-6:first-child .card-section {
+.page--empresa .card .cell.large-6:first-child .card-section {
   border-right: 2px solid white; }
 
-.page--empresa .sec .circled-icon {
+.page--empresa .circled-icon {
   width: 100px;
   height: 100px;
   border-radius: 50px;
@@ -1191,14 +1163,14 @@ header {
   align-items: center;
   justify-content: center;
   margin: 15px auto; }
-  .page--empresa .sec .circled-icon--over {
+  .page--empresa .circled-icon--over {
     position: absolute;
     top: -50px;
     left: 50%;
     margin-left: -50px;
     margin-top: 0; }
 
-.page--empresa .sec .ltda-disclaimer {
+.page--empresa .ltda-disclaimer {
   width: 37.500rem;
   border-top: 1px dotted #2C2C30;
   border-bottom: 1px dotted #2C2C30;
@@ -1206,46 +1178,47 @@ header {
   padding: 30px 0;
   color: #2C2C30; }
   @media only screen and (max-width: 37.5rem) {
-    .page--empresa .sec .ltda-disclaimer {
+    .page--empresa .ltda-disclaimer {
       width: 100%; } }
 
 @media only screen and (max-width: 40.1rem) {
-  .page--empresa .sec .card--beige {
+  .page--empresa .card--beige {
     font-size: 18px; }
-  .page--empresa .sec .card .card-section {
+  .page--empresa .card .card-section {
     margin: 0 auto;
     padding: 40px 30px; }
-    .page--empresa .sec .card .card-section--variation {
+    .page--empresa .card .card-section--variation {
       padding: 60px 20px 20px;
       font-size: 18px; }
-  .page--empresa .sec .card .cell.large-6:first-child .card-section {
+  .page--empresa .card .cell.large-6:first-child .card-section {
     border-right: none; } }
 
-.page--clientes-atendidos .sec .title-blue {
+.page--clientes-atendidos .title-blue {
   font-family: "baloo_daregular", sans-serif; }
 
-.page--clientes-atendidos .sec h1 {
+.page--clientes-atendidos h1 {
   margin-bottom: 0; }
 
-.page--clientes-atendidos .sec .arrow-down {
+.page--clientes-atendidos .arrow-down {
   margin: 40px 0; }
 
-.page--caracteristicas .sec .card,
-.page--blog .sec .card {
+.page--caracteristicas .card, .page--blog .card {
   max-width: 380px;
   margin: 10px 10px 0 0; }
-  .page--caracteristicas .sec .card h3,
-  .page--blog .sec .card h3 {
+  .page--caracteristicas .card h3, .page--blog .card h3 {
     text-transform: uppercase; }
 
-.page--blog .sec .card h3 {
+.page--blog .card h3 {
   font-size: 20px;
   margin-top: 16px;
   min-height: 40px; }
 
-.page--blog .sec span {
+.page--blog span {
   color: #A5A5A5;
   font-size: 16px; }
+
+.page--como-comprar .tracado-cerca img {
+  padding: 0 20px 25px; }
 
 @media only screen and (max-width: 40.1rem) {
   .page.bc-mobile-push {
