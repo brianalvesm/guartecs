@@ -1008,11 +1008,11 @@ header {
         width: initial;
         height: initial; } }
 
-.page--parceiro .sec .card {
+.page--parceiro .card {
   overflow: visible;
   position: relative; }
 
-.page--parceiro .sec .arrow-down {
+.page--parceiro .arrow-down {
   position: absolute;
   top: -25px; }
 
@@ -1145,43 +1145,43 @@ header {
 .page--gradil .sec--hero {
   background-image: url("../images/pag-produtos-gradil.jpg"); }
 
-.page--empresa .sec h1.title-blue {
+.page--empresa h1.title-blue {
   margin: 40px auto 60px; }
 
-.page--empresa .sec figure {
+.page--empresa figure {
   max-width: 560px; }
-  .page--empresa .sec figure figcaption {
+  .page--empresa figure figcaption {
     font-family: "baloo_daregular", sans-serif;
     font-size: 16px;
     text-align: left; }
 
-.page--empresa .sec .card--beige {
+.page--empresa .card--beige {
   color: #E4283D;
   font-family: "baloo_daregular", sans-serif;
   font-size: 28px; }
 
-.page--empresa .sec .card--blue {
+.page--empresa .card--blue {
   color: white;
   position: relative;
   overflow: visible; }
-  .page--empresa .sec .card--blue p.paragraph {
+  .page--empresa .card--blue p.paragraph {
     font-family: "open_sans", sans-serif;
     font-size: 24px; }
 
-.page--empresa .sec .card .card-section {
+.page--empresa .card .card-section {
   padding: 0 30px;
   margin: 40px auto; }
-  .page--empresa .sec .card .card-section--variation {
+  .page--empresa .card .card-section--variation {
     padding: 75px;
     font-family: "baloo_daregular", sans-serif;
     font-size: 28px; }
-  .page--empresa .sec .card .card-section h2 {
+  .page--empresa .card .card-section h2 {
     margin-bottom: 20px; }
 
-.page--empresa .sec .card .cell.large-6:first-child .card-section {
+.page--empresa .card .cell.large-6:first-child .card-section {
   border-right: 2px solid white; }
 
-.page--empresa .sec .circled-icon {
+.page--empresa .circled-icon {
   width: 100px;
   height: 100px;
   border-radius: 50px;
@@ -1191,14 +1191,14 @@ header {
   align-items: center;
   justify-content: center;
   margin: 15px auto; }
-  .page--empresa .sec .circled-icon--over {
+  .page--empresa .circled-icon--over {
     position: absolute;
     top: -50px;
     left: 50%;
     margin-left: -50px;
     margin-top: 0; }
 
-.page--empresa .sec .ltda-disclaimer {
+.page--empresa .ltda-disclaimer {
   width: 37.500rem;
   border-top: 1px dotted #2C2C30;
   border-bottom: 1px dotted #2C2C30;
@@ -1206,47 +1206,109 @@ header {
   padding: 30px 0;
   color: #2C2C30; }
   @media only screen and (max-width: 37.5rem) {
-    .page--empresa .sec .ltda-disclaimer {
+    .page--empresa .ltda-disclaimer {
       width: 100%; } }
 
 @media only screen and (max-width: 40.1rem) {
-  .page--empresa .sec .card--beige {
+  .page--empresa .card--beige {
     font-size: 18px; }
-  .page--empresa .sec .card .card-section {
+  .page--empresa .card .card-section {
     margin: 0 auto;
     padding: 40px 30px; }
-    .page--empresa .sec .card .card-section--variation {
+    .page--empresa .card .card-section--variation {
       padding: 60px 20px 20px;
       font-size: 18px; }
-  .page--empresa .sec .card .cell.large-6:first-child .card-section {
+  .page--empresa .card .cell.large-6:first-child .card-section {
     border-right: none; } }
 
-.page--clientes-atendidos .sec .title-blue {
+.page--clientes-atendidos .title-blue {
   font-family: "baloo_daregular", sans-serif; }
 
-.page--clientes-atendidos .sec h1 {
+.page--clientes-atendidos h1 {
   margin-bottom: 0; }
 
-.page--clientes-atendidos .sec .arrow-down {
+.page--clientes-atendidos .arrow-down {
   margin: 40px 0; }
 
-.page--caracteristicas .sec .card,
-.page--blog .sec .card {
+.page--caracteristicas .card, .page--blog .card {
   max-width: 380px;
   margin: 10px 10px 0 0; }
-  .page--caracteristicas .sec .card h3,
-  .page--blog .sec .card h3 {
+  .page--caracteristicas .card h3, .page--blog .card h3 {
     text-transform: uppercase; }
 
-.page--blog .sec .card h3 {
+.page--blog .card h3 {
   font-size: 20px;
   margin-top: 16px;
   min-height: 40px; }
 
-.page--blog .sec span {
+.page--blog span {
   color: #A5A5A5;
   font-size: 16px; }
 
+.page--como-comprar .tracado-cerca img {
+  padding: 0 20px 25px; }
+
+.page--como-comprar .comprar-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  .page--como-comprar .comprar-cards-wrapper .card {
+    margin-top: 100px;
+    max-width: 380px;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    padding-top: 150px; }
+    .page--como-comprar .comprar-cards-wrapper .card img {
+      width: fit-content;
+      position: absolute;
+      top: -80px; }
+    .page--como-comprar .comprar-cards-wrapper .card .title-red {
+      font-family: "baloo_daregular", sans-serif; }
+    .page--como-comprar .comprar-cards-wrapper .card .card-section {
+      background-color: #F9F5ED;
+      width: 100%;
+      min-height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+
+.page--como-comprar .card--beige img {
+  max-width: 800px;
+  width: 100%;
+  margin: auto; }
+
+.page--como-comprar .pagamento-facilitado {
+  max-width: 750px;
+  margin: auto; }
+  .page--como-comprar .pagamento-facilitado .title-red {
+    font-family: "baloo_daregular", sans-serif;
+    display: inline;
+    position: relative; }
+    .page--como-comprar .pagamento-facilitado .title-red:before, .page--como-comprar .pagamento-facilitado .title-red:after {
+      content: "";
+      display: block;
+      width: 190px;
+      height: 1px;
+      border-bottom: 1px dotted #2C2C30;
+      position: absolute;
+      top: 20px; }
+    .page--como-comprar .pagamento-facilitado .title-red:before {
+      left: -200px; }
+    .page--como-comprar .pagamento-facilitado .title-red:after {
+      left: 260px; }
+  .page--como-comprar .pagamento-facilitado img {
+    display: block;
+    margin: 30px auto; }
+  .page--como-comprar .pagamento-facilitado .friso {
+    width: 600px;
+    height: 1px;
+    border-bottom: 1px dotted #2C2C30; }
+
 @media only screen and (max-width: 40.1rem) {
   .page.bc-mobile-push {
-    margin-top: 90px; } }
+    margin-top: 90px; }
+  .page--como-comprar .pagamento-facilitado .title-red:before,
+  .page--como-comprar .pagamento-facilitado .title-red:after {
+    content: none; }
+  .page--como-comprar .pagamento-facilitado .friso {
+    width: 100%; } }
