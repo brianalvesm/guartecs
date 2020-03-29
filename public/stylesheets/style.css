@@ -1304,6 +1304,33 @@ header {
     height: 1px;
     border-bottom: 1px dotted #2C2C30; }
 
+.page--contato .card {
+  align-items: center;
+  flex-direction: row;
+  padding: 0 40px;
+  min-height: 180px;
+  text-align: left; }
+  .page--contato .card img {
+    max-width: unset;
+    margin-right: 30px; }
+  .page--contato .card span {
+    display: block;
+    font-size: 18px;
+    color: #E4283D; }
+  .page--contato .card div {
+    width: initial; }
+  .page--contato .card .title-blue {
+    display: inline;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-right: 30px; }
+  .page--contato .card--exception .title-blue {
+    display: block; }
+
+.page--contato iframe {
+  width: 100%; }
+
 @media only screen and (max-width: 40.1rem) {
   .page.bc-mobile-push {
     margin-top: 90px; }

@@ -442,6 +442,7 @@
 		span
 			color: #A5A5A5
 			font-size: 16px
+	// COMO COMPRAR
 	&--como-comprar
 		.tracado-cerca img
 			padding: 0 20px 25px
@@ -499,6 +500,34 @@
 				width: 600px
 				height: 1px
 				border-bottom: 1px dotted #2C2C30
+	// CONTATO
+	&--contato
+		.card
+			align-items: center
+			flex-direction: row
+			padding: 0 40px
+			min-height: 180px
+			text-align: left
+			img
+				max-width: unset
+				margin-right: 30px
+			span
+				display: block
+				font-size: 18px
+				color: $color-red
+			div
+				width: initial
+			.title-blue
+				display: inline
+				font-weight: bold
+				text-transform: uppercase
+				margin-bottom: 0
+				margin-right: 30px
+			&--exception
+				.title-blue
+					display: block
+		iframe
+			width: 100%
 	@media only screen and (max-width: 40.1rem)
 		&.bc-mobile-push
 			margin-top: 90px
