@@ -1304,6 +1304,9 @@ header {
     height: 1px;
     border-bottom: 1px dotted #2C2C30; }
 
+.page--contato section {
+  margin-bottom: -6px; }
+
 .page--contato .card {
   align-items: center;
   flex-direction: row;
@@ -1311,25 +1314,31 @@ header {
   min-height: 180px;
   text-align: left; }
   .page--contato .card img {
-    max-width: unset;
-    margin-right: 30px; }
+    max-width: unset; }
   .page--contato .card span {
-    display: block;
-    font-size: 18px;
+    display: inline;
+    font-size: 16px;
     color: #E4283D; }
   .page--contato .card div {
-    width: initial; }
+    width: initial;
+    margin-right: 30px; }
+    .page--contato .card div:last-child {
+      margin-right: 0; }
   .page--contato .card .title-blue {
     display: inline;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 0;
-    margin-right: 30px; }
+    margin-bottom: 0; }
   .page--contato .card--exception .title-blue {
     display: block; }
 
+.page--contato .arrow-down {
+  position: relative;
+  top: -35px; }
+
 .page--contato iframe {
-  width: 100%; }
+  width: 100%;
+  height: 560px; }
 
 @media only screen and (max-width: 40.1rem) {
   .page.bc-mobile-push {
@@ -1338,4 +1347,12 @@ header {
   .page--como-comprar .pagamento-facilitado .title-red:after {
     content: none; }
   .page--como-comprar .pagamento-facilitado .friso {
-    width: 100%; } }
+    width: 100%; }
+  .page--contato .card {
+    flex-wrap: wrap;
+    padding: 40px 20px 0; }
+    .page--contato .card div {
+      padding-bottom: 40px;
+      margin-right: 15px; }
+  .page--contato iframe {
+    height: 160px; } }
