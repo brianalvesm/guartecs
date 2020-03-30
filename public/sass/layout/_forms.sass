@@ -13,6 +13,10 @@ form
 			text-transform: uppercase
 	select
 		color: #cacaca
+		background:
+			image: url('../images/icons/arrow-down.png')
+			size: 15px
+			position: right 0rem center
 	textarea
 		height: 230px
 	[type="submit"]
@@ -24,3 +28,38 @@ form
 		text-transform: uppercase
 		height: 66px !important
 		border-radius: 33px !important
+
+input[type="file"].inputfile
+	width: 0.1px
+	height: 0.1px
+	opacity: 0
+	overflow: hidden
+	position: absolute
+	z-index: -1
+
+input[type="file"].inputfile + label
+	border-radius: 60px
+	background: $color-blue
+	color: white
+	text-transform: uppercase
+	font-family: $font-baloo
+	font-size: 13px
+	padding: 10px 40px 10px 20px
+	margin-bottom: 1rem
+	display: inline-block
+	position: relative
+	&:after
+		content: ""
+		display: block
+		background:
+			image: url('../images/icons/icon-camera.png')
+			repeat: no-repeat
+		width: 25px
+		height: 20px
+		position: absolute
+		right: 10px
+		top: 10px
+
+input[type="radio"] + label
+	margin-right: 0
+	color: #cacaca

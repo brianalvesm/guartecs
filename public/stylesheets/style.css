@@ -547,7 +547,10 @@ form textarea {
     text-transform: uppercase; }
 
 form select {
-  color: #cacaca; }
+  color: #cacaca;
+  background-image: url("../images/icons/arrow-down.png");
+  background-size: 15px;
+  background-position: right 0rem center; }
 
 form textarea {
   height: 230px; }
@@ -561,6 +564,40 @@ form [type="submit"] {
   text-transform: uppercase;
   height: 66px !important;
   border-radius: 33px !important; }
+
+input[type="file"].inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+input[type="file"].inputfile + label {
+  border-radius: 60px;
+  background: #58BEED;
+  color: white;
+  text-transform: uppercase;
+  font-family: "baloo_daregular", sans-serif;
+  font-size: 13px;
+  padding: 10px 40px 10px 20px;
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative; }
+  input[type="file"].inputfile + label:after {
+    content: "";
+    display: block;
+    background-image: url("../images/icons/icon-camera.png");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+
+input[type="radio"] + label {
+  margin-right: 0;
+  color: #cacaca; }
 
 body, html {
   margin: 0;
@@ -1356,6 +1393,14 @@ header {
 .page--contato iframe {
   width: 100%;
   height: 560px; }
+
+.page--orcamento .orcamento-added-form-sec p {
+  font-size: 18px; }
+
+.page--orcamento .orcamento-added-form-sec .gray-label {
+  font-size: 18px;
+  display: block;
+  color: #cacaca; }
 
 @media only screen and (max-width: 40.1rem) {
   .page.bc-mobile-push {
