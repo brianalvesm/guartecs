@@ -1316,19 +1316,36 @@ header {
   .page--contato .card img {
     max-width: unset; }
   .page--contato .card span {
-    display: inline;
+    display: flex;
     font-size: 16px;
     color: #E4283D; }
-  .page--contato .card div {
-    width: initial;
-    margin-right: 30px; }
-    .page--contato .card div:last-child {
-      margin-right: 0; }
   .page--contato .card .title-blue {
-    display: inline;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 0; }
+    line-height: 1;
+    margin-bottom: 0;
+    max-width: 155px; }
+  .page--contato .card .divide {
+    margin-right: 30px; }
+    .page--contato .card .divide:last-child {
+      margin-right: 0;
+      min-width: 33%; }
+    .page--contato .card .divide--exception {
+      margin-left: 100px; }
+      .page--contato .card .divide--exception .title-blue {
+        font-weight: normal;
+        margin-left: 50px;
+        position: relative; }
+        .page--contato .card .divide--exception .title-blue:before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: -50px;
+          top: -12px;
+          background-image: url("../images/icons/sign-right.png");
+          background-repeat: no-repeat;
+          width: 46px;
+          height: 46px; }
   .page--contato .card--exception .title-blue {
     display: block; }
 

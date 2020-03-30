@@ -513,19 +513,37 @@
 			img
 				max-width: unset
 			span
-				display: inline
+				display: flex
 				font-size: 16px
 				color: $color-red
-			div
-				width: initial
+			.title-blue
+				font-weight: bold
+				text-transform: uppercase
+				line-height: 1
+				margin-bottom: 0
+				max-width: 155px
+			.divide
 				margin-right: 30px
 				&:last-child
 					margin-right: 0
-			.title-blue
-				display: inline
-				font-weight: bold
-				text-transform: uppercase
-				margin-bottom: 0
+					min-width: 33%
+				&--exception
+					margin-left: 100px
+					.title-blue
+						font-weight: normal
+						margin-left: 50px
+						position: relative
+						&:before
+							content: ""
+							display: block
+							position: absolute
+							left: -50px
+							top: -12px
+							background:
+								image: url('../images/icons/sign-right.png')
+								repeat: no-repeat
+							width: 46px
+							height: 46px
 			&--exception
 				.title-blue
 					display: block
