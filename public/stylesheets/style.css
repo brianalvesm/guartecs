@@ -228,6 +228,32 @@ main h3 {
     .card .card-section--extra-padding {
       padding: 1rem 2rem; } }
 
+.beige-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  .beige-cards-wrapper .card {
+    max-width: 380px;
+    align-items: center;
+    overflow: visible;
+    position: relative; }
+    .beige-cards-wrapper .card figure {
+      background-color: white;
+      min-height: 260px;
+      display: flex;
+      align-items: center; }
+    .beige-cards-wrapper .card img {
+      width: fit-content;
+      max-width: 340px; }
+    .beige-cards-wrapper .card .title-red {
+      font-family: "baloo_daregular", sans-serif; }
+    .beige-cards-wrapper .card .card-section {
+      background-color: #F9F5ED;
+      width: 100%;
+      min-height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+
 .btn {
   display: inline-block;
   border-radius: 60px;
@@ -1010,7 +1036,8 @@ header {
 .page--home .sec--galeria .gallery-container,
 .page--galeria .sec--galeria .gallery-container,
 .page--caracteristicas .sec--galeria .gallery-container,
-.page--blog .sec--galeria .gallery-container {
+.page--blog .sec--galeria .gallery-container,
+.page--instalacao .sec--galeria .gallery-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
@@ -1021,7 +1048,9 @@ header {
   .page--caracteristicas .sec--galeria .gallery-container .gallery-figure,
   .page--caracteristicas .sec--galeria .gallery-container .gallery-card,
   .page--blog .sec--galeria .gallery-container .gallery-figure,
-  .page--blog .sec--galeria .gallery-container .gallery-card {
+  .page--blog .sec--galeria .gallery-container .gallery-card,
+  .page--instalacao .sec--galeria .gallery-container .gallery-figure,
+  .page--instalacao .sec--galeria .gallery-container .gallery-card {
     width: 380px;
     margin: 10px 10px 0 0;
     overflow: hidden;
@@ -1033,7 +1062,9 @@ header {
     .page--caracteristicas .sec--galeria .gallery-container .gallery-figure figcaption,
     .page--caracteristicas .sec--galeria .gallery-container .gallery-card figcaption,
     .page--blog .sec--galeria .gallery-container .gallery-figure figcaption,
-    .page--blog .sec--galeria .gallery-container .gallery-card figcaption {
+    .page--blog .sec--galeria .gallery-container .gallery-card figcaption,
+    .page--instalacao .sec--galeria .gallery-container .gallery-figure figcaption,
+    .page--instalacao .sec--galeria .gallery-container .gallery-card figcaption {
       background: #E4283D;
       opacity: 0.9;
       color: white;
@@ -1052,7 +1083,9 @@ header {
       .page--caracteristicas .sec--galeria .gallery-container .gallery-figure,
       .page--caracteristicas .sec--galeria .gallery-container .gallery-card,
       .page--blog .sec--galeria .gallery-container .gallery-figure,
-      .page--blog .sec--galeria .gallery-container .gallery-card {
+      .page--blog .sec--galeria .gallery-container .gallery-card,
+      .page--instalacao .sec--galeria .gallery-container .gallery-figure,
+      .page--instalacao .sec--galeria .gallery-container .gallery-card {
         width: initial;
         height: initial; } }
 
@@ -1296,29 +1329,12 @@ header {
 .page--como-comprar .tracado-cerca img {
   padding: 0 20px 25px; }
 
-.page--como-comprar .comprar-cards-wrapper {
-  display: flex;
-  flex-wrap: wrap; }
-  .page--como-comprar .comprar-cards-wrapper .card {
-    margin-top: 100px;
-    max-width: 380px;
-    align-items: center;
-    overflow: visible;
-    position: relative;
-    padding-top: 150px; }
-    .page--como-comprar .comprar-cards-wrapper .card img {
-      width: fit-content;
-      position: absolute;
-      top: -80px; }
-    .page--como-comprar .comprar-cards-wrapper .card .title-red {
-      font-family: "baloo_daregular", sans-serif; }
-    .page--como-comprar .comprar-cards-wrapper .card .card-section {
-      background-color: #F9F5ED;
-      width: 100%;
-      min-height: 230px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
+.page--como-comprar .beige-cards-wrapper .card {
+  margin-top: 100px;
+  padding-top: 150px; }
+  .page--como-comprar .beige-cards-wrapper .card img {
+    position: absolute;
+    top: -80px; }
 
 .page--como-comprar .card--beige img {
   max-width: 800px;
