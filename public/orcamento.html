@@ -140,7 +140,7 @@
 									<div class="cell large-12 text-left">
 										<div class="grid-container orcamento-added-form-sec">
 											<div class="grid-x">
-												<div class="cell large-8">
+												<div class="cell large-7">
 													<p>Para melhor assessorarmos no projeto da sua cerca,<br>por favor nos envie uma foto!</p>
 													<input type="file" name="file" id="file" class="inputfile" />
 													<label for="file">Enviar foto</label>
@@ -149,32 +149,38 @@
 														Tamanho Máximo de Arquivo: 5MB</span>
 													</p>
 												</div>
-												<div class="cell large-4">
-													<span class="gray-label">Formato da Piscina:</span>
-													<input type="radio" id="na" value="na">
-													<label for="na">N/A.</label>
-													<input type="radio" id="retangular" value="retangular">
-													<label for="retangular">Retangular</label>
-													<input type="radio" id="redonda" value="redonda">
-													<label for="redonda">Redonda</label>
-													<input type="radio" id="irregular" value="irregular">
-													<label for="irregular">Irregular</label>
-													<span class="gray-label">Piso Adjacente:</span>
-													<input type="radio" id="na" value="na">
-													<label for="na">N/A.</label>
-													<input type="radio" id="pedra" value="pedra">
-													<label for="pedra">Pedra</label>
-													<input type="radio" id="madeira" value="madeira">
-													<label for="madeira">Madeira</label>
-													<input type="radio" id="grama" value="grama">
-													<label for="grama">Grama</label>
-													<span class="gray-label">Cerca da Piscina:</span>
-													<input type="radio" id="na" value="na">
-													<label for="na">N/A.</label>
-													<input type="radio" id="total" value="total">
-													<label for="total">Total</label>
-													<input type="radio" id="parcial" value="parcial">
-													<label for="parcial">Parcial</label>
+												<div class="cell large-5">
+													<fieldset>
+														<legend class="gray-label">Formato da Piscina:</legend>
+														<input type="radio" id="na" name="formatopiscina" value="na">
+														<label for="na">N/A.</label>
+														<input type="radio" id="fpretangular" name="formatopiscina" value="retangular">
+														<label for="fpretangular">Retangular</label>
+														<input type="radio" id="fpredonda" name="formatopiscina" value="redonda">
+														<label for="fpredonda">Redonda</label>
+														<input type="radio" id="fpirregular" name="formatopiscina" value="irregular">
+														<label for="fpirregular">Irregular</label>
+													</fieldset>
+													<fieldset>
+														<legend class="gray-label">Piso Adjacente:</legend>
+														<input type="radio" id="pana" name="pisoadjacente" value="na">
+														<label for="pana">N/A.</label>
+														<input type="radio" id="papedra" name="pisoadjacente" value="pedra">
+														<label for="papedra">Pedra</label>
+														<input type="radio" id="pamadeira" name="pisoadjacente" value="madeira">
+														<label for="pamadeira">Madeira</label>
+														<input type="radio" id="pagrama" name="pisoadjacente" value="grama">
+														<label for="pagrama">Grama</label>
+													</fieldset>
+													<fieldset>
+														<legend class="gray-label">Cerca da Piscina:</legend>
+														<input type="radio" id="cpna" name="cercapiscina" value="na">
+														<label for="cpna">N/A.</label>
+														<input type="radio" id="cptotal" name="cercapiscina" value="total">
+														<label for="cptotal">Total</label>
+														<input type="radio" id="cpparcial" name="cercapiscina" value="parcial">
+														<label for="cpparcial">Parcial</label>
+													</fieldset>
 												</div>
 											</div>
 										</div>
