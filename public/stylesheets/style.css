@@ -547,7 +547,10 @@ form textarea {
     text-transform: uppercase; }
 
 form select {
-  color: #cacaca; }
+  color: #cacaca;
+  background-image: url("../images/icons/arrow-down.png");
+  background-size: 15px;
+  background-position: right 0rem center; }
 
 form textarea {
   height: 230px; }
@@ -561,6 +564,51 @@ form [type="submit"] {
   text-transform: uppercase;
   height: 66px !important;
   border-radius: 33px !important; }
+  form [type="submit"]:hover, form [type="submit"]:focus {
+    background-color: #c1182b; }
+
+input[type="file"].inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+input[type="file"].inputfile + label {
+  border-radius: 60px;
+  background: #9FE3F7;
+  color: white;
+  text-transform: uppercase;
+  font-family: "baloo_daregular", sans-serif;
+  font-size: 13px;
+  padding: 10px 50px 10px 20px;
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
+  input[type="file"].inputfile + label:after {
+    content: "";
+    display: block;
+    background-image: url("../images/icons/icon-camera.png");
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 10px; }
+  input[type="file"].inputfile + label:hover {
+    background: #58BEED;
+    cursor: pointer; }
+
+input[type="radio"] + label {
+  margin-left: 0;
+  color: #cacaca;
+  font-size: 18px; }
 
 body, html {
   margin: 0;
@@ -1356,6 +1404,24 @@ header {
 .page--contato iframe {
   width: 100%;
   height: 560px; }
+
+.page--orcamento h1.title-blue {
+  margin: 40px auto 60px; }
+
+.page--orcamento .orcamento-added-form-sec p {
+  font-size: 18px; }
+
+.page--orcamento .orcamento-added-form-sec span {
+  color: #9FE3F7; }
+
+.page--orcamento .orcamento-added-form-sec fieldset {
+  margin-bottom: 14px; }
+
+.page--orcamento .orcamento-added-form-sec .gray-label {
+  font-size: 18px;
+  display: block;
+  color: #cacaca;
+  margin-bottom: 0; }
 
 @media only screen and (max-width: 40.1rem) {
   .page.bc-mobile-push {

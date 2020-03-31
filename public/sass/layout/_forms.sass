@@ -13,6 +13,10 @@ form
 			text-transform: uppercase
 	select
 		color: #cacaca
+		background:
+			image: url('../images/icons/arrow-down.png')
+			size: 15px
+			position: right 0rem center
 	textarea
 		height: 230px
 	[type="submit"]
@@ -24,3 +28,47 @@ form
 		text-transform: uppercase
 		height: 66px !important
 		border-radius: 33px !important
+		&:hover,
+		&:focus
+			background-color: darken($color-red, 10%)
+
+// Form da página ORÇAMENTO
+input[type="file"].inputfile
+	width: 0.1px
+	height: 0.1px
+	opacity: 0
+	overflow: hidden
+	position: absolute
+	z-index: -1
+
+input[type="file"].inputfile + label
+	border-radius: 60px
+	background: #9FE3F7
+	color: white
+	text-transform: uppercase
+	font-family: $font-baloo
+	font-size: 13px
+	padding: 10px 50px 10px 20px
+	margin-bottom: 1rem
+	display: inline-block
+	position: relative
+	@include transition(200ms)
+	&:after
+		content: ""
+		display: block
+		background:
+			image: url('../images/icons/icon-camera.png')
+			repeat: no-repeat
+		width: 25px
+		height: 20px
+		position: absolute
+		right: 15px
+		top: 10px
+	&:hover
+		background: $color-blue
+		cursor: pointer
+
+input[type="radio"] + label
+	margin-left: 0
+	color: #cacaca
+	font-size: 18px

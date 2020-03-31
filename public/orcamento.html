@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<title>Guartecs / Entre em contato conosco</title>
+		<title>Guartecs / Orçamento</title>
 		<link rel="stylesheet" href="stylesheets/style.css" />
 		<link rel="stylesheet" href="stylesheets/foundation.css" />
 		<link rel="stylesheet" href="stylesheets/owl.carousel.min.css">
@@ -45,8 +45,8 @@
 								<li><a href="como-comprar.html">Como comprar</a></li>
 								<li>Instalação</li>
 								<li><a href="blog.html">Blog</a></li>
-								<li class="active"><a href="contato.html">Contato</a></li>
-								<li><a href="orcamento.html">Orçamento</a></li>
+								<li><a href="contato.html">Contato</a></li>
+								<li class="active"><a href="orcamento.html">Orçamento</a></li>
 								<li class="visible-mobile-small-only">
 									<img src="images/icons/icon-email.png"><br>
 									guartecs@GUARTECS.com.br
@@ -66,102 +66,22 @@
 					<div class="cell">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="contato.html">Contato</a></li>
+							<li><a href="orcamento.html">Orçamento</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<main class="page page--contato bc-mobile-push">
+		<main class="page page--orcamento bc-mobile-push">
 			<section class="sec">
 				<div class="grid-container">
 					<div class="grid-x">
 						<div class="cell">
-							<h1 class="title-blue">Entre em contato conosco</h1>
-						</div>
-					</div>
-					<div class="grid-x">
-						<div class="cell large-6">
-							<div class="card card--exception">
-								<div class="divide">
-									<img src="images/icons/envelope-email-blue.png">
-								</div>
-								<div class="divide">
-									<h5 class="title-blue">E-MAIL:</h5>
-									<span>guartecs@guartecs.com.br</span>	
-								</div>
-							</div>
-						</div>
-						<div class="cell large-6">
-							<div class="card">
-								<div class="divide">
-									<img src="images/icons/telephone-call-receiver.png">
-								</div>
-								<div class="divide">
-									<h5 class="title-blue">TELEFONE:</h5>
-								</div>
-								<div class="divide">
-									<span>0800 777-0199<br>(11) 3093-0199</span>	
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="grid-x">
-						<div class="cell large-6">
-							<div class="card">
-								<div class="divide">
-									<img src="images/icons/icon-whatsapp.png">
-								</div>
-								<div class="divide">
-									<h5 class="title-blue">Whatsapp:</h5>
-								</div>
-								<div class="divide">
-									<span>Vendedor 1 – (11) 98129-0226<br>Vendedor 2 – (11) 98939-3518</span>	
-								</div>
-							</div>
-						</div>
-						<div class="cell large-6">
-							<div class="card">
-								<div class="divide">
-									<img src="images/icons/icon-velocimetro-blue.png">
-								</div>
-								<div class="divide">
-									<h5 class="title-blue">Horário de Atendimento:</h5>
-								</div>
-								<div class="divide">
-									<span>Segunda à Sexta<br>08:00 ÀS 18:00H</span>	
-								</div>
-							</div>
+							<h1 class="title-blue">Orçamento</h1>
 						</div>
 					</div>
 					<div class="grid-x">
 						<div class="cell">
-							<div class="card">
-								<div class="divide">
-									<img src="images/icons/map-point-pointer.png">
-								</div>
-								<div class="divide">
-									<h5 class="title-blue">NOSSO<br>ENDEREÇO:</h5>
-								</div>
-								<div class="divide">
-									<span>RUA CAMARGO 12 - BUTANTÃ - SÃO PAULO/SP<br>CEP 05510-050</span>
-								</div>
-								<div class="divide divide--exception text-right">
-									<h5 class="title-blue">Como chegar</h5>
-								</div>
-							</div>
-							<img src="images/arrow-bottom.png" class="arrow-down">
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- CONTATO - Use como partial quando o código não estiver em HTML puro -->
-			<section class="sec sec--contato">
-				<div class="grid-container">
-					<div class="grid-x">
-						<div class="cell">
-							<h1 class="title-red">Quer mais informações?</h1>
-							<p class="paragraph">Preencha o formulário que em breve responderemos sua dúvidas.</p>
 							<form>
 								<div class="grid-x grid-margin-x">
 									<div class="cell large-12">
@@ -174,14 +94,92 @@
 										<input type="tel" name="" placeholder="Seu telefone/celular">
 									</div>
 									<div class="cell large-12">
-										<select>
-											<option value="estado">Estado</option>
+										<select id="UF" name="UF">
+										  <option value="estado">Estado</option>
+										  <option value="AC">Acre</option>
+										  <option value="AL">Alagoas</option>
+										  <option value="AP">Amapá</option>
+										  <option value="AM">Amazonas</option>
+										  <option value="BA">Bahia</option>
+										  <option value="CE">Ceará</option>
+										  <option value="DF">Distrito Federal</option>
+										  <option value="ES">Espirito Santo</option>
+										  <option value="GO">Goiás</option>
+										  <option value="MA">Maranhão</option>
+										  <option value="MS">Mato Grosso do Sul</option>
+										  <option value="MT">Mato Grosso</option>
+										  <option value="MG">Minas Gerais</option>
+										  <option value="PA">Pará</option>
+										  <option value="PB">Paraíba</option>
+										  <option value="PR">Paraná</option>
+										  <option value="PE">Pernambuco</option>
+										  <option value="PI">Piauí</option>
+										  <option value="RJ">Rio de Janeiro</option>
+										  <option value="RN">Rio Grande do Norte</option>
+										  <option value="RS">Rio Grande do Sul</option>
+										  <option value="RO">Rondônia</option>
+										  <option value="RR">Roraima</option>
+										  <option value="SC">Santa Catarina</option>
+										  <option value="SP">São Paulo</option>
+										  <option value="SE">Sergipe</option>
+										  <option value="TO">Tocantins</option>
 										</select>
 									</div>
 									<div class="cell large-12">
 										<select>
 											<option value="cidade">Cidade</option>
 										</select>
+									</div>
+									<div class="cell large-12">
+										<input type="text" name="" placeholder="Comprimento da cerca">
+									</div>
+									<div class="cell large-12 text-left">
+										<div class="grid-container orcamento-added-form-sec">
+											<div class="grid-x">
+												<div class="cell large-7">
+													<p>Para melhor assessorarmos no projeto da sua cerca,<br>por favor nos envie uma foto!</p>
+													<input type="file" name="file" id="file" class="inputfile" />
+													<label for="file">Enviar foto</label>
+													<p>Foto da Piscina:<br>
+														<span>Extensões Aceitas: .jpg, .jpeg, .gif, .png<br>
+														Tamanho Máximo de Arquivo: 5MB</span>
+													</p>
+												</div>
+												<div class="cell large-5">
+													<fieldset>
+														<legend class="gray-label">Formato da Piscina:</legend>
+														<input type="radio" id="na" name="formatopiscina" value="na">
+														<label for="na">N/A.</label>
+														<input type="radio" id="fpretangular" name="formatopiscina" value="retangular">
+														<label for="fpretangular">Retangular</label>
+														<input type="radio" id="fpredonda" name="formatopiscina" value="redonda">
+														<label for="fpredonda">Redonda</label>
+														<input type="radio" id="fpirregular" name="formatopiscina" value="irregular">
+														<label for="fpirregular">Irregular</label>
+													</fieldset>
+													<fieldset>
+														<legend class="gray-label">Piso Adjacente:</legend>
+														<input type="radio" id="pana" name="pisoadjacente" value="na">
+														<label for="pana">N/A.</label>
+														<input type="radio" id="papedra" name="pisoadjacente" value="pedra">
+														<label for="papedra">Pedra</label>
+														<input type="radio" id="pamadeira" name="pisoadjacente" value="madeira">
+														<label for="pamadeira">Madeira</label>
+														<input type="radio" id="pagrama" name="pisoadjacente" value="grama">
+														<label for="pagrama">Grama</label>
+													</fieldset>
+													<fieldset>
+														<legend class="gray-label">Cerca da Piscina:</legend>
+														<input type="radio" id="cpna" name="cercapiscina" value="na">
+														<label for="cpna">N/A.</label>
+														<input type="radio" id="cptotal" name="cercapiscina" value="total">
+														<label for="cptotal">Total</label>
+														<input type="radio" id="cpparcial" name="cercapiscina" value="parcial">
+														<label for="cpparcial">Parcial</label>
+													</fieldset>
+												</div>
+											</div>
+										</div>
 									</div>
 									<div class="cell large-12">
 										<textarea placeholder="Deixe sua mensagem"></textarea>
@@ -194,10 +192,6 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			<!-- CONTATO - Fim -->
-			<section>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8309401811525!2d-46.7126240844757!3d-23.57451456796452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce56ff8a9dc945%3A0x31c86341d5f7300c!2sR.%20Camargo%2C%2012%20-%20Butant%C3%A3%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005509-001!5e0!3m2!1spt-BR!2sbr!4v1585502867904!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			</section>
 		</main>
 		<div class="newsletter">
