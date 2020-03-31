@@ -1395,6 +1395,9 @@ header {
   width: 100%;
   height: 560px; }
 
+.page--orcamento h1.title-blue {
+  margin: 40px auto 60px; }
+
 .page--orcamento .orcamento-added-form-sec p {
   font-size: 18px; }
 
