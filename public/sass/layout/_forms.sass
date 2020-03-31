@@ -28,7 +28,11 @@ form
 		text-transform: uppercase
 		height: 66px !important
 		border-radius: 33px !important
+		&:hover,
+		&:focus
+			background-color: darken($color-red, 10%)
 
+// Form da página ORÇAMENTO
 input[type="file"].inputfile
 	width: 0.1px
 	height: 0.1px
@@ -39,7 +43,7 @@ input[type="file"].inputfile
 
 input[type="file"].inputfile + label
 	border-radius: 60px
-	background: $color-blue
+	background: #9FE3F7
 	color: white
 	text-transform: uppercase
 	font-family: $font-baloo
@@ -48,6 +52,7 @@ input[type="file"].inputfile + label
 	margin-bottom: 1rem
 	display: inline-block
 	position: relative
+	@include transition(200ms)
 	&:after
 		content: ""
 		display: block
@@ -59,6 +64,9 @@ input[type="file"].inputfile + label
 		position: absolute
 		right: 15px
 		top: 10px
+	&:hover
+		background: $color-blue
+		cursor: pointer
 
 input[type="radio"] + label
 	margin-left: 0
