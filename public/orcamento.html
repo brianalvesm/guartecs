@@ -60,204 +60,206 @@
 				</div>
 			</nav>
 		</header>
-		<div class="breadcrumbs">
-			<div class="grid-container">
-				<div class="grid-x">
-					<div class="cell">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="orcamento.html">Orçamento</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<main class="page page--orcamento bc-mobile-push">
-			<section class="sec">
+		<div class="wrapper">
+			<div class="breadcrumbs">
 				<div class="grid-container">
 					<div class="grid-x">
 						<div class="cell">
-							<h1 class="title-blue">Orçamento</h1>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="orcamento.html">Orçamento</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="grid-x">
-						<div class="cell">
-							<form>
-								<div class="grid-x grid-margin-x">
-									<div class="cell large-12">
-										<input type="text" name="" placeholder="Seu nome">
-									</div>
-									<div class="cell large-6">
-										<input type="email" name="" placeholder="Seu email">
-									</div>
-									<div class="cell large-6">
-										<input type="tel" name="" placeholder="Seu telefone/celular">
-									</div>
-									<div class="cell large-12">
-										<select id="UF" name="UF">
-										  <option value="estado">Estado</option>
-										  <option value="AC">Acre</option>
-										  <option value="AL">Alagoas</option>
-										  <option value="AP">Amapá</option>
-										  <option value="AM">Amazonas</option>
-										  <option value="BA">Bahia</option>
-										  <option value="CE">Ceará</option>
-										  <option value="DF">Distrito Federal</option>
-										  <option value="ES">Espirito Santo</option>
-										  <option value="GO">Goiás</option>
-										  <option value="MA">Maranhão</option>
-										  <option value="MS">Mato Grosso do Sul</option>
-										  <option value="MT">Mato Grosso</option>
-										  <option value="MG">Minas Gerais</option>
-										  <option value="PA">Pará</option>
-										  <option value="PB">Paraíba</option>
-										  <option value="PR">Paraná</option>
-										  <option value="PE">Pernambuco</option>
-										  <option value="PI">Piauí</option>
-										  <option value="RJ">Rio de Janeiro</option>
-										  <option value="RN">Rio Grande do Norte</option>
-										  <option value="RS">Rio Grande do Sul</option>
-										  <option value="RO">Rondônia</option>
-										  <option value="RR">Roraima</option>
-										  <option value="SC">Santa Catarina</option>
-										  <option value="SP">São Paulo</option>
-										  <option value="SE">Sergipe</option>
-										  <option value="TO">Tocantins</option>
-										</select>
-									</div>
-									<div class="cell large-12">
-										<select>
-											<option value="cidade">Cidade</option>
-										</select>
-									</div>
-									<div class="cell large-12">
-										<input type="text" name="" placeholder="Comprimento da cerca">
-									</div>
-									<div class="cell large-12 text-left">
-										<div class="grid-container orcamento-added-form-sec">
-											<div class="grid-x">
-												<div class="cell large-7">
-													<p>Para melhor assessorarmos no projeto da sua cerca,<br>por favor nos envie uma foto!</p>
-													<input type="file" name="file" id="file" class="inputfile" />
-													<label for="file">Enviar foto</label>
-													<p>Foto da Piscina:<br>
-														<span>Extensões Aceitas: .jpg, .jpeg, .gif, .png<br>
-														Tamanho Máximo de Arquivo: 5MB</span>
-													</p>
-												</div>
-												<div class="cell large-5">
-													<fieldset>
-														<legend class="gray-label">Formato da Piscina:</legend>
-														<input type="radio" id="na" name="formatopiscina" value="na">
-														<label for="na">N/A.</label>
-														<input type="radio" id="fpretangular" name="formatopiscina" value="retangular">
-														<label for="fpretangular">Retangular</label>
-														<input type="radio" id="fpredonda" name="formatopiscina" value="redonda">
-														<label for="fpredonda">Redonda</label>
-														<input type="radio" id="fpirregular" name="formatopiscina" value="irregular">
-														<label for="fpirregular">Irregular</label>
-													</fieldset>
-													<fieldset>
-														<legend class="gray-label">Piso Adjacente:</legend>
-														<input type="radio" id="pana" name="pisoadjacente" value="na">
-														<label for="pana">N/A.</label>
-														<input type="radio" id="papedra" name="pisoadjacente" value="pedra">
-														<label for="papedra">Pedra</label>
-														<input type="radio" id="pamadeira" name="pisoadjacente" value="madeira">
-														<label for="pamadeira">Madeira</label>
-														<input type="radio" id="pagrama" name="pisoadjacente" value="grama">
-														<label for="pagrama">Grama</label>
-													</fieldset>
-													<fieldset>
-														<legend class="gray-label">Cerca da Piscina:</legend>
-														<input type="radio" id="cpna" name="cercapiscina" value="na">
-														<label for="cpna">N/A.</label>
-														<input type="radio" id="cptotal" name="cercapiscina" value="total">
-														<label for="cptotal">Total</label>
-														<input type="radio" id="cpparcial" name="cercapiscina" value="parcial">
-														<label for="cpparcial">Parcial</label>
-													</fieldset>
+				</div>
+			</div>
+			<main class="page page--orcamento">
+				<section class="sec">
+					<div class="grid-container">
+						<div class="grid-x">
+							<div class="cell">
+								<h1 class="title-blue">Orçamento</h1>
+							</div>
+						</div>
+						<div class="grid-x">
+							<div class="cell">
+								<form>
+									<div class="grid-x grid-margin-x">
+										<div class="cell large-12">
+											<input type="text" name="" placeholder="Seu nome">
+										</div>
+										<div class="cell large-6">
+											<input type="email" name="" placeholder="Seu email">
+										</div>
+										<div class="cell large-6">
+											<input type="tel" name="" placeholder="Seu telefone/celular">
+										</div>
+										<div class="cell large-12">
+											<select id="UF" name="UF">
+											  <option value="estado">Estado</option>
+											  <option value="AC">Acre</option>
+											  <option value="AL">Alagoas</option>
+											  <option value="AP">Amapá</option>
+											  <option value="AM">Amazonas</option>
+											  <option value="BA">Bahia</option>
+											  <option value="CE">Ceará</option>
+											  <option value="DF">Distrito Federal</option>
+											  <option value="ES">Espirito Santo</option>
+											  <option value="GO">Goiás</option>
+											  <option value="MA">Maranhão</option>
+											  <option value="MS">Mato Grosso do Sul</option>
+											  <option value="MT">Mato Grosso</option>
+											  <option value="MG">Minas Gerais</option>
+											  <option value="PA">Pará</option>
+											  <option value="PB">Paraíba</option>
+											  <option value="PR">Paraná</option>
+											  <option value="PE">Pernambuco</option>
+											  <option value="PI">Piauí</option>
+											  <option value="RJ">Rio de Janeiro</option>
+											  <option value="RN">Rio Grande do Norte</option>
+											  <option value="RS">Rio Grande do Sul</option>
+											  <option value="RO">Rondônia</option>
+											  <option value="RR">Roraima</option>
+											  <option value="SC">Santa Catarina</option>
+											  <option value="SP">São Paulo</option>
+											  <option value="SE">Sergipe</option>
+											  <option value="TO">Tocantins</option>
+											</select>
+										</div>
+										<div class="cell large-12">
+											<select>
+												<option value="cidade">Cidade</option>
+											</select>
+										</div>
+										<div class="cell large-12">
+											<input type="text" name="" placeholder="Comprimento da cerca">
+										</div>
+										<div class="cell large-12 text-left">
+											<div class="grid-container orcamento-added-form-sec">
+												<div class="grid-x">
+													<div class="cell large-7">
+														<p>Para melhor assessorarmos no projeto da sua cerca,<br>por favor nos envie uma foto!</p>
+														<input type="file" name="file" id="file" class="inputfile" />
+														<label for="file">Enviar foto</label>
+														<p>Foto da Piscina:<br>
+															<span>Extensões Aceitas: .jpg, .jpeg, .gif, .png<br>
+															Tamanho Máximo de Arquivo: 5MB</span>
+														</p>
+													</div>
+													<div class="cell large-5">
+														<fieldset>
+															<legend class="gray-label">Formato da Piscina:</legend>
+															<input type="radio" id="na" name="formatopiscina" value="na">
+															<label for="na">N/A.</label>
+															<input type="radio" id="fpretangular" name="formatopiscina" value="retangular">
+															<label for="fpretangular">Retangular</label>
+															<input type="radio" id="fpredonda" name="formatopiscina" value="redonda">
+															<label for="fpredonda">Redonda</label>
+															<input type="radio" id="fpirregular" name="formatopiscina" value="irregular">
+															<label for="fpirregular">Irregular</label>
+														</fieldset>
+														<fieldset>
+															<legend class="gray-label">Piso Adjacente:</legend>
+															<input type="radio" id="pana" name="pisoadjacente" value="na">
+															<label for="pana">N/A.</label>
+															<input type="radio" id="papedra" name="pisoadjacente" value="pedra">
+															<label for="papedra">Pedra</label>
+															<input type="radio" id="pamadeira" name="pisoadjacente" value="madeira">
+															<label for="pamadeira">Madeira</label>
+															<input type="radio" id="pagrama" name="pisoadjacente" value="grama">
+															<label for="pagrama">Grama</label>
+														</fieldset>
+														<fieldset>
+															<legend class="gray-label">Cerca da Piscina:</legend>
+															<input type="radio" id="cpna" name="cercapiscina" value="na">
+															<label for="cpna">N/A.</label>
+															<input type="radio" id="cptotal" name="cercapiscina" value="total">
+															<label for="cptotal">Total</label>
+															<input type="radio" id="cpparcial" name="cercapiscina" value="parcial">
+															<label for="cpparcial">Parcial</label>
+														</fieldset>
+													</div>
 												</div>
 											</div>
 										</div>
+										<div class="cell large-12">
+											<textarea placeholder="Deixe sua mensagem"></textarea>
+										</div>
+										<div class="cell large-12 text-right">
+											<input type="submit" class="button" value="Enviar">
+										</div>
 									</div>
-									<div class="cell large-12">
-										<textarea placeholder="Deixe sua mensagem"></textarea>
-									</div>
-									<div class="cell large-12 text-right">
-										<input type="submit" class="button" value="Enviar">
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<div class="newsletter">
+				<div class="grid-container">
+					<div class="grid-x align-middle">
+						<div class="cell large-6">
+							<div class="newsletter-message">
+								<img src="images/icons/envelope-email.png" alt="receba nossas novidades"><span>Receba nossas novidades</span>
+							</div>
+						</div>
+						<div class="cell large-6">
+							<form>
+								<div class="input-group">
+									<div class="input-group-button">
+										<input type="email" name="E-mail" placeholder="Digite seu email"><input type="submit" class="button" name="Enviar" value="Enviar">
 									</div>
 								</div>
 							</form>
 						</div>
 					</div>
 				</div>
-			</section>
-		</main>
-		<div class="newsletter">
-			<div class="grid-container">
-				<div class="grid-x align-middle">
-					<div class="cell large-6">
-						<div class="newsletter-message">
-							<img src="images/icons/envelope-email.png" alt="receba nossas novidades"><span>Receba nossas novidades</span>
+			</div>
+			<footer>
+				<div class="footer-content">
+					<div class="grid-container">
+						<div class="grid-x">
+							<div class="cell large-4">
+								<img src="images/guartecs-logo-white.png" title="Guartecs" alt="Guartecs">
+							</div>
+							<div class="cell large-4">
+								<nav class="footer-menu">
+									<ul>
+										<li><a href="empresa.html">Empresa</a></li>
+										<li><a href="produtos.html">Produtos</a></li>
+										<li><a href="caracteristicas.html">Características</a></li>
+										<li><a href="galeria.html">Galeria</a></li>
+										<li><a href="como-comprar.html">Como comprar</a></li>
+										<li><a href="instalacao.html">Instalação</a></li>
+										<li><a href="blog.html">Blog</a></li>
+										<li><a href="contato.html">Contato</a></li>
+										<li><a href="orcamento.html">Orçamento</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="cell large-4">
+								<div class="footer-tel"><img src="images/icons/icon-phone.png" alt="telefone"> 0800 777-0199 - (11) 98129-0226</div>
+								<div class="footer-email"><img src="images/icons/icon-email.png" alt="email"> guartecs@GUARTECS.com.br</div>
+							</div>
 						</div>
 					</div>
-					<div class="cell large-6">
-						<form>
-							<div class="input-group">
-								<div class="input-group-button">
-									<input type="email" name="E-mail" placeholder="Digite seu email"><input type="submit" class="button" name="Enviar" value="Enviar">
+				</div>
+				<div class="all-rights-reserved">
+					<div class="grid-container">
+						<div class="grid-x">
+							<div class="cell">
+								<div class="footer-wrapper">
+									© 2019 Guartecs. Todos os direitos reservados.
+									<div class="social-media-icons">
+										<img src="images/icons/facebook-white.png" alt="facebook"><img src="images/icons/instagram-white.png" alt="instagram">
+									</div>
 								</div>
 							</div>
-						</form>
+						</div>
 					</div>
 				</div>
-			</div>
+			</footer>
 		</div>
-		<footer>
-			<div class="footer-content">
-				<div class="grid-container">
-					<div class="grid-x">
-						<div class="cell large-4">
-							<img src="images/guartecs-logo-white.png" title="Guartecs" alt="Guartecs">
-						</div>
-						<div class="cell large-4">
-							<nav class="footer-menu">
-								<ul>
-									<li><a href="empresa.html">Empresa</a></li>
-									<li><a href="produtos.html">Produtos</a></li>
-									<li><a href="caracteristicas.html">Características</a></li>
-									<li><a href="galeria.html">Galeria</a></li>
-									<li><a href="como-comprar.html">Como comprar</a></li>
-									<li><a href="instalacao.html">Instalação</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="contato.html">Contato</a></li>
-									<li><a href="orcamento.html">Orçamento</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="cell large-4">
-							<div class="footer-tel"><img src="images/icons/icon-phone.png" alt="telefone"> 0800 777-0199 - (11) 98129-0226</div>
-							<div class="footer-email"><img src="images/icons/icon-email.png" alt="email"> guartecs@GUARTECS.com.br</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="all-rights-reserved">
-				<div class="grid-container">
-					<div class="grid-x">
-						<div class="cell">
-							<div class="footer-wrapper">
-								© 2019 Guartecs. Todos os direitos reservados.
-								<div class="social-media-icons">
-									<img src="images/icons/facebook-white.png" alt="facebook"><img src="images/icons/instagram-white.png" alt="instagram">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
 		<script type="text/javascript" src="javascripts/jquery.min.js"></script>
 		<script type="text/javascript" src="javascripts/scripts.js"></script>
 		<script type="text/javascript" src="javascripts/slider.js"></script>
