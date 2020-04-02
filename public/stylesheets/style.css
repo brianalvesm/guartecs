@@ -474,7 +474,8 @@ nav[role=navigation] li a {
     color: #E4283D;
     font-family: "baloo_daregular", sans-serif;
     font-size: 24px;
-    margin-left: 32px; }
+    margin-left: 32px;
+    text-transform: uppercase; }
   @media only screen and (max-width: 40.1rem) {
     .newsletter {
       height: initial; }
@@ -521,6 +522,8 @@ footer {
 
 .footer-tel,
 .footer-email {
+  display: flex;
+  align-items: center;
   font-family: "baloo_daregular", sans-serif;
   font-size: 20px;
   text-transform: uppercase; }
@@ -708,8 +711,7 @@ body, html {
       text-transform: uppercase;
       font-family: "baloo_daregular", sans-serif;
       font-size: 18px;
-      color: white;
-      line-height: normal; }
+      color: white; }
       .js nav[role=navigation].main-menu ul li:nth-last-child(2) {
         border-right: none; }
       .js nav[role=navigation].main-menu ul li.active {
@@ -718,7 +720,9 @@ body, html {
       .js nav[role=navigation].main-menu ul li a {
         padding: 0;
         color: white;
-        border-bottom: none; }
+        border-bottom: none;
+        position: relative;
+        top: 2px; }
         .js nav[role=navigation].main-menu ul li a:hover, .js nav[role=navigation].main-menu ul li a:focus {
           text-decoration: underline; }
   @media only screen and (max-width: 40.1rem) {
@@ -791,6 +795,8 @@ header {
     box-shadow: none; }
   .header-wrapper.logo-wrapper {
     justify-content: flex-start; }
+    .header-wrapper.logo-wrapper img {
+      max-width: 274px; }
     @media only screen and (max-width: 40.1rem) {
       .header-wrapper.logo-wrapper {
         padding-left: 0;
@@ -801,7 +807,6 @@ header {
   font-family: "baloo_daregular", sans-serif;
   font-size: 22px;
   position: relative;
-  top: 5px;
   padding-left: 32px; }
   .header-tel:before {
     content: "";
