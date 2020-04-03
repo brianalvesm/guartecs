@@ -100,6 +100,10 @@ header
 			font-family: $font-baloo
 			font-size: 18px
 			color: white
+			@include transition(200ms)
+			&:hover
+				background-color: darken($color-red, 5%)
+				box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.3)
 			&:nth-last-child(2)
 				border-right: none
 			&.active
@@ -111,9 +115,6 @@ header
 				border-bottom: none
 				position: relative
 				top: 2px
-				&:hover,
-				&:focus
-					text-decoration: underline
 	@media only screen and (max-width: 40.1rem)
 		.grid-container
 			padding: 0
