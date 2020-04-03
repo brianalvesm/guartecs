@@ -1018,7 +1018,8 @@ header {
 .page--home .sec--video {
   min-height: 856px;
   background-image: url("../images/video-bg.png");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  padding-bottom: 0; }
   .page--home .sec--video .grid-container {
     height: 796px; }
     .page--home .sec--video .grid-container .grid-x {
@@ -1064,6 +1065,12 @@ header {
       text-transform: uppercase;
       margin-bottom: 0; }
   @media only screen and (max-width: 40.1rem) {
+    .page--home .sec--video-footer .btn {
+      font-size: 18px;
+      padding: 18px 30px 17px;
+      position: relative; }
+    .page--home .sec--video-footer .grid-container .grid-x {
+      padding-bottom: 0; }
     .page--home .sec--video-footer .grid-container .girl {
       left: 50%;
       margin-left: -180px;
@@ -1071,10 +1078,13 @@ header {
       -webkit-mask-image: linear-gradient(to top, transparent 0%, black 15%);
       mask-image: linear-gradient(to top, transparent 0%, black 15%); }
     .page--home .sec--video-footer ul.video-footer-content {
-      flex-wrap: wrap;
-      padding-top: 60px; }
+      flex-wrap: wrap; }
       .page--home .sec--video-footer ul.video-footer-content li {
         padding: 15px; } }
+
+@media only screen and (max-width: 40.1rem) {
+  .page--home .sec--simulador {
+    padding-top: 80px; } }
 
 .page--home .sec--sobrasa {
   color: #E4283D; }

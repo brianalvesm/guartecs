@@ -117,6 +117,7 @@
 			background:
 				image: url('../images/video-bg.png')
 				repeat: no-repeat
+			padding-bottom: 0
 			.grid-container
 				height: 796px
 				.grid-x
@@ -161,17 +162,26 @@
 					text-transform: uppercase
 					margin-bottom: 0
 			@media only screen and (max-width: 40.1rem)
-				.grid-container .girl
-					left: 50%
-					margin-left: -180px
-					top: -300px
-					-webkit-mask-image: $maskImage
-					mask-image: $maskImage
+				.btn
+					font-size: 18px
+					padding: 18px 30px 17px
+					position: relative
+				.grid-container
+					.grid-x
+						padding-bottom: 0
+					.girl
+						left: 50%
+						margin-left: -180px
+						top: -300px
+						-webkit-mask-image: $maskImage
+						mask-image: $maskImage
 				ul.video-footer-content
 					flex-wrap: wrap
-					padding-top: 60px
 					li
 						padding: 15px
+		&--simulador
+			@media only screen and (max-width: 40.1rem)
+				padding-top: 80px
 		&--sobrasa
 			b
 			color: $color-red
