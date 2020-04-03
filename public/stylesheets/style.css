@@ -386,7 +386,9 @@ main h3 {
 
 a.menu-link {
   float: right;
-  display: block; }
+  display: block;
+  max-width: 44px;
+  max-height: 28px; }
 
 nav[role=navigation] {
   clear: both;
@@ -751,6 +753,85 @@ body, html {
     .wrapper {
       top: 88px; } }
 
+header {
+  background-color: white;
+  position: fixed;
+  z-index: 9;
+  width: 100%; }
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  justify-content: space-between; }
+  @media only screen and (max-width: 40.1rem) {
+    .header-wrapper {
+      padding: 15px; } }
+
+.logo-wrapper img {
+  max-width: 274px; }
+  @media only screen and (max-width: 40.1rem) {
+    .logo-wrapper img {
+      max-width: 168px; } }
+
+.header-content {
+  display: flex;
+  align-items: center; }
+  .header-content .social-media-icons img:first-child {
+    padding-right: 20px; }
+  .header-content .btn-orcamento {
+    box-shadow: none;
+    font-size: 18px;
+    padding: 10px 30px 8px;
+    margin: 0 30px 0 50px; }
+
+.header-tel {
+  color: #E4283D;
+  font-family: "baloo_daregular", sans-serif;
+  font-size: 22px;
+  position: relative;
+  padding-left: 32px; }
+  .header-tel:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../images/icons/whatsapp.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: -5px; }
+  @media only screen and (max-width: 26rem) {
+    .header-tel {
+      font-size: 12px;
+      padding-left: 20px;
+      top: 2px; }
+      .header-tel:before {
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+        top: 2px; } }
+
+@media only screen and (max-width: 40.1rem) {
+  .header-wrapper .btn-orcamento {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9;
+    font-size: 14px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    box-shadow: 0 15px 34px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .header-wrapper .social-media-icons {
+    display: none; }
+  .header-tel {
+    line-height: 1.2; } }
+
 .js nav[role=navigation].main-menu {
   background-color: #E4283D;
   box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
@@ -828,79 +909,6 @@ div.breadcrumbs {
         color: #58BEED;
         font-family: "baloo_daregular", sans-serif;
         font-size: 16px; }
-
-header {
-  background-color: white;
-  position: fixed;
-  z-index: 9;
-  width: 100%; }
-
-.header-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 15px 0;
-  min-height: 58px; }
-  .header-wrapper .social-media-icons {
-    width: 56px; }
-    .header-wrapper .social-media-icons img:first-child {
-      padding-right: 20px; }
-  .header-wrapper .btn-orcamento {
-    box-shadow: none;
-    font-size: 18px;
-    padding: 10px 30px 8px; }
-  .header-wrapper.logo-wrapper {
-    justify-content: flex-start; }
-    .header-wrapper.logo-wrapper img {
-      max-width: 274px; }
-      @media only screen and (max-width: 40.1rem) {
-        .header-wrapper.logo-wrapper img {
-          max-width: 100%; } }
-
-.header-tel {
-  color: #E4283D;
-  font-family: "baloo_daregular", sans-serif;
-  font-size: 22px;
-  position: relative;
-  padding-left: 32px; }
-  .header-tel:before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../images/icons/whatsapp.png");
-    width: 32px;
-    height: 32px;
-    top: 0;
-    left: -5px; }
-  @media only screen and (max-width: 26rem) {
-    .header-tel {
-      font-size: 12px;
-      padding-left: 20px;
-      top: 2px; }
-      .header-tel:before {
-        background-size: 20px;
-        width: 20px;
-        height: 20px;
-        top: 2px; } }
-
-@media only screen and (max-width: 40.1rem) {
-  .header-wrapper .btn-orcamento {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 9;
-    font-size: 14px;
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    box-shadow: 0 15px 34px 0 rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .header-wrapper .social-media-icons {
-    display: none; }
-  .header-tel {
-    line-height: 1.2; } }
 
 .page--home .sec--slide {
   overflow: hidden;
