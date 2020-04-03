@@ -851,13 +851,13 @@ header {
       text-transform: uppercase;
       font-family: "baloo_daregular", sans-serif;
       font-size: 18px;
-      color: white;
-      -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-      -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-      -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-      -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
-      transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
+      color: white; }
       .js nav[role=navigation].main-menu ul li:hover {
+        -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
         background-color: #d71b30;
         box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.3); }
       .js nav[role=navigation].main-menu ul li:nth-last-child(2) {
