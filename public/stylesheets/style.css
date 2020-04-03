@@ -53,6 +53,41 @@ main h3 {
       font-size: 1.250rem;
       margin: 16px auto; } }
 
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "baloo_daregular", sans-serif;
+  font-size: 16px;
+  color: white;
+  background: #58BEED;
+  border-radius: 60px;
+  padding: 14px 36px 12px;
+  box-shadow: 0 15px 34px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
+  .btn:hover, .btn:focus {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+    background-color: #41b5eb; }
+  .btn--red {
+    background: #E4283D; }
+    .btn--red:hover, .btn--red:focus {
+      background-color: #d71b30; }
+  .btn--white {
+    color: #58BEED;
+    background: #fff; }
+    .btn--white:hover, .btn--white:focus {
+      color: #58BEED;
+      background-color: #f2f2f2; }
+  .btn--shadowless {
+    box-shadow: none; }
+  .btn--stretch {
+    padding: 14px 66px 12px; }
+
 .owl-carousel .owl-prev,
 .owl-carousel .owl-next {
   cursor: pointer;
@@ -102,10 +137,11 @@ main h3 {
     width: 100%; }
   .owl-heroslider .slide-content {
     position: absolute;
-    height: 100%;
+    height: calc(100% - 75px);
     text-align: left;
     display: flex;
     flex-direction: column;
+    align-items: baseline;
     justify-content: center; }
     .owl-heroslider .slide-content h1 {
       color: white;
@@ -116,8 +152,6 @@ main h3 {
       color: #C9ECF7;
       font-size: 42px;
       line-height: 1; }
-    .owl-heroslider .slide-content .btn {
-      width: 325px; }
   .owl-heroslider .owl-dots {
     position: relative;
     width: 100%;
@@ -146,16 +180,20 @@ main h3 {
         color: #58BEED; }
         .owl-heroslider .owl-dots .owl-dot.active:before {
           color: #58BEED; }
+  @media only screen and (max-width: 64.1rem) {
+    .owl-heroslider .slide-content {
+      margin-left: 4.625rem;
+      margin-right: 4.625rem; }
+      .owl-heroslider .slide-content h1 {
+        font-size: 48px;
+        margin-bottom: 16px; }
+      .owl-heroslider .slide-content h2 {
+        font-size: 38px;
+        margin-bottom: 16px; } }
   @media only screen and (max-width: 40.1rem) {
-    .owl-heroslider .slide-content h1 {
-      font-size: 48px;
-      margin-bottom: 16px; }
-    .owl-heroslider .slide-content h2 {
-      font-size: 38px;
-      margin-bottom: 16px; }
-    .owl-heroslider .slide-content .btn {
-      font-size: 14px;
-      width: fit-content; }
+    .owl-heroslider .slide-content {
+      margin-left: 0;
+      margin-right: 0; }
     .owl-heroslider .owl-image {
       min-width: max-content; }
     .owl-heroslider .owl-prev,
@@ -209,7 +247,8 @@ main h3 {
   margin: 10px;
   border-radius: 10px;
   overflow: visible;
-  background-color: white; }
+  background-color: white;
+  position: relative; }
   .card--beige {
     background-color: #F9F5ED; }
   .card--blue {
@@ -218,10 +257,12 @@ main h3 {
     background-color: #E4283D; }
   .card--padding {
     padding: 50px 80px; }
-  .card .card-section p {
-    font-size: 1rem; }
-  .card .card-section--extra-padding {
-    padding: 2rem 4rem; }
+  .card .card-section {
+    border-radius: 0 0 10px 10px; }
+    .card .card-section p {
+      font-size: 1rem; }
+    .card .card-section--extra-padding {
+      padding: 2rem 4rem; }
   @media only screen and (max-width: 40.1rem) {
     .card--padding {
       padding: 50px 20px; }
@@ -253,27 +294,6 @@ main h3 {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-
-.btn {
-  display: inline-block;
-  border-radius: 60px;
-  background: #58BEED;
-  color: white;
-  text-transform: uppercase;
-  font-family: "baloo_daregular", sans-serif;
-  font-size: 18px;
-  padding: 8px 30px;
-  box-shadow: 0 15px 34px 0 rgba(0, 0, 0, 0.2); }
-  .btn a {
-    color: white; }
-    .btn a:hover, .btn a:focus {
-      color: white;
-      text-decoration: underline; }
-  .btn--secondary {
-    background: #E4283D; }
-  .btn--tertiary {
-    background: white;
-    color: #58BEED; }
 
 .highlight {
   border: 2px solid #E4283D;
@@ -335,6 +355,34 @@ main h3 {
     @media only screen and (max-width: 40.1rem) {
       .accordion-content .btn {
         font-size: 12px; } }
+
+.sec--galeria .gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .sec--galeria .gallery-container .gallery-figure,
+  .sec--galeria .gallery-container .gallery-card {
+    width: 380px;
+    margin: 10px 10px 0 0;
+    overflow: hidden;
+    position: relative; }
+    .sec--galeria .gallery-container .gallery-figure figcaption,
+    .sec--galeria .gallery-container .gallery-card figcaption {
+      background: #E4283D;
+      opacity: 0.9;
+      color: white;
+      font-family: "baloo_daregular", sans-serif;
+      font-size: 22px;
+      width: 100%;
+      height: 40px;
+      position: absolute;
+      bottom: 0;
+      padding: 5px; }
+    @media only screen and (max-width: 40.1rem) {
+      .sec--galeria .gallery-container .gallery-figure,
+      .sec--galeria .gallery-container .gallery-card {
+        width: initial;
+        height: initial; } }
 
 a.menu-link {
   float: right;
@@ -464,12 +512,8 @@ nav[role=navigation] li a {
     .newsletter input[type="submit"] {
       position: absolute;
       right: 0;
-      width: 168px;
-      color: white;
-      background-color: #E4283D;
-      font-family: "baloo_daregular", sans-serif;
       font-size: 14px;
-      text-transform: uppercase; }
+      padding: 19px 50px 16px; }
   .newsletter .newsletter-message span {
     color: #E4283D;
     font-family: "baloo_daregular", sans-serif;
@@ -585,16 +629,18 @@ form textarea {
   height: 230px; }
 
 form [type="submit"] {
-  width: 280px;
   color: white;
   background-color: #E4283D;
   font-family: "baloo_daregular", sans-serif;
   font-size: 18px;
+  padding: 19px 100px 16px;
   text-transform: uppercase;
-  height: 66px !important;
   border-radius: 33px !important; }
   form [type="submit"]:hover, form [type="submit"]:focus {
-    background-color: #c1182b; }
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+    background-color: #d71b30; }
 
 input[type="file"].inputfile {
   width: 0.1px;
@@ -800,7 +846,9 @@ header {
     .header-wrapper .social-media-icons img:first-child {
       padding-right: 20px; }
   .header-wrapper .btn-orcamento {
-    box-shadow: none; }
+    box-shadow: none;
+    font-size: 18px;
+    padding: 10px 30px 8px; }
   .header-wrapper.logo-wrapper {
     justify-content: flex-start; }
     .header-wrapper.logo-wrapper img {
@@ -890,15 +938,6 @@ header {
       position: absolute;
       top: 12px;
       left: 12px; }
-    .page--home .sec--cerca .card .btn {
-      width: 200px;
-      height: 40px;
-      padding: 10px;
-      font-size: 14px;
-      position: absolute;
-      bottom: -20px;
-      left: 50%;
-      margin-left: -100px; }
   @media only screen and (max-width: 40.1rem) {
     .page--home .sec--cerca {
       padding-bottom: 400px; }
@@ -930,21 +969,19 @@ header {
         font-size: 21px;
         font-weight: bold;
         margin-bottom: 0; }
-    .page--home .sec--diferenciais .card--diferenciais .btn {
-      width: 300px;
-      height: 60px;
-      padding: 18px;
-      font-size: 18px;
-      position: absolute;
-      bottom: -30px;
-      left: 50%;
-      margin-left: -150px; }
   .page--home .sec--diferenciais .card--qualidade .card-section {
     padding: 35px 1rem; }
   .page--home .sec--diferenciais .diferenciais-figure {
     overflow: hidden;
     border-radius: 10px 10px 0 0;
     height: 250px; }
+
+.page--home .sec--cerca .card .btn,
+.page--home .sec--diferenciais .card .btn {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -108px; }
 
 .page--home .sec--galeria {
   background: #F9F5ED;
@@ -1001,13 +1038,11 @@ header {
       left: 0; }
     .page--home .sec--video-footer .grid-container .grid-x {
       padding: 60px 0; }
-  @media only screen and (max-width: 40.1rem) {
-    .page--home .sec--video-footer .grid-container .girl {
-      left: 50%;
-      margin-left: -180px;
-      top: -300px;
-      -webkit-mask-image: linear-gradient(to top, transparent 0%, black 15%);
-      mask-image: linear-gradient(to top, transparent 0%, black 15%); } }
+  .page--home .sec--video-footer .btn {
+    padding: 8px 40px 7px;
+    position: absolute;
+    bottom: -22px;
+    right: 0; }
   .page--home .sec--video-footer ul.video-footer-content {
     list-style: none;
     display: flex;
@@ -1028,78 +1063,21 @@ header {
       font-size: 16px;
       text-transform: uppercase;
       margin-bottom: 0; }
-    @media only screen and (max-width: 40rem) {
-      .page--home .sec--video-footer ul.video-footer-content {
-        flex-wrap: wrap;
-        padding-top: 60px; }
-        .page--home .sec--video-footer ul.video-footer-content li {
-          padding: 15px; } }
-  .page--home .sec--video-footer .btn {
-    font-family: "baloo_daregular", sans-serif;
-    font-size: 16px;
-    position: absolute;
-    bottom: -22px;
-    right: 0;
-    padding: 10px 32px; }
+  @media only screen and (max-width: 40.1rem) {
+    .page--home .sec--video-footer .grid-container .girl {
+      left: 50%;
+      margin-left: -180px;
+      top: -300px;
+      -webkit-mask-image: linear-gradient(to top, transparent 0%, black 15%);
+      mask-image: linear-gradient(to top, transparent 0%, black 15%); }
+    .page--home .sec--video-footer ul.video-footer-content {
+      flex-wrap: wrap;
+      padding-top: 60px; }
+      .page--home .sec--video-footer ul.video-footer-content li {
+        padding: 15px; } }
 
 .page--home .sec--sobrasa {
   color: #E4283D; }
-
-.page--home .sec--galeria .gallery-container,
-.page--galeria .sec--galeria .gallery-container,
-.page--caracteristicas .sec--galeria .gallery-container,
-.page--blog .sec--galeria .gallery-container,
-.page--instalacao .sec--galeria .gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .page--home .sec--galeria .gallery-container .gallery-figure,
-  .page--home .sec--galeria .gallery-container .gallery-card,
-  .page--galeria .sec--galeria .gallery-container .gallery-figure,
-  .page--galeria .sec--galeria .gallery-container .gallery-card,
-  .page--caracteristicas .sec--galeria .gallery-container .gallery-figure,
-  .page--caracteristicas .sec--galeria .gallery-container .gallery-card,
-  .page--blog .sec--galeria .gallery-container .gallery-figure,
-  .page--blog .sec--galeria .gallery-container .gallery-card,
-  .page--instalacao .sec--galeria .gallery-container .gallery-figure,
-  .page--instalacao .sec--galeria .gallery-container .gallery-card {
-    width: 380px;
-    margin: 10px 10px 0 0;
-    overflow: hidden;
-    position: relative; }
-    .page--home .sec--galeria .gallery-container .gallery-figure figcaption,
-    .page--home .sec--galeria .gallery-container .gallery-card figcaption,
-    .page--galeria .sec--galeria .gallery-container .gallery-figure figcaption,
-    .page--galeria .sec--galeria .gallery-container .gallery-card figcaption,
-    .page--caracteristicas .sec--galeria .gallery-container .gallery-figure figcaption,
-    .page--caracteristicas .sec--galeria .gallery-container .gallery-card figcaption,
-    .page--blog .sec--galeria .gallery-container .gallery-figure figcaption,
-    .page--blog .sec--galeria .gallery-container .gallery-card figcaption,
-    .page--instalacao .sec--galeria .gallery-container .gallery-figure figcaption,
-    .page--instalacao .sec--galeria .gallery-container .gallery-card figcaption {
-      background: #E4283D;
-      opacity: 0.9;
-      color: white;
-      font-family: "baloo_daregular", sans-serif;
-      font-size: 22px;
-      width: 100%;
-      height: 40px;
-      position: absolute;
-      bottom: 0;
-      padding: 5px; }
-    @media only screen and (max-width: 40.1rem) {
-      .page--home .sec--galeria .gallery-container .gallery-figure,
-      .page--home .sec--galeria .gallery-container .gallery-card,
-      .page--galeria .sec--galeria .gallery-container .gallery-figure,
-      .page--galeria .sec--galeria .gallery-container .gallery-card,
-      .page--caracteristicas .sec--galeria .gallery-container .gallery-figure,
-      .page--caracteristicas .sec--galeria .gallery-container .gallery-card,
-      .page--blog .sec--galeria .gallery-container .gallery-figure,
-      .page--blog .sec--galeria .gallery-container .gallery-card,
-      .page--instalacao .sec--galeria .gallery-container .gallery-figure,
-      .page--instalacao .sec--galeria .gallery-container .gallery-card {
-        width: initial;
-        height: initial; } }
 
 .page--parceiro .card {
   overflow: visible;
@@ -1148,19 +1126,21 @@ header {
     top: -150px;
     margin-left: -30px;
     z-index: 2; }
-  .page--portoes-de-seguranca .sec .card-overflow-wrapper .card-section,
-  .page--cercas-removiveis .sec .card-overflow-wrapper .card-section,
-  .page--gradil .sec .card-overflow-wrapper .card-section {
-    padding-bottom: 60px; }
-  .page--portoes-de-seguranca .sec .card-overflow-wrapper .btn--secondary,
-  .page--cercas-removiveis .sec .card-overflow-wrapper .btn--secondary,
-  .page--gradil .sec .card-overflow-wrapper .btn--secondary {
-    position: relative;
-    top: -40px;
-    width: 300px;
-    height: 60px;
-    padding: 18px;
-    font-size: 18px; }
+  .page--portoes-de-seguranca .sec .card,
+  .page--cercas-removiveis .sec .card,
+  .page--gradil .sec .card {
+    overflow: visible; }
+    .page--portoes-de-seguranca .sec .card .card-section,
+    .page--cercas-removiveis .sec .card .card-section,
+    .page--gradil .sec .card .card-section {
+      padding-bottom: 60px; }
+    .page--portoes-de-seguranca .sec .card .btn--red,
+    .page--cercas-removiveis .sec .card .btn--red,
+    .page--gradil .sec .card .btn--red {
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      margin-left: -108px; }
   @media only screen and (max-width: 40.1rem) {
     .page--portoes-de-seguranca .sec .large-6:first-child,
     .page--cercas-removiveis .sec .large-6:first-child,

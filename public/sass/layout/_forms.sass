@@ -20,17 +20,19 @@ form
 	textarea
 		height: 230px
 	[type="submit"]
-		width: 280px
 		color: white
 		background-color: $color-red
 		font-family: $font-baloo
 		font-size: 18px
+		padding: 19px 100px 16px
 		text-transform: uppercase
-		height: 66px !important
 		border-radius: 33px !important
 		&:hover,
 		&:focus
-			background-color: darken($color-red, 10%)
+			text-decoration: underline
+			cursor: pointer
+			color: white
+			background-color: darken($color-red, 5%)
 
 // Form da página ORÇAMENTO
 input[type="file"].inputfile

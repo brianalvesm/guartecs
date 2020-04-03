@@ -45,10 +45,11 @@
 		width: 100%
 	.slide-content
 		position: absolute
-		height: 100%
+		height: calc(100% - 75px)
 		text-align: left
 		display: flex
 		flex-direction: column
+		align-items: baseline
 		justify-content: center
 		h1
 			color: white
@@ -59,8 +60,6 @@
 			color: #C9ECF7
 			font-size: 42px
 			line-height: 1
-		.btn
-			width: 325px
 	.owl-dots
 		position: relative
 		width: 100%
@@ -89,17 +88,20 @@
 				color: $color-blue
 				&:before
 					color: $color-blue
-	@media only screen and (max-width: 40.1rem)
+	@media only screen and (max-width: 64.1rem)
 		.slide-content
+			margin-left: 4.625rem
+			margin-right: 4.625rem
 			h1
 				font-size: 48px
 				margin-bottom: 16px
 			h2
 				font-size: 38px
 				margin-bottom: 16px
-			.btn
-				font-size: 14px
-				width: fit-content
+	@media only screen and (max-width: 40.1rem)
+		.slide-content
+			margin-left: 0
+			margin-right: 0
 		.owl-image
 			min-width: max-content
 		.owl-prev,

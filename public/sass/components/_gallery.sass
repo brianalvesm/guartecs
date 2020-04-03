@@ -1,0 +1,26 @@
+// GALERIA
+.sec--galeria
+	.gallery-container
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		.gallery-figure,
+		.gallery-card
+			width: 380px
+			margin: 10px 10px 0 0
+			overflow: hidden
+			position: relative
+			figcaption
+				background: $color-red
+				opacity: 0.9
+				color: white
+				font-family: $font-baloo
+				font-size: 22px
+				width: 100%
+				height: 40px
+				position: absolute
+				bottom: 0
+				padding: 5px
+			@media only screen and (max-width: 40.1rem)
+				width: initial
+				height: initial
