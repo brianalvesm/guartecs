@@ -28,29 +28,29 @@ main h1, main h2, main h3 {
   margin-top: 0; }
 
 main h1 {
-  font-size: 3.125rem; }
+  font-size: 2.750rem; }
 
 main h2 {
-  font-size: 2.375rem; }
+  font-size: 2.125rem; }
 
 main h3 {
-  font-size: 1.750rem; }
+  font-size: 1.500rem; }
 
-@media only screen and (max-width: 40.1rem) {
+@media only screen and (max-width: 40rem) {
   main h1 {
-    font-size: 2.750rem; }
+    font-size: 2.125rem; }
   main h2 {
-    font-size: 2.000rem; }
+    font-size: 1.500rem; }
   main h3 {
-    font-size: 1.375rem; } }
+    font-size: 1.250rem; } }
 
 .paragraph {
   font-size: 1.500rem;
   line-height: 1.4;
   margin: 0 auto 32px; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .paragraph {
-      font-size: 1.250rem;
+      font-size: 1.125rem;
       margin: 16px auto; } }
 
 .btn {
@@ -1009,7 +1009,7 @@ div.breadcrumbs {
       position: absolute;
       top: 12px;
       left: 12px; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .page--home .sec--cerca {
       padding-bottom: 400px; }
       .page--home .sec--cerca .slide-mask {
@@ -1037,7 +1037,6 @@ div.breadcrumbs {
         max-width: 420px; }
       .page--home .sec--diferenciais .card--diferenciais .card-section h3 {
         font-family: "open_sans", sans-serif;
-        font-size: 21px;
         font-weight: bold;
         margin-bottom: 0; }
   .page--home .sec--diferenciais .card--qualidade .card-section {
@@ -1081,7 +1080,8 @@ div.breadcrumbs {
 .page--home .sec--sobre .grid-container {
   background-image: url("../images/guartecs-sobre-bg.png");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-size: contain; }
 
 .page--home .sec--sobre h2 {
   position: relative; }
@@ -1093,7 +1093,7 @@ div.breadcrumbs {
     background-repeat: no-repeat;
     width: 320px;
     height: 1px; }
-    @media only screen and (max-width: 40.1rem) {
+    @media only screen and (max-width: 40rem) {
       .page--home .sec--sobre h2:before, .page--home .sec--sobre h2:after {
         width: 60px; } }
   .page--home .sec--sobre h2:before {
@@ -1112,7 +1112,7 @@ div.breadcrumbs {
     height: 796px; }
     .page--home .sec--video .grid-container .grid-x {
       height: 100%; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .page--home .sec--video {
       background-position-x: center; } }
 
@@ -1152,7 +1152,7 @@ div.breadcrumbs {
       font-size: 16px;
       text-transform: uppercase;
       margin-bottom: 0; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .page--home .sec--video-footer .btn {
       font-size: 18px;
       padding: 18px 30px 17px;
@@ -1170,7 +1170,7 @@ div.breadcrumbs {
       .page--home .sec--video-footer ul.video-footer-content li {
         padding: 15px; } }
 
-@media only screen and (max-width: 40.1rem) {
+@media only screen and (max-width: 40rem) {
   .page--home .sec--simulador {
     padding-top: 80px; } }
 
