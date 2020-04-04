@@ -763,6 +763,15 @@ body, html {
     .wrapper {
       top: auto; } }
 
+.reveal {
+  padding: 0 !important; }
+
+.reveal-overlay {
+  background-color: rgba(0, 0, 0, 0.9) !important; }
+
+.responsive-embed {
+  margin-bottom: 0 !important; }
+
 header {
   background-color: white;
   position: fixed;
@@ -1002,7 +1011,24 @@ div.breadcrumbs {
   .page--home .sec--diferenciais .diferenciais-figure {
     overflow: hidden;
     border-radius: 10px 10px 0 0;
-    height: 250px; }
+    height: 250px;
+    position: relative; }
+    .page--home .sec--diferenciais .diferenciais-figure--2:after {
+      content: "";
+      z-index: 2;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -95px;
+      margin-top: -54px;
+      width: 190px;
+      height: 108px;
+      background-image: url("../images/play.png");
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .page--home .sec--diferenciais .diferenciais-figure--2:hover {
+      cursor: pointer; }
 
 .page--home .sec--cerca .card .btn,
 .page--home .sec--diferenciais .card .btn {
