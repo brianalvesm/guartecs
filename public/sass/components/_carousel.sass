@@ -29,6 +29,16 @@
 
 .owl-heroslider
 	position: relative
+	.slide-wrapper
+		height: 700px
+		background:
+			repeat: no-repeat
+			size: cover
+			position: center
+		&--1
+			background-image: url('../images/slide-1-crop.jpg')
+		&--2
+			background-image: url('../images/slide-2-crop.jpg')
 	&:after
 		content: ""
 		display: block
@@ -89,6 +99,8 @@
 				&:before
 					color: $color-blue
 	@media only screen and (max-width: 64.1rem)
+		.slide-wrapper
+			height: 650px
 		.slide-content
 			margin-left: 4.625rem
 			margin-right: 4.625rem
@@ -99,11 +111,14 @@
 				font-size: 38px
 				margin-bottom: 16px
 	@media only screen and (max-width: 40.1rem)
+		.slide-wrapper
+			&--1
+				background-image: url('../images/slide-1-crop-mobile.jpg')
+			&--2
+				background-image: url('../images/slide-2-crop-mobile.jpg')
 		.slide-content
 			margin-left: 0
 			margin-right: 0
-		.owl-image
-			min-width: max-content
 		.owl-prev,
 		.owl-next
 			display: none

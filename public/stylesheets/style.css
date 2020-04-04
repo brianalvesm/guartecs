@@ -122,6 +122,15 @@ main h3 {
 
 .owl-heroslider {
   position: relative; }
+  .owl-heroslider .slide-wrapper {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .owl-heroslider .slide-wrapper--1 {
+      background-image: url("../images/slide-1-crop.jpg"); }
+    .owl-heroslider .slide-wrapper--2 {
+      background-image: url("../images/slide-2-crop.jpg"); }
   .owl-heroslider:after {
     content: "";
     display: block;
@@ -181,6 +190,8 @@ main h3 {
         .owl-heroslider .owl-dots .owl-dot.active:before {
           color: #58BEED; }
   @media only screen and (max-width: 64.1rem) {
+    .owl-heroslider .slide-wrapper {
+      height: 650px; }
     .owl-heroslider .slide-content {
       margin-left: 4.625rem;
       margin-right: 4.625rem; }
@@ -191,11 +202,13 @@ main h3 {
         font-size: 38px;
         margin-bottom: 16px; } }
   @media only screen and (max-width: 40.1rem) {
+    .owl-heroslider .slide-wrapper--1 {
+      background-image: url("../images/slide-1-crop-mobile.jpg"); }
+    .owl-heroslider .slide-wrapper--2 {
+      background-image: url("../images/slide-2-crop-mobile.jpg"); }
     .owl-heroslider .slide-content {
       margin-left: 0;
       margin-right: 0; }
-    .owl-heroslider .owl-image {
-      min-width: max-content; }
     .owl-heroslider .owl-prev,
     .owl-heroslider .owl-next {
       display: none; } }
@@ -797,24 +810,15 @@ header {
   position: fixed;
   z-index: 9;
   width: 100%; }
-  @media only screen and (max-width: 40rem) {
-    header {
-      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3); } }
 
 .header-wrapper {
   display: flex;
   align-items: center;
   padding: 15px 0;
   justify-content: space-between; }
-  @media only screen and (max-width: 40rem) {
-    .header-wrapper {
-      padding: 15px; } }
 
 .logo-wrapper img {
   max-width: 274px; }
-  @media only screen and (max-width: 40rem) {
-    .logo-wrapper img {
-      max-width: 168px; } }
 
 .header-content {
   display: flex;
@@ -844,36 +848,6 @@ header {
     height: 30px;
     top: 0;
     left: -5px; }
-  @media only screen and (max-width: 26rem) {
-    .header-tel {
-      font-size: 13px;
-      padding-left: 20px;
-      top: 3px; }
-      .header-tel:before {
-        background-size: 20px;
-        width: 20px;
-        height: 20px;
-        top: 4px; } }
-
-@media only screen and (max-width: 40rem) {
-  .header-wrapper .btn-orcamento {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 9;
-    font-size: 14px;
-    height: 100px;
-    width: 100px;
-    margin: auto;
-    border-radius: 50px;
-    box-shadow: 0 15px 34px 0 rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .header-wrapper .social-media-icons {
-    display: none; }
-  .header-tel {
-    line-height: 1.2; } }
 
 .js nav[role=navigation].main-menu {
   background-color: #E4283D;
@@ -914,34 +888,8 @@ header {
         border-bottom: none;
         position: relative;
         top: 2px; }
-  @media only screen and (max-width: 40rem) {
-    .js nav[role=navigation].main-menu .grid-container {
-      padding: 0; }
-    .js nav[role=navigation].main-menu ul {
-      display: block; }
-      .js nav[role=navigation].main-menu ul li {
-        display: block;
-        border-bottom: 1px solid #F2617C;
-        border-right: none;
-        text-align: left;
-        padding: 5px 10px; }
-        .js nav[role=navigation].main-menu ul li:last-child {
-          border-bottom: none;
-          text-align: center;
-          padding: 40px 0; }
-          .js nav[role=navigation].main-menu ul li:last-child img {
-            margin-bottom: 15px; }
-        .js nav[role=navigation].main-menu ul li .social-media-icons {
-          width: 56px;
-          margin: 40px auto; }
-          .js nav[role=navigation].main-menu ul li .social-media-icons img:first-child {
-            padding-right: 20px; } }
   .js nav[role=navigation].main-menu.active {
     max-height: 40em; }
-
-@media only screen and (max-width: 40rem) {
-  .main-menu ul li {
-    display: block; } }
 
 div.breadcrumbs {
   background-color: #F9F5ED;
@@ -958,6 +906,72 @@ div.breadcrumbs {
         color: #58BEED;
         font-family: "baloo_daregular", sans-serif;
         font-size: 16px; }
+
+@media only screen and (max-width: 64rem) {
+  .logo-wrapper img {
+    max-width: 168px; }
+  .header-content .btn-orcamento {
+    font-size: 16px; }
+  .header-tel {
+    font-size: 18px; }
+  .js nav[role=navigation].main-menu ul li {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 40rem) {
+  header {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3); }
+  .header-tel {
+    font-size: 13px;
+    padding-left: 20px;
+    top: 3px; }
+    .header-tel:before {
+      background-size: 20px;
+      width: 20px;
+      height: 20px;
+      top: 4px; }
+  .header-wrapper {
+    padding: 15px; }
+    .header-wrapper .social-media-icons {
+      display: none; }
+  .header-content .btn-orcamento {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9;
+    font-size: 14px;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    border-radius: 50px;
+    box-shadow: 0 15px 34px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .header-tel {
+    line-height: 1.2; }
+  .js nav[role=navigation].main-menu .grid-container {
+    padding: 0; }
+  .js nav[role=navigation].main-menu ul {
+    display: block; }
+    .js nav[role=navigation].main-menu ul li {
+      display: block;
+      border-bottom: 1px solid #F2617C;
+      border-right: none;
+      text-align: left;
+      padding: 5px 10px; }
+      .js nav[role=navigation].main-menu ul li:last-child {
+        border-bottom: none;
+        text-align: center;
+        padding: 40px 0; }
+        .js nav[role=navigation].main-menu ul li:last-child img {
+          margin-bottom: 15px; }
+      .js nav[role=navigation].main-menu ul li .social-media-icons {
+        width: 56px;
+        margin: 40px auto; }
+        .js nav[role=navigation].main-menu ul li .social-media-icons img:first-child {
+          padding-right: 20px; }
+  .main-menu ul li {
+    display: block; } }
 
 .page--home .sec--slide {
   overflow: hidden;
