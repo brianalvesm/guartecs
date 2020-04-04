@@ -386,9 +386,9 @@ main h3 {
 
 a.menu-link {
   float: right;
-  display: block;
-  max-width: 44px;
-  max-height: 28px; }
+  display: block; }
+  a.menu-link img {
+    max-width: 34px; }
 
 nav[role=navigation] {
   clear: both;
@@ -751,13 +751,16 @@ body, html {
   top: 127px; }
   @media only screen and (max-width: 40.1rem) {
     .wrapper {
-      top: 88px; } }
+      top: auto; } }
 
 header {
   background-color: white;
   position: fixed;
   z-index: 9;
   width: 100%; }
+  @media only screen and (max-width: 40.1rem) {
+    header {
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3); } }
 
 .header-wrapper {
   display: flex;
@@ -804,14 +807,14 @@ header {
     left: -5px; }
   @media only screen and (max-width: 26rem) {
     .header-tel {
-      font-size: 12px;
+      font-size: 13px;
       padding-left: 20px;
-      top: 2px; }
+      top: 3px; }
       .header-tel:before {
         background-size: 20px;
         width: 20px;
         height: 20px;
-        top: 2px; } }
+        top: 4px; } }
 
 @media only screen and (max-width: 40.1rem) {
   .header-wrapper .btn-orcamento {
