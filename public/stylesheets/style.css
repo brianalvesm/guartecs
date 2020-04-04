@@ -327,10 +327,10 @@ main h3 {
 .sec {
   text-align: center;
   font-size: 1.5rem;
-  padding: 40px 0; }
+  padding: 60px 0; }
   @media only screen and (max-width: 40.1rem) {
     .sec {
-      padding: 20px 0; } }
+      padding: 30px 0; } }
 
 .accordion-title {
   font-family: "baloo_daregular", sans-serif;
@@ -366,6 +366,13 @@ main h3 {
     margin: 10px 10px 0 0;
     overflow: hidden;
     position: relative; }
+    .sec--galeria .gallery-container .gallery-figure img,
+    .sec--galeria .gallery-container .gallery-card img {
+      -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+      transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
     .sec--galeria .gallery-container .gallery-figure figcaption,
     .sec--galeria .gallery-container .gallery-card figcaption {
       background: #E4283D;
@@ -378,6 +385,19 @@ main h3 {
       position: absolute;
       bottom: 0;
       padding: 5px; }
+    .sec--galeria .gallery-container .gallery-figure:hover,
+    .sec--galeria .gallery-container .gallery-card:hover {
+      cursor: pointer; }
+      .sec--galeria .gallery-container .gallery-figure:hover figcaption,
+      .sec--galeria .gallery-container .gallery-card:hover figcaption {
+        opacity: 1; }
+      .sec--galeria .gallery-container .gallery-figure:hover img,
+      .sec--galeria .gallery-container .gallery-card:hover img {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1); }
     @media only screen and (max-width: 40.1rem) {
       .sec--galeria .gallery-container .gallery-figure,
       .sec--galeria .gallery-container .gallery-card {
@@ -614,8 +634,8 @@ form input[type="tel"],
 form select,
 form select option,
 form textarea {
-  height: 70px;
-  padding: 20px;
+  height: 60px;
+  padding: 15px;
   border-radius: 10px; }
   form input[type="text"]::placeholder,
   form input[type="email"]::placeholder,

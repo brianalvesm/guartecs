@@ -10,6 +10,8 @@
 			margin: 10px 10px 0 0
 			overflow: hidden
 			position: relative
+			img
+				@include transition(200ms)
 			figcaption
 				background: $color-red
 				opacity: 0.9
@@ -21,6 +23,12 @@
 				position: absolute
 				bottom: 0
 				padding: 5px
+			&:hover
+				cursor: pointer
+				figcaption
+					opacity: 1
+				img
+					@include scale(1.1)
 			@media only screen and (max-width: 40.1rem)
 				width: initial
 				height: initial
