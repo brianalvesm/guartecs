@@ -16,7 +16,7 @@
 			&::placeholder
 				color: $color-red
 				padding-left: 40px
-			@media only screen and (max-width: 40.1rem)
+			@media only screen and (max-width: 40rem)
 				width: initial
 		&[type="submit"]
 			position: absolute
@@ -29,7 +29,7 @@
 		font-size: 24px
 		margin-left: 32px
 		text-transform: uppercase
-	@media only screen and (max-width: 40.1rem)
+	@media only screen and (max-width: 40rem)
 		height: initial
 		.input-group-button
 			width: 100%
@@ -52,6 +52,9 @@ footer
 		margin: 75px auto
 	.all-rights-reserved
 		border-top: 1px solid white
+	@media only screen and (max-width: 40rem)
+		.footer-content img
+			max-width: 280px
 
 .footer-menu ul
 	column-count: 2
@@ -67,7 +70,7 @@ footer
 			&:hover,
 			&:focus
 				text-decoration: underline
-	@media only screen and (max-width: 40.1rem)
+	@media only screen and (max-width: 40rem)
 		column-count: 1
 		column-width: auto
 		margin: 20px 0
@@ -81,8 +84,9 @@ footer
 	text-transform: uppercase
 	img
 		padding-right: 36px
-	@media only screen and (max-width: 40.1rem)
+	@media only screen and (max-width: 40rem)
 		font-size: 16px
+		justify-content: center
 		img
 			padding-right: 16px
 
@@ -98,7 +102,7 @@ footer
 		width: 56px
 		img:first-child
 			padding-right: 20px
-	@media only screen and (max-width: 40.1rem)
+	@media only screen and (max-width: 40rem)
 		display: block
 		padding: 15px
 		.social-media-icons

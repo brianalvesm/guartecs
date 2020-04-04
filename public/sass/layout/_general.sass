@@ -41,7 +41,7 @@ body, html
     display: block
   &:last-child
     display: none
-  @media only screen and (max-width: 40.1rem)
+  @media only screen and (max-width: 40rem)
     &:first-child
       display: none
     &:last-child
@@ -53,6 +53,11 @@ body, html
   @media only screen and (max-width: 40rem)
     display: block
 
+.text-left-to-center
+  text-align: left
+  @media only screen and (max-width: 40rem)
+    text-align: center
+
 .simulador
 	margin: 40px 0
 
@@ -60,5 +65,5 @@ body, html
 	position: relative
 	top: 127px
 	// Fix para o header position:fixed não sobrepor o conteúdo
-	@media only screen and (max-width: 40.1rem)
+	@media only screen and (max-width: 40rem)
 		top: auto

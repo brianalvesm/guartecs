@@ -508,7 +508,7 @@ nav[role=navigation] li a {
       .newsletter input[type="email"]::placeholder {
         color: #E4283D;
         padding-left: 40px; }
-      @media only screen and (max-width: 40.1rem) {
+      @media only screen and (max-width: 40rem) {
         .newsletter input[type="email"] {
           width: initial; } }
     .newsletter input[type="submit"] {
@@ -522,7 +522,7 @@ nav[role=navigation] li a {
     font-size: 24px;
     margin-left: 32px;
     text-transform: uppercase; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .newsletter {
       height: initial; }
       .newsletter .input-group-button {
@@ -546,6 +546,9 @@ footer {
     margin: 75px auto; }
   footer .all-rights-reserved {
     border-top: 1px solid white; }
+  @media only screen and (max-width: 40rem) {
+    footer .footer-content img {
+      max-width: 280px; } }
 
 .footer-menu ul {
   column-count: 2;
@@ -560,7 +563,7 @@ footer {
       color: white; }
       .footer-menu ul li a:hover, .footer-menu ul li a:focus {
         text-decoration: underline; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .footer-menu ul {
       column-count: 1;
       column-width: auto;
@@ -576,10 +579,11 @@ footer {
   .footer-tel img,
   .footer-email img {
     padding-right: 36px; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .footer-tel,
     .footer-email {
-      font-size: 16px; }
+      font-size: 16px;
+      justify-content: center; }
       .footer-tel img,
       .footer-email img {
         padding-right: 16px; } }
@@ -596,7 +600,7 @@ footer {
     width: 56px; }
     .footer-wrapper .social-media-icons img:first-child {
       padding-right: 20px; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .footer-wrapper {
       display: block;
       padding: 15px; }
@@ -729,7 +733,7 @@ body, html {
 .switch-mobile div:last-child {
   display: none; }
 
-@media only screen and (max-width: 40.1rem) {
+@media only screen and (max-width: 40rem) {
   .switch-mobile div:first-child {
     display: none; }
   .switch-mobile div:last-child {
@@ -743,13 +747,19 @@ body, html {
   .visible-mobile-small-only {
     display: block; } }
 
+.text-left-to-center {
+  text-align: left; }
+  @media only screen and (max-width: 40rem) {
+    .text-left-to-center {
+      text-align: center; } }
+
 .simulador {
   margin: 40px 0; }
 
 .wrapper {
   position: relative;
   top: 127px; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .wrapper {
       top: auto; } }
 
@@ -758,7 +768,7 @@ header {
   position: fixed;
   z-index: 9;
   width: 100%; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     header {
       box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3); } }
 
@@ -767,13 +777,13 @@ header {
   align-items: center;
   padding: 15px 0;
   justify-content: space-between; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .header-wrapper {
       padding: 15px; } }
 
 .logo-wrapper img {
   max-width: 274px; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .logo-wrapper img {
       max-width: 168px; } }
 
@@ -816,7 +826,7 @@ header {
         height: 20px;
         top: 4px; } }
 
-@media only screen and (max-width: 40.1rem) {
+@media only screen and (max-width: 40rem) {
   .header-wrapper .btn-orcamento {
     position: fixed;
     bottom: 10px;
@@ -825,6 +835,7 @@ header {
     font-size: 14px;
     height: 100px;
     width: 100px;
+    margin: auto;
     border-radius: 50px;
     box-shadow: 0 15px 34px 0 rgba(0, 0, 0, 0.2);
     display: flex;
@@ -874,7 +885,7 @@ header {
         border-bottom: none;
         position: relative;
         top: 2px; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .js nav[role=navigation].main-menu .grid-container {
       padding: 0; }
     .js nav[role=navigation].main-menu ul {
@@ -899,7 +910,7 @@ header {
   .js nav[role=navigation].main-menu.active {
     max-height: 40em; }
 
-@media only screen and (max-width: 40.1rem) {
+@media only screen and (max-width: 40rem) {
   .main-menu ul li {
     display: block; } }
 
