@@ -45,7 +45,7 @@ main h3 {
     font-size: 1.250rem; } }
 
 .paragraph {
-  font-size: 1.500rem;
+  font-size: 1.250rem;
   line-height: 1.4;
   margin: 0 auto 32px; }
   @media only screen and (max-width: 40rem) {
@@ -252,7 +252,9 @@ main h3 {
 
 @media only screen and (max-width: 40.1rem) {
   .owl-depoimentos .card p {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .owl-depoimentos .owl-dots {
+    height: 0; } }
 
 .card {
   border: none;
@@ -276,11 +278,13 @@ main h3 {
       font-size: 1rem; }
     .card .card-section--extra-padding {
       padding: 2rem 4rem; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .card--padding {
       padding: 50px 20px; }
-    .card .card-section--extra-padding {
-      padding: 1rem 2rem; } }
+    .card .card-section {
+      padding: 2rem 1rem; }
+      .card .card-section--extra-padding {
+        padding: 1rem 2rem; } }
 
 .beige-cards-wrapper {
   display: flex;
@@ -317,7 +321,7 @@ main h3 {
     position: absolute;
     left: 50%;
     margin-left: -120px; }
-  @media only screen and (max-width: 40.1rem) {
+  @media only screen and (max-width: 40rem) {
     .highlight {
       border-radius: 50px; } }
 
@@ -326,9 +330,13 @@ main h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  margin: 0; }
   .selos li {
     display: inline-block; }
+    @media only screen and (max-width: 40rem) {
+      .selos li {
+        width: 33%; } }
 
 .friso {
   display: block;
@@ -340,10 +348,10 @@ main h3 {
 .sec {
   text-align: center;
   font-size: 1.5rem;
-  padding: 60px 0; }
-  @media only screen and (max-width: 40.1rem) {
+  padding: 40px 0; }
+  @media only screen and (max-width: 40rem) {
     .sec {
-      padding: 30px 0; } }
+      padding: 20px 0; } }
 
 .accordion-title {
   font-family: "baloo_daregular", sans-serif;
@@ -365,7 +373,7 @@ main h3 {
     right: 10px;
     top: 50%;
     margin-top: -24px; }
-    @media only screen and (max-width: 40.1rem) {
+    @media only screen and (max-width: 40rem) {
       .accordion-content .btn {
         font-size: 12px; } }
 
@@ -977,11 +985,16 @@ div.breadcrumbs {
   overflow: hidden;
   position: relative;
   z-index: 0;
-  padding: 0; }
+  padding-top: 0; }
 
 .page--home .sec--cerca {
   position: relative;
   padding-bottom: 200px; }
+  .page--home .sec--cerca .arrow-down {
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    margin-left: -30px; }
   .page--home .sec--cerca .slide-mask {
     position: absolute;
     bottom: 0;
@@ -1018,7 +1031,8 @@ div.breadcrumbs {
         width: auto; } }
 
 .page--home .sec--diferenciais {
-  background-color: #F9F5ED; }
+  background-color: #F9F5ED;
+  padding-top: 0; }
   .page--home .sec--diferenciais .arrow-down {
     align-self: center;
     margin-bottom: 40px; }
@@ -1062,6 +1076,9 @@ div.breadcrumbs {
       background-size: contain; }
     .page--home .sec--diferenciais .diferenciais-figure--2:hover {
       cursor: pointer; }
+    @media only screen and (max-width: 40rem) {
+      .page--home .sec--diferenciais .diferenciais-figure {
+        height: initial; } }
 
 .page--home .sec--cerca .card .btn,
 .page--home .sec--diferenciais .card .btn {
@@ -1114,11 +1131,17 @@ div.breadcrumbs {
       height: 100%; }
   @media only screen and (max-width: 40rem) {
     .page--home .sec--video {
-      background-position-x: center; } }
+      min-height: initial;
+      background-position-x: center;
+      padding-bottom: 315px;
+      padding-top: 150px; }
+      .page--home .sec--video .grid-container {
+        height: initial; } }
 
 .page--home .sec--video-footer {
   background: #58BEED;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 60px; }
   .page--home .sec--video-footer .grid-container {
     position: relative; }
     .page--home .sec--video-footer .grid-container .girl {
@@ -1135,8 +1158,9 @@ div.breadcrumbs {
   .page--home .sec--video-footer ul.video-footer-content {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
-    margin: 0; }
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 80px; }
     .page--home .sec--video-footer ul.video-footer-content li {
       display: inline-flex;
       flex-direction: column;
@@ -1166,16 +1190,17 @@ div.breadcrumbs {
       -webkit-mask-image: linear-gradient(to top, transparent 0%, black 15%);
       mask-image: linear-gradient(to top, transparent 0%, black 15%); }
     .page--home .sec--video-footer ul.video-footer-content {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding-left: initial; }
       .page--home .sec--video-footer ul.video-footer-content li {
-        padding: 15px; } }
+        padding: 15px; }
+        .page--home .sec--video-footer ul.video-footer-content li:last-child {
+          width: 100%; } }
 
 @media only screen and (max-width: 40rem) {
   .page--home .sec--simulador {
     padding-top: 80px; } }
-
-.page--home .sec--sobrasa {
-  color: #E4283D; }
 
 .page--parceiro .card {
   overflow: visible;
