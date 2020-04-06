@@ -1,0 +1,221 @@
+// PAGINA INICIAL
+.page
+	// HOME
+	&--home .sec
+		&--slide
+			overflow: hidden
+			position: relative
+			z-index: 0
+			padding-top: 0
+		&--cerca
+			position: relative
+			padding-bottom: 200px
+			.arrow-down
+				position: absolute
+				top: -65px
+				left: 50%
+				margin-left: -30px
+			.slide-mask
+				position: absolute
+				bottom: 0
+				z-index: 1
+				background:
+					image: url('../images/slide-mask-2.png')
+					repeat: no-repeat
+					position-y: bottom
+					position-x: center
+					size: contain
+				height: 215px
+				width: 100%
+			.dog-with-kid
+				position: absolute
+				bottom: 0
+				left: 50%
+				margin-left: -248px
+			.card
+				position: relative
+				width: 400px
+				margin: 50px auto
+				padding-bottom: 40px
+				background-color: $color-beige
+				overflow: visible
+				.alu-icon
+					position: absolute
+					top: 12px
+					left: 12px
+			@media only screen and (max-width: 40rem)
+				padding-bottom: 400px
+				.slide-mask
+					background-size: cover
+				.card
+					width: auto
+		&--diferenciais
+			background-color: $color-beige
+			padding-top: 0
+			.arrow-down
+				align-self: center
+				margin-bottom: 40px
+			.card--diferenciais
+				position: relative
+				overflow: visible
+				margin-bottom: 60px
+				.card-section
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: center
+					background: #fefefe
+					min-height: 356px
+					p
+						max-width: 420px
+					h3
+						font-family: $font-family
+						font-weight: bold
+						margin-bottom: 0
+			.card--qualidade .card-section
+				padding: 35px 1rem
+			.diferenciais-figure
+				overflow: hidden
+				border-radius: 10px 10px 0 0
+				height: 250px
+				position: relative
+				&--2
+					&:after
+						content: ""
+						z-index: 2
+						display: block
+						position: absolute
+						top: 50%
+						left: 50%
+						margin-left: -95px
+						margin-top: -54px 
+						width: 190px
+						height: 108px
+						background:
+							image: url('../images/play.png')
+							repeat: no-repeat
+							size: contain
+					&:hover
+						cursor: pointer
+				@media only screen and (max-width: 40rem)
+					height: initial
+		&--cerca .card .btn,
+		&--diferenciais .card .btn
+			position: absolute
+			bottom: -25px
+			left: 50%
+			margin-left: -108px
+		&--galeria
+			background: $color-beige
+			background: linear-gradient(to bottom, $color-beige 0%, white 100%)
+			background: -moz-linear-gradient(top, $color-beige 0%, white 100%)
+			background: -webkit-linear-gradient(top, $color-beige 0%, white 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-beige', endColorstr='white',GradientType=1)
+		&--sobre
+			.grid-container
+				background:
+					image: url('../images/guartecs-sobre-bg.png')
+					repeat: no-repeat
+					position: center
+					size: contain
+			h2
+				position: relative
+				&:before,
+				&:after
+					display: block
+					content: ""
+					position: absolute
+					background:
+						image: url('../images/sobre-section-friso.png')
+						repeat: no-repeat
+					width: 320px
+					height: 1px
+					@media only screen and (max-width: 40rem)
+						width: 60px
+				&:before
+					left: 0
+					top: 16px
+				&:after
+					right: 0
+					bottom: 16px
+		&--video
+			min-height: 856px
+			background:
+				image: url('../images/video-bg.png')
+				repeat: no-repeat
+			padding-bottom: 0
+			.grid-container
+				height: 796px
+				.grid-x
+					height: 100%
+			@media only screen and (max-width: 40rem)
+				min-height: initial
+				background-position-x: center
+				padding-bottom: 315px
+				padding-top: 150px
+				.grid-container
+					height: initial
+		&--video-footer
+			// height: 280px
+			background: $color-blue
+			padding: 0
+			margin-bottom: 60px
+			.grid-container
+				position: relative
+				.girl
+					position: absolute
+					bottom: 0
+					left: 0
+				.grid-x
+					padding: 60px 0
+			.btn
+				padding: 8px 40px 7px
+				position: absolute
+				bottom: -22px
+				right: 0
+			ul.video-footer-content
+				list-style: none
+				display: flex
+				justify-content: space-between
+				margin: 0
+				padding-left: 80px
+				li
+					display: inline-flex
+					flex-direction: column
+					align-items: center
+				img
+					max-height: 40px
+				span
+					color: white
+					font-family: $font-baloo
+					font-size: 48px
+				p
+					color: white
+					font-size: 16px
+					text-transform: uppercase
+					margin-bottom: 0
+			@media only screen and (max-width: 40rem)
+				.btn
+					font-size: 18px
+					padding: 18px 30px 17px
+					position: relative
+				.grid-container
+					.grid-x
+						padding-bottom: 0
+					.girl
+						left: 50%
+						margin-left: -180px
+						top: -300px
+						-webkit-mask-image: $maskImage
+						mask-image: $maskImage
+				ul.video-footer-content
+					flex-wrap: wrap
+					justify-content: space-evenly
+					padding-left: initial
+					li
+						padding: 15px
+						&:last-child
+							width: 100%
+		&--simulador
+			@media only screen and (max-width: 40rem)
+				padding-top: 80px

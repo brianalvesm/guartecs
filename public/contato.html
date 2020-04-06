@@ -13,20 +13,20 @@
 		<header>
 			<div class="grid-container">
 				<div class="grid-x">
-					<div class="cell small-5">
-						<div class="header-wrapper logo-wrapper">
-							<a href="index.html"><img src="images/guartecs-logo.png" title="Guartecs" alt="Guartecs"></a>
-						</div>
-					</div>
-					<div class="cell small-7">
+					<div class="cell">
 						<div class="header-wrapper">
-							<div class="switch-mobile">
-								<div class="header-tel">0800 777-0199 - (11) 98129-0226</div>
-								<div class="header-tel">0800 777-0199<br>(11) 98129-0226</div>
-							</div>
-							<div class="btn btn--primary btn-orcamento">Orçamento</div>
-							<div class="social-media-icons">
-								<img src="images/icons/facebook.png" alt="facebook"><img src="images/icons/instagram.png" alt="instagram">
+							<a href="index.html" class="logo-wrapper">
+								<img src="images/guartecs-logo.png" title="Guartecs" alt="Guartecs">
+							</a>
+							<div class="header-content">
+								<div class="switch-mobile">
+									<div class="header-tel">0800 777-0199 - (11) 98129-0226</div>
+									<div class="header-tel">0800 777-0199<br>(11) 98129-0226</div>
+								</div>
+								<a class="btn btn-orcamento">Orçamento</a>
+								<div class="social-media-icons">
+									<img src="images/icons/facebook.svg" alt="facebook"><img src="images/icons/instagram.svg" alt="instagram">
+								</div>
 							</div>
 							<a href="#menu" class="menu-link"><img src="images/menu-toggle.png" alt="Menu"></a>
 						</div>
@@ -45,7 +45,7 @@
 								<li><a href="como-comprar.html">Como comprar</a></li>
 								<li><a href="instalacao.html">Instalação</a></li>
 								<li><a href="blog.html">Blog</a></li>
-								<li class="active"><a href="contato.html">Contato</a></li>
+								<li><a href="contato.html">Contato</a></li>
 								<li><a href="orcamento.html">Orçamento</a></li>
 								<li class="visible-mobile-small-only">
 									<img src="images/icons/icon-email.png" alt="email"><br>
@@ -60,210 +60,212 @@
 				</div>
 			</nav>
 		</header>
-		<div class="breadcrumbs">
-			<div class="grid-container">
-				<div class="grid-x">
-					<div class="cell">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="contato.html">Contato</a></li>
-						</ul>
+		<div class="wrapper">
+			<div class="breadcrumbs">
+				<div class="grid-container">
+					<div class="grid-x">
+						<div class="cell">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="contato.html">Contato</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<main class="page page--contato bc-mobile-push">
-			<section class="sec">
+			<main class="page page--contato">
+				<section class="sec">
+					<div class="grid-container">
+						<div class="grid-x">
+							<div class="cell">
+								<h1 class="title-blue margin-bottom-40">Entre em contato conosco</h1>
+							</div>
+						</div>
+						<div class="grid-x">
+							<div class="cell large-6">
+								<div class="card card--exception">
+									<div class="divide">
+										<img src="images/icons/envelope-email-blue.png">
+									</div>
+									<div class="divide">
+										<h5 class="title-blue">E-MAIL:</h5>
+										<span>guartecs@guartecs.com.br</span>	
+									</div>
+								</div>
+							</div>
+							<div class="cell large-6">
+								<div class="card">
+									<div class="divide">
+										<img src="images/icons/telephone-call-receiver.png">
+									</div>
+									<div class="divide">
+										<h5 class="title-blue">TELEFONE:</h5>
+									</div>
+									<div class="divide">
+										<span>0800 777-0199<br>(11) 3093-0199</span>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid-x">
+							<div class="cell large-6">
+								<div class="card">
+									<div class="divide">
+										<img src="images/icons/icon-whatsapp.png">
+									</div>
+									<div class="divide">
+										<h5 class="title-blue">Whatsapp:</h5>
+									</div>
+									<div class="divide">
+										<span>Vendedor 1 – (11) 98129-0226<br>Vendedor 2 – (11) 98939-3518</span>	
+									</div>
+								</div>
+							</div>
+							<div class="cell large-6">
+								<div class="card">
+									<div class="divide">
+										<img src="images/icons/icon-velocimetro-blue.png">
+									</div>
+									<div class="divide">
+										<h5 class="title-blue">Horário de Atendimento:</h5>
+									</div>
+									<div class="divide">
+										<span>Segunda à Sexta<br>08:00 ÀS 18:00H</span>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid-x">
+							<div class="cell">
+								<div class="card">
+									<div class="divide">
+										<img src="images/icons/map-point-pointer.png">
+									</div>
+									<div class="divide">
+										<h5 class="title-blue">NOSSO<br>ENDEREÇO:</h5>
+									</div>
+									<div class="divide">
+										<span>RUA CAMARGO 12 - BUTANTÃ - SÃO PAULO/SP<br>CEP 05510-050</span>
+									</div>
+									<div class="divide divide--exception text-right">
+										<h5 class="title-blue">Como chegar</h5>
+									</div>
+								</div>
+								<img src="images/arrow-bottom.png" class="arrow-down">
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- CONTATO - Use como partial quando o código não estiver em HTML puro -->
+				<section class="sec sec--contato">
+					<div class="grid-container">
+						<div class="grid-x align-center">
+							<div class="cell large-10">
+								<h1 class="title-red">Quer mais informações?</h1>
+								<p class="paragraph">Preencha o formulário que em breve responderemos sua dúvidas.</p>
+								<form>
+									<div class="grid-x grid-margin-x">
+										<div class="cell large-12">
+											<input type="text" name="" placeholder="Seu nome">
+										</div>
+										<div class="cell large-6">
+											<input type="email" name="" placeholder="Seu email">
+										</div>
+										<div class="cell large-6">
+											<input type="tel" name="" placeholder="Seu telefone/celular">
+										</div>
+										<div class="cell large-12">
+											<select>
+												<option value="estado">Estado</option>
+											</select>
+										</div>
+										<div class="cell large-12">
+											<select>
+												<option value="cidade">Cidade</option>
+											</select>
+										</div>
+										<div class="cell large-12">
+											<textarea placeholder="Deixe sua mensagem"></textarea>
+										</div>
+										<div class="cell large-12 text-right">
+											<input type="submit" class="button button--red button--shadowless" value="Enviar">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- CONTATO - Fim -->
+				<section>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8309401811525!2d-46.7126240844757!3d-23.57451456796452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce56ff8a9dc945%3A0x31c86341d5f7300c!2sR.%20Camargo%2C%2012%20-%20Butant%C3%A3%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005509-001!5e0!3m2!1spt-BR!2sbr!4v1585502867904!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</section>
+			</main>
+			<div class="newsletter">
 				<div class="grid-container">
-					<div class="grid-x">
-						<div class="cell">
-							<h1 class="title-blue">Entre em contato conosco</h1>
-						</div>
-					</div>
-					<div class="grid-x">
+					<div class="grid-x align-middle">
 						<div class="cell large-6">
-							<div class="card card--exception">
-								<div class="divide">
-									<img src="images/icons/envelope-email-blue.png">
-								</div>
-								<div class="divide">
-									<h5 class="title-blue">E-MAIL:</h5>
-									<span>guartecs@guartecs.com.br</span>	
-								</div>
+							<div class="newsletter-message">
+								<img src="images/icons/envelope-email.png" alt="receba nossas novidades"><span>Receba nossas novidades</span>
 							</div>
 						</div>
 						<div class="cell large-6">
-							<div class="card">
-								<div class="divide">
-									<img src="images/icons/telephone-call-receiver.png">
-								</div>
-								<div class="divide">
-									<h5 class="title-blue">TELEFONE:</h5>
-								</div>
-								<div class="divide">
-									<span>0800 777-0199<br>(11) 3093-0199</span>	
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="grid-x">
-						<div class="cell large-6">
-							<div class="card">
-								<div class="divide">
-									<img src="images/icons/icon-whatsapp.png">
-								</div>
-								<div class="divide">
-									<h5 class="title-blue">Whatsapp:</h5>
-								</div>
-								<div class="divide">
-									<span>Vendedor 1 – (11) 98129-0226<br>Vendedor 2 – (11) 98939-3518</span>	
-								</div>
-							</div>
-						</div>
-						<div class="cell large-6">
-							<div class="card">
-								<div class="divide">
-									<img src="images/icons/icon-velocimetro-blue.png">
-								</div>
-								<div class="divide">
-									<h5 class="title-blue">Horário de Atendimento:</h5>
-								</div>
-								<div class="divide">
-									<span>Segunda à Sexta<br>08:00 ÀS 18:00H</span>	
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="grid-x">
-						<div class="cell">
-							<div class="card">
-								<div class="divide">
-									<img src="images/icons/map-point-pointer.png">
-								</div>
-								<div class="divide">
-									<h5 class="title-blue">NOSSO<br>ENDEREÇO:</h5>
-								</div>
-								<div class="divide">
-									<span>RUA CAMARGO 12 - BUTANTÃ - SÃO PAULO/SP<br>CEP 05510-050</span>
-								</div>
-								<div class="divide divide--exception text-right">
-									<h5 class="title-blue">Como chegar</h5>
-								</div>
-							</div>
-							<img src="images/arrow-bottom.png" class="arrow-down">
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- CONTATO - Use como partial quando o código não estiver em HTML puro -->
-			<section class="sec sec--contato">
-				<div class="grid-container">
-					<div class="grid-x">
-						<div class="cell">
-							<h1 class="title-red">Quer mais informações?</h1>
-							<p class="paragraph">Preencha o formulário que em breve responderemos sua dúvidas.</p>
 							<form>
-								<div class="grid-x grid-margin-x">
-									<div class="cell large-12">
-										<input type="text" name="" placeholder="Seu nome">
-									</div>
-									<div class="cell large-6">
-										<input type="email" name="" placeholder="Seu email">
-									</div>
-									<div class="cell large-6">
-										<input type="tel" name="" placeholder="Seu telefone/celular">
-									</div>
-									<div class="cell large-12">
-										<select>
-											<option value="estado">Estado</option>
-										</select>
-									</div>
-									<div class="cell large-12">
-										<select>
-											<option value="cidade">Cidade</option>
-										</select>
-									</div>
-									<div class="cell large-12">
-										<textarea placeholder="Deixe sua mensagem"></textarea>
-									</div>
-									<div class="cell large-12 text-right">
-										<input type="submit" class="button" value="Enviar">
+								<div class="input-group">
+									<div class="input-group-button">
+										<input type="email" name="E-mail" placeholder="Digite seu email"><input type="submit" class="button" name="Enviar" value="Enviar">
 									</div>
 								</div>
 							</form>
 						</div>
 					</div>
 				</div>
-			</section>
-			<!-- CONTATO - Fim -->
-			<section>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8309401811525!2d-46.7126240844757!3d-23.57451456796452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce56ff8a9dc945%3A0x31c86341d5f7300c!2sR.%20Camargo%2C%2012%20-%20Butant%C3%A3%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005509-001!5e0!3m2!1spt-BR!2sbr!4v1585502867904!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-			</section>
-		</main>
-		<div class="newsletter">
-			<div class="grid-container">
-				<div class="grid-x align-middle">
-					<div class="cell large-6">
-						<div class="newsletter-message">
-							<img src="images/icons/envelope-email.png" alt="receba nossas novidades"><span>Receba nossas novidades</span>
+			</div>
+			<footer>
+				<div class="footer-content">
+					<div class="grid-container">
+						<div class="grid-x">
+							<div class="cell large-4 text-left-to-center">
+								<img src="images/guartecs-logo-white.png" title="Guartecs" alt="Guartecs">
+							</div>
+							<div class="cell large-4 text-left-to-center">
+								<nav class="footer-menu">
+									<ul>
+										<li><a href="empresa.html">Empresa</a></li>
+										<li><a href="produtos.html">Produtos</a></li>
+										<li><a href="caracteristicas.html">Características</a></li>
+										<li><a href="galeria.html">Galeria</a></li>
+										<li><a href="como-comprar.html">Como comprar</a></li>
+										<li><a href="instalacao.html">Instalação</a></li>
+										<li><a href="blog.html">Blog</a></li>
+										<li><a href="contato.html">Contato</a></li>
+										<li><a href="orcamento.html">Orçamento</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="cell large-4">
+								<div class="footer-tel"><img src="images/icons/icon-phone.png" alt="telefone"> 0800 777-0199 - (11) 98129-0226</div>
+								<div class="footer-email"><img src="images/icons/icon-email.png" alt="email"> guartecs@GUARTECS.com.br</div>
+							</div>
 						</div>
 					</div>
-					<div class="cell large-6">
-						<form>
-							<div class="input-group">
-								<div class="input-group-button">
-									<input type="email" name="E-mail" placeholder="Digite seu email"><input type="submit" class="button" name="Enviar" value="Enviar">
+				</div>
+				<div class="all-rights-reserved">
+					<div class="grid-container">
+						<div class="grid-x">
+							<div class="cell">
+								<div class="footer-wrapper">
+									© 2019 Guartecs. Todos os direitos reservados.
+									<div class="social-media-icons">
+										<img src="images/icons/facebook-white.png" alt="facebook"><img src="images/icons/instagram-white.png" alt="instagram">
+									</div>
 								</div>
 							</div>
-						</form>
+						</div>
 					</div>
 				</div>
-			</div>
+			</footer>
 		</div>
-		<footer>
-			<div class="footer-content">
-				<div class="grid-container">
-					<div class="grid-x">
-						<div class="cell large-4">
-							<img src="images/guartecs-logo-white.png" title="Guartecs" alt="Guartecs">
-						</div>
-						<div class="cell large-4">
-							<nav class="footer-menu">
-								<ul>
-									<li><a href="empresa.html">Empresa</a></li>
-									<li><a href="produtos.html">Produtos</a></li>
-									<li><a href="caracteristicas.html">Características</a></li>
-									<li><a href="galeria.html">Galeria</a></li>
-									<li><a href="como-comprar.html">Como comprar</a></li>
-									<li><a href="instalacao.html">Instalação</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="contato.html">Contato</a></li>
-									<li><a href="orcamento.html">Orçamento</a></li>
-								</ul>
-							</nav>
-						</div>
-						<div class="cell large-4">
-							<div class="footer-tel"><img src="images/icons/icon-phone.png" alt="telefone"> 0800 777-0199 - (11) 98129-0226</div>
-							<div class="footer-email"><img src="images/icons/icon-email.png" alt="email"> guartecs@GUARTECS.com.br</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="all-rights-reserved">
-				<div class="grid-container">
-					<div class="grid-x">
-						<div class="cell">
-							<div class="footer-wrapper">
-								© 2019 Guartecs. Todos os direitos reservados.
-								<div class="social-media-icons">
-									<img src="images/icons/facebook-white.png" alt="facebook"><img src="images/icons/instagram-white.png" alt="instagram">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
 		<script type="text/javascript" src="javascripts/jquery.min.js"></script>
 		<script type="text/javascript" src="javascripts/scripts.js"></script>
 		<script type="text/javascript" src="javascripts/slider.js"></script>

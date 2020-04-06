@@ -1,0 +1,40 @@
+// BOTÕES
+.btn
+	display: inline-block
+	text-transform: uppercase
+	font-family: $font-baloo
+	font-size: 16px
+	color: white
+	background: $color-blue
+	border-radius: 60px
+	padding: 14px 36px 12px
+	box-shadow: 0 15px 34px 0 rgba(0,0,0,0.2)
+	@include transition(200ms)
+	&:hover,
+	&:focus
+		text-decoration: underline
+		cursor: pointer
+		color: white
+		background-color: darken($color-blue, 5%)
+	&--red
+		background: $color-red
+		&:hover,
+		&:focus
+			background-color: darken($color-red, 5%)
+	&--white
+		color: $color-blue
+		background: #fff
+		&:hover,
+		&:focus
+			color: $color-blue
+			background-color: darken(#fff, 5%)
+	&--shadowless
+		box-shadow: none
+	&--stretch
+		padding: 14px 66px 12px
+
+// @media only screen and (max-width: 64rem)
+// telas médias (abaixo de 1024px)
+
+// @media only screen and (max-width: 40rem)
+// telas pequenas (abaixo de 640px)

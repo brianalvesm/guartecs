@@ -27,15 +27,21 @@ body, html
 .margin-bottom-40
 	margin-bottom: 40px
 
+.margin-bottom-100
+	margin-bottom: 100px
+
 .margin-bottom-0
 	margin-bottom: 0
+
+.margin-top-40
+	margin-top: 40px
 
 .switch-mobile div
   &:first-child
     display: block
   &:last-child
     display: none
-  @media only screen and (max-width: 40.1rem)
+  @media only screen and (max-width: 40rem)
     &:first-child
       display: none
     &:last-child
@@ -47,5 +53,26 @@ body, html
   @media only screen and (max-width: 40rem)
     display: block
 
+.text-left-to-center
+  text-align: left
+  @media only screen and (max-width: 40rem)
+    text-align: center
+
 .simulador
 	margin: 40px 0
+
+.wrapper
+	position: relative
+	top: 127px
+	// Fix para o header position:fixed não sobrepor o conteúdo
+	@media only screen and (max-width: 40rem)
+		top: 65px
+
+.reveal
+	padding: 0 !important
+
+.reveal-overlay
+	background-color: rgba(0, 0, 0, 0.9) !important
+
+.responsive-embed
+	margin-bottom: 0 !important
