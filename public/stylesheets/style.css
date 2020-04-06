@@ -802,7 +802,7 @@ body, html {
   top: 127px; }
   @media only screen and (max-width: 40rem) {
     .wrapper {
-      top: auto; } }
+      top: 65px; } }
 
 .reveal {
   padding: 0 !important; }
