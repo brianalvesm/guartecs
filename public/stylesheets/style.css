@@ -371,29 +371,38 @@ main h3 {
     .sec {
       padding: 20px 0; } }
 
-.accordion-title {
-  font-family: "baloo_daregular", sans-serif;
-  text-align: left; }
-  .accordion-title h4 {
-    padding-left: 30px;
-    margin-bottom: 0; }
-  .accordion-title:before {
+.accordion-ca {
+  column-count: 2; }
+  .accordion-ca .accordion-title {
     font-family: "baloo_daregular", sans-serif;
-    font-size: 28px; }
-
-.accordion-content {
-  text-align: left;
-  font-size: 18px;
-  position: relative; }
-  .accordion-content .btn {
-    box-shadow: none;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    margin-top: -24px; }
-    @media only screen and (max-width: 40rem) {
-      .accordion-content .btn {
+    text-align: left;
+    padding: 1rem; }
+    .accordion-ca .accordion-title h4 {
+      padding-left: 30px;
+      margin-bottom: 0; }
+    .accordion-ca .accordion-title:before {
+      font-family: "baloo_daregular", sans-serif;
+      font-size: 28px; }
+  .accordion-ca .accordion-content {
+    text-align: left;
+    font-size: 18px;
+    color: #999;
+    position: relative;
+    padding: 2rem 1rem; }
+    .accordion-ca .accordion-content .btn {
+      box-shadow: none;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -24px; }
+  @media only screen and (max-width: 40rem) {
+    .accordion-ca {
+      column-count: 1; }
+      .accordion-ca .accordion-content .btn {
         font-size: 12px; } }
+
+.accordion-item:last-child:not(.is-active) > .accordion-title {
+  border-bottom: none; }
 
 .sec--galeria .gallery-container {
   display: flex;

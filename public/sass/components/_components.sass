@@ -113,24 +113,34 @@
 		padding: 20px 0
 
 // Accordion
-.accordion-title
-	font-family: $font-baloo
-	text-align: left
-	h4
-		padding-left: 30px
-		margin-bottom: 0
-	&:before
+.accordion-ca
+	column-count: 2
+	.accordion-title
 		font-family: $font-baloo
-		font-size: 28px
-.accordion-content
-	text-align: left
-	font-size: 18px
-	position: relative
-	.btn
-		box-shadow: none
-		position: absolute
-		right: 10px
-		top: 50%
-		margin-top: -24px
-		@media only screen and (max-width: 40rem)
+		text-align: left
+		padding: 1rem
+		h4
+			padding-left: 30px
+			margin-bottom: 0
+		&:before
+			font-family: $font-baloo
+			font-size: 28px
+	.accordion-content
+		text-align: left
+		font-size: 18px
+		color: #999
+		position: relative
+		padding: 2rem 1rem
+		.btn
+			box-shadow: none
+			position: absolute
+			right: 10px
+			top: 50%
+			margin-top: -24px
+	@media only screen and (max-width: 40rem)
+		column-count: 1
+		.accordion-content .btn
 			font-size: 12px
+
+.accordion-item:last-child:not(.is-active) > .accordion-title
+	border-bottom: none
