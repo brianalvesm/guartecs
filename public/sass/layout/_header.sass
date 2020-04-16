@@ -17,9 +17,6 @@ header
 .header-content
 	display: flex
 	align-items: center
-	.social-media-icons
-		img:first-child
-			padding-right: 20px
 	.btn-orcamento
 		box-shadow: none
 		font-size: 18px
@@ -164,9 +161,10 @@ div.breadcrumbs
 					img
 						margin-bottom: 15px
 				.social-media-icons
-					width: 56px
 					margin: 40px auto
-					img:first-child
-						padding-right: 20px
+					a
+						display: inline-block
+						&:nth-child(n+2)
+							padding-left: 20px
 	.main-menu ul li
 		display: block

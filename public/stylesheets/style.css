@@ -278,6 +278,9 @@ main h3 {
       font-size: 1rem; }
     .card .card-section--extra-padding {
       padding: 2rem 4rem; }
+  .card figure {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0; }
   @media only screen and (max-width: 40rem) {
     .card--padding {
       padding: 50px 20px; }
@@ -403,6 +406,9 @@ main h3 {
 
 .accordion-item:last-child:not(.is-active) > .accordion-title {
   border-bottom: none; }
+
+.social-media-icons a:nth-child(n+2) {
+  padding-left: 20px; }
 
 .sec--galeria .gallery-container {
   display: flex;
@@ -589,7 +595,9 @@ nav[role=navigation] li a {
     font-family: "baloo_daregular", sans-serif;
     font-size: 24px;
     margin-left: 32px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    position: relative;
+    top: 2px; }
   @media only screen and (max-width: 40rem) {
     .newsletter {
       height: initial; }
@@ -665,17 +673,10 @@ footer {
   justify-content: space-between;
   align-items: center;
   min-height: 72px; }
-  .footer-wrapper .social-media-icons {
-    width: 56px; }
-    .footer-wrapper .social-media-icons img:first-child {
-      padding-right: 20px; }
   @media only screen and (max-width: 40rem) {
     .footer-wrapper {
       display: block;
-      padding: 15px; }
-      .footer-wrapper .social-media-icons {
-        width: 100%;
-        text-align: center; } }
+      padding: 15px; } }
 
 form input[type="text"],
 form input[type="email"],
@@ -717,7 +718,7 @@ form [type="submit"] {
     color: white;
     background-color: #d71b30; }
 
-input[type="file"].inputfile {
+input[type="file"].wpcf7-form-control.wpcf7-file.inputfile {
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
@@ -725,7 +726,7 @@ input[type="file"].inputfile {
   position: absolute;
   z-index: -1; }
 
-input[type="file"].inputfile + label {
+input[type="file"].wpcf7-form-control.wpcf7-file.inputfile + label {
   border-radius: 60px;
   background: #9FE3F7;
   color: white;
@@ -741,7 +742,7 @@ input[type="file"].inputfile + label {
   -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
-  input[type="file"].inputfile + label:after {
+  input[type="file"].wpcf7-form-control.wpcf7-file.inputfile + label:after {
     content: "";
     display: block;
     background-image: url("../images/icons/icon-camera.png");
@@ -751,7 +752,7 @@ input[type="file"].inputfile + label {
     position: absolute;
     right: 15px;
     top: 10px; }
-  input[type="file"].inputfile + label:hover {
+  input[type="file"].wpcf7-form-control.wpcf7-file.inputfile + label:hover {
     background: #58BEED;
     cursor: pointer; }
 
@@ -759,6 +760,9 @@ input[type="radio"] + label {
   margin-left: 0;
   color: #cacaca;
   font-size: 18px; }
+
+.input-group {
+  margin-bottom: 0; }
 
 body, html {
   margin: 0;
@@ -859,8 +863,6 @@ header {
 .header-content {
   display: flex;
   align-items: center; }
-  .header-content .social-media-icons img:first-child {
-    padding-right: 20px; }
   .header-content .btn-orcamento {
     box-shadow: none;
     font-size: 18px;
@@ -1002,10 +1004,11 @@ div.breadcrumbs {
         .js nav[role=navigation].main-menu ul li:last-child img {
           margin-bottom: 15px; }
       .js nav[role=navigation].main-menu ul li .social-media-icons {
-        width: 56px;
         margin: 40px auto; }
-        .js nav[role=navigation].main-menu ul li .social-media-icons img:first-child {
-          padding-right: 20px; }
+        .js nav[role=navigation].main-menu ul li .social-media-icons a {
+          display: inline-block; }
+          .js nav[role=navigation].main-menu ul li .social-media-icons a:nth-child(n+2) {
+            padding-left: 20px; }
   .main-menu ul li {
     display: block; } }
 
@@ -1072,7 +1075,7 @@ div.breadcrumbs {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      padding-top: 2rem;
       background: #fefefe;
       min-height: 356px; }
       .page--home .sec--diferenciais .card--diferenciais .card-section p {
