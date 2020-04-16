@@ -1124,6 +1124,9 @@ div.breadcrumbs {
   background: -moz-linear-gradient(top, #F9F5ED 0%, white 100%);
   background: -webkit-linear-gradient(top, #F9F5ED 0%, white 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color-beige', endColorstr='white',GradientType=1); }
+  .page--home .sec--galeria .gallery-container .gallery-figure,
+  .page--home .sec--galeria .gallery-container .gallery-card {
+    width: 270px; }
 
 .page--home .sec--sobre .grid-container {
   background-image: url("../images/guartecs-sobre-bg.png");
