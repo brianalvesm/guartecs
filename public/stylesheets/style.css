@@ -407,8 +407,10 @@ main h3 {
 .accordion-item:last-child:not(.is-active) > .accordion-title {
   border-bottom: none; }
 
-.social-media-icons a:nth-child(n+2) {
-  padding-left: 20px; }
+.social-media-icons {
+  text-align: center; }
+  .social-media-icons a:nth-child(n+2) {
+    padding-left: 20px; }
 
 .sec--galeria .gallery-container {
   display: flex;
@@ -578,7 +580,8 @@ nav[role=navigation] li a {
     height: 66px !important;
     border-radius: 33px !important; }
     .newsletter input[type="email"] {
-      width: 500px; }
+      width: 500px;
+      padding: 0; }
       .newsletter input[type="email"]::placeholder {
         color: #E4283D;
         padding-left: 40px; }
@@ -726,7 +729,7 @@ input[type="file"].wpcf7-form-control.wpcf7-file.inputfile {
   position: absolute;
   z-index: -1; }
 
-input[type="file"].wpcf7-form-control.wpcf7-file.inputfile + label {
+label.inputfilelabel {
   border-radius: 60px;
   background: #9FE3F7;
   color: white;
@@ -742,7 +745,7 @@ input[type="file"].wpcf7-form-control.wpcf7-file.inputfile + label {
   -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
-  input[type="file"].wpcf7-form-control.wpcf7-file.inputfile + label:after {
+  label.inputfilelabel:after {
     content: "";
     display: block;
     background-image: url("../images/icons/icon-camera.png");
@@ -752,7 +755,7 @@ input[type="file"].wpcf7-form-control.wpcf7-file.inputfile + label {
     position: absolute;
     right: 15px;
     top: 10px; }
-  input[type="file"].wpcf7-form-control.wpcf7-file.inputfile + label:hover {
+  label.inputfilelabel:hover {
     background: #58BEED;
     cursor: pointer; }
 
@@ -1017,6 +1020,9 @@ div.breadcrumbs {
   position: relative;
   z-index: 0;
   padding-top: 0; }
+  @media only screen and (max-width: 40rem) {
+    .page--home .sec--slide .btn {
+      padding: 14px 26px 12px; } }
 
 .page--home .sec--cerca {
   position: relative;
@@ -1127,6 +1133,10 @@ div.breadcrumbs {
   .page--home .sec--galeria .gallery-container .gallery-figure,
   .page--home .sec--galeria .gallery-container .gallery-card {
     width: 270px; }
+    @media only screen and (max-width: 40rem) {
+      .page--home .sec--galeria .gallery-container .gallery-figure,
+      .page--home .sec--galeria .gallery-container .gallery-card {
+        width: initial; } }
 
 .page--home .sec--sobre .grid-container {
   background-image: url("../images/guartecs-sobre-bg.png");

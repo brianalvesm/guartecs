@@ -5,6 +5,9 @@
 		position: relative
 		z-index: 0
 		padding-top: 0
+		@media only screen and (max-width: 40rem)
+			.btn
+				padding: 14px 26px 12px
 	&--cerca
 		position: relative
 		padding-bottom: 200px
@@ -113,6 +116,8 @@
 			.gallery-figure,
 			.gallery-card
 				width: 270px
+				@media only screen and (max-width: 40rem)
+					width: initial
 	&--sobre
 		.grid-container
 			background:
