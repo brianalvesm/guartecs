@@ -54,6 +54,7 @@ label.inputfilelabel
 	margin-bottom: 1rem
 	display: inline-block
 	position: relative
+	cursor: pointer
 	@include transition(200ms)
 	&:after
 		content: ""
@@ -69,6 +70,9 @@ label.inputfilelabel
 	&:hover
 		background: $color-blue
 		cursor: pointer
+	&:focus
+		outline: 1px dotted #000
+		outline: -webkit-focus-ring-color auto 5px
 
 input[type="radio"] + label
 	margin-left: 0
