@@ -1331,11 +1331,13 @@ div.breadcrumbs {
   color: #E4283D; }
 
 .page--portoes-de-seguranca .sec .prod-img-wrapper {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  top: 100px; }
+  bottom: -100px;
+  width: 100%;
+  margin-left: -64px; }
 
 .page--portoes-de-seguranca .sec .prod-img {
   position: relative;
