@@ -897,7 +897,7 @@ header {
 .js nav[role=navigation].main-menu {
   background-color: #E4283D;
   box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-  overflow: auto; }
+  overflow: visible; }
   .js nav[role=navigation].main-menu ul {
     margin: 0;
     text-align: center;
@@ -906,6 +906,7 @@ header {
     display: flex;
     justify-content: space-between; }
     .js nav[role=navigation].main-menu ul li {
+      position: relative;
       flex-grow: 1;
       padding: 8px 0;
       margin: 0;
@@ -933,8 +934,31 @@ header {
         border-bottom: none;
         position: relative;
         top: 2px; }
-    .js nav[role=navigation].main-menu ul.subitem {
-      display: none; }
+      .js nav[role=navigation].main-menu ul li.has-subitem:hover .subitem {
+        display: block;
+        visibility: visible;
+        -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
+      .js nav[role=navigation].main-menu ul li .subitem {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+        top: 44px;
+        background-color: #E4283D;
+        box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+        -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        -ms-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
+        .js nav[role=navigation].main-menu ul li .subitem li {
+          width: 100%;
+          border-right: 0;
+          font-size: 16px;
+          padding: 8px 10px; }
   .js nav[role=navigation].main-menu.active {
     max-height: 40em; }
 
@@ -996,33 +1020,45 @@ div.breadcrumbs {
     justify-content: center; }
   .header-tel {
     line-height: 1.2; }
-  .js nav[role=navigation].main-menu .grid-container {
-    padding: 0; }
-  .js nav[role=navigation].main-menu ul {
-    display: block; }
-    .js nav[role=navigation].main-menu ul li {
-      display: block;
-      border-bottom: 1px solid #F2617C;
-      border-right: none;
-      text-align: left;
-      padding: 5px 10px; }
-      .js nav[role=navigation].main-menu ul li:last-child {
-        border-bottom: none;
-        text-align: center;
-        padding: 40px 0; }
-        .js nav[role=navigation].main-menu ul li:last-child img {
-          margin-bottom: 15px; }
-      .js nav[role=navigation].main-menu ul li .social-media-icons {
-        margin: 40px auto; }
-        .js nav[role=navigation].main-menu ul li .social-media-icons a {
-          display: inline-block; }
-          .js nav[role=navigation].main-menu ul li .social-media-icons a:nth-child(n+2) {
-            padding-left: 20px; }
-    .js nav[role=navigation].main-menu ul.subitem {
+  .js nav[role=navigation].main-menu {
+    overflow: auto; }
+    .js nav[role=navigation].main-menu .grid-container {
+      padding: 0; }
+    .js nav[role=navigation].main-menu ul {
       display: block; }
-      .js nav[role=navigation].main-menu ul.subitem li:last-child {
-        padding: 5px 10px;
-        text-align: left; }
+      .js nav[role=navigation].main-menu ul li {
+        display: block;
+        border-bottom: 1px solid #F2617C;
+        border-right: none;
+        text-align: left;
+        padding: 5px 10px; }
+        .js nav[role=navigation].main-menu ul li:last-child {
+          border-bottom: none;
+          text-align: center;
+          padding: 40px 0; }
+          .js nav[role=navigation].main-menu ul li:last-child img {
+            margin-bottom: 15px; }
+        .js nav[role=navigation].main-menu ul li .social-media-icons {
+          margin: 40px auto; }
+          .js nav[role=navigation].main-menu ul li .social-media-icons a {
+            display: inline-block; }
+            .js nav[role=navigation].main-menu ul li .social-media-icons a:nth-child(n+2) {
+              padding-left: 20px; }
+        .js nav[role=navigation].main-menu ul li .subitem {
+          display: block;
+          visibility: visible;
+          position: unset;
+          box-shadow: none;
+          background-color: unset; }
+          .js nav[role=navigation].main-menu ul li .subitem li {
+            padding: 10px 20px;
+            font-size: 12px; }
+            .js nav[role=navigation].main-menu ul li .subitem li:last-child {
+              padding: 10px 20px;
+              text-align: left; }
+            .js nav[role=navigation].main-menu ul li .subitem li:hover {
+              background-color: unset;
+              box-shadow: none; }
   .main-menu ul li {
     display: block; } }
 
