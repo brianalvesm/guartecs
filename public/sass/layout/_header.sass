@@ -78,6 +78,8 @@ header
 				border-bottom: none
 				position: relative
 				top: 2px
+		&.subitem
+			display: none
 	&.active
 		max-height: 40em
 
@@ -166,8 +168,10 @@ div.breadcrumbs
 						display: inline-block
 						&:nth-child(n+2)
 							padding-left: 20px
-			&.subitem li:last-child
-				padding: 5px 10px
-				text-align: left
+			&.subitem
+				display: block
+				li:last-child
+					padding: 5px 10px
+					text-align: left
 	.main-menu ul li
 		display: block

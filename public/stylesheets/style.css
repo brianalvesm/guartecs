@@ -933,6 +933,8 @@ header {
         border-bottom: none;
         position: relative;
         top: 2px; }
+    .js nav[role=navigation].main-menu ul.subitem {
+      display: none; }
   .js nav[role=navigation].main-menu.active {
     max-height: 40em; }
 
@@ -1016,9 +1018,11 @@ div.breadcrumbs {
           display: inline-block; }
           .js nav[role=navigation].main-menu ul li .social-media-icons a:nth-child(n+2) {
             padding-left: 20px; }
-    .js nav[role=navigation].main-menu ul.subitem li:last-child {
-      padding: 5px 10px;
-      text-align: left; }
+    .js nav[role=navigation].main-menu ul.subitem {
+      display: block; }
+      .js nav[role=navigation].main-menu ul.subitem li:last-child {
+        padding: 5px 10px;
+        text-align: left; }
   .main-menu ul li {
     display: block; } }
 
