@@ -943,10 +943,12 @@ header {
         -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
         transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); }
       .js nav[role=navigation].main-menu ul li .subitem {
+        text-align: left;
         display: none;
         visibility: hidden;
         position: absolute;
         top: 44px;
+        width: 240px;
         background-color: #E4283D;
         box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
         -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -1031,13 +1033,15 @@ div.breadcrumbs {
         border-bottom: 1px solid #F2617C;
         border-right: none;
         text-align: left;
-        padding: 5px 10px; }
+        padding: 0; }
         .js nav[role=navigation].main-menu ul li:last-child {
           border-bottom: none;
           text-align: center;
           padding: 40px 0; }
           .js nav[role=navigation].main-menu ul li:last-child img {
             margin-bottom: 15px; }
+        .js nav[role=navigation].main-menu ul li a {
+          padding: 5px 10px; }
         .js nav[role=navigation].main-menu ul li .social-media-icons {
           margin: 40px auto; }
           .js nav[role=navigation].main-menu ul li .social-media-icons a {
@@ -1048,17 +1052,20 @@ div.breadcrumbs {
           display: block;
           visibility: visible;
           position: unset;
+          width: initial;
           box-shadow: none;
           background-color: unset; }
           .js nav[role=navigation].main-menu ul li .subitem li {
-            padding: 10px 20px;
+            padding: 0;
             font-size: 12px; }
             .js nav[role=navigation].main-menu ul li .subitem li:last-child {
-              padding: 10px 20px;
+              padding: 0;
               text-align: left; }
             .js nav[role=navigation].main-menu ul li .subitem li:hover {
               background-color: unset;
               box-shadow: none; }
+            .js nav[role=navigation].main-menu ul li .subitem li a {
+              padding: 10px 20px; }
   .main-menu ul li {
     display: block; } }
 

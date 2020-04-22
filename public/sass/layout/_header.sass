@@ -84,10 +84,12 @@ header
 				visibility: visible
 				@include transition(200ms)
 			.subitem
+				text-align: left
 				display: none
 				visibility: hidden
 				position: absolute
 				top: 44px
+				width: 240px
 				background-color: $color-red
 				box-shadow: inset 0px 5px 10px 0px rgba(0,0,0,0.3)
 				@include transition(200ms)
@@ -172,13 +174,15 @@ div.breadcrumbs
 				border-bottom: 1px solid #F2617C
 				border-right: none
 				text-align: left
-				padding: 5px 10px
+				padding: 0
 				&:last-child
 					border-bottom: none
 					text-align: center
 					padding: 40px 0
 					img
 						margin-bottom: 15px
+				a
+					padding: 5px 10px
 				.social-media-icons
 					margin: 40px auto
 					a
@@ -189,16 +193,19 @@ div.breadcrumbs
 					display: block
 					visibility: visible
 					position: unset
+					width: initial
 					box-shadow: none
 					background-color: unset
 					li
-						padding: 10px 20px
+						padding: 0
 						font-size: 12px
 						&:last-child
-							padding: 10px 20px
+							padding: 0
 							text-align: left
 						&:hover
 							background-color: unset
 							box-shadow: none
+						a
+							padding: 10px 20px
 	.main-menu ul li
 		display: block
