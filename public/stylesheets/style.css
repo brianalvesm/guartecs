@@ -727,7 +727,7 @@ input[type="file"].wpcf7-form-control.wpcf7-file.inputfile {
   opacity: 0;
   overflow: hidden;
   position: absolute;
-  z-index: -1; }
+  z-index: 0; }
 
 label.inputfilelabel {
   border-radius: 60px;
@@ -1429,7 +1429,10 @@ div.breadcrumbs {
     background-position: -150vw center;
     height: 350px; }
   .page--portoes-de-seguranca .sec .prod-img-wrapper {
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative;
+    margin-left: 0;
+    bottom: 0; }
   .page--portoes-de-seguranca .sec .prod-img {
     margin-right: 0;
     margin-bottom: 40px; }
