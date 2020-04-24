@@ -36,26 +36,31 @@ form
 
 // Form da página ORÇAMENTO
 input[type="file"].wpcf7-form-control.wpcf7-file.inputfile
-	width: 0.1px
-	height: 0.1px
-	opacity: 0
-	overflow: hidden
-	position: absolute
-	z-index: 0
-
-label.inputfilelabel
-	border-radius: 60px
-	background: #9FE3F7
-	color: white
-	text-transform: uppercase
-	font-family: $font-baloo
-	font-size: 13px
-	padding: 12px 50px 10px 20px
-	margin-bottom: 1rem
-	display: inline-block
+	color: transparent
 	position: relative
-	cursor: pointer
-	@include transition(200ms)
+	margin-bottom: 0
+	&::-webkit-file-upload-button
+		visibility: hidden
+	&:before
+		content: "Enviar foto"
+		display: inline-block
+		text-transform: uppercase
+		position: relative
+		border-radius: 60px
+		background: #9FE3F7
+		color: white
+		text-transform: uppercase
+		font-family: $font-baloo
+		font-size: 13px
+		padding: 12px 50px 10px 20px
+		position: relative
+		cursor: pointer
+		@include transition(200ms)
+		&:hover
+			background: $color-blue
+		&:focus
+			outline: 1px dotted #000
+			outline: -webkit-focus-ring-color auto 5px
 	&:after
 		content: ""
 		display: block
@@ -65,14 +70,14 @@ label.inputfilelabel
 		width: 25px
 		height: 20px
 		position: absolute
-		right: 15px
+		left: 108px
 		top: 10px
-	&:hover
-		background: $color-blue
 		cursor: pointer
-	&:focus
-		outline: 1px dotted #000
-		outline: -webkit-focus-ring-color auto 5px
+
+label.inputfilelabel
+	font-style: italic
+	color: $color-blue
+	margin-bottom: 1rem
 
 input[type="radio"] + label
 	margin-left: 0
