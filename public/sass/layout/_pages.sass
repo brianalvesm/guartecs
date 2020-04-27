@@ -68,7 +68,7 @@
 			color: $color-red
 		.prod-img-wrapper
 			position: absolute
-			display: flex
+			@extend %display-flex
 			flex-wrap: wrap
 			justify-content: center
 			bottom: -100px
@@ -171,7 +171,7 @@
 			border-radius: 50px
 			background-color: white
 			border: 4px solid $color-blue
-			display: flex
+			@extend %display-flex
 			align-items: center
 			justify-content: center
 			margin: 15px auto
@@ -281,7 +281,7 @@
 			img
 				max-width: unset
 			span
-				display: flex
+				@extend %display-flex
 				font-size: 16px
 				color: $color-red
 			.title-blue
