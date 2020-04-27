@@ -69,8 +69,8 @@
 		.prod-img-wrapper
 			position: absolute
 			@extend %display-flex
-			flex-wrap: wrap
-			justify-content: center
+			@extend %flex-wrap
+			@extend %justify-content-center
 			bottom: -100px
 			width: 100%
 			margin-left: -64px
@@ -173,7 +173,7 @@
 			border: 4px solid $color-blue
 			@extend %display-flex
 			align-items: center
-			justify-content: center
+			@extend %justify-content-center
 			margin: 15px auto
 			&--over
 				position: absolute
@@ -345,6 +345,10 @@
 					width: 100%
 		&--contato
 			.card
+				-webkit-flex-wrap: wrap
+				-moz-flex-wrap: wrap
+				-ms-flex-wrap: wrap
+				-o-flex-wrap: wrap
 				flex-wrap: wrap
 				padding: 40px 20px 0
 				.divide

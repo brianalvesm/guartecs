@@ -90,6 +90,7 @@ footer
 		padding-right: 36px
 	@media only screen and (max-width: 40rem)
 		font-size: 16px
+		-webkit-justify-content: center
 		justify-content: center
 		img
 			padding-right: 16px
@@ -99,7 +100,7 @@ footer
 
 .footer-wrapper
 	display: flex
-	justify-content: space-between
+	@extend %space-between
 	align-items: center
 	min-height: 72px
 	@media only screen and (max-width: 40rem)

@@ -34,7 +34,7 @@
 
 .beige-cards-wrapper
 	@extend %display-flex
-	flex-wrap: wrap
+	@extend %flex-wrap
 	.card
 		max-width: 380px
 		align-items: center
@@ -56,7 +56,7 @@
 			min-height: 230px
 			@extend %display-flex
 			flex-direction: column
-			justify-content: center
+			@extend %justify-content-center
 
 .highlight
 	border: 2px solid $color-red
@@ -73,7 +73,7 @@
 .selos
 	list-style: none
 	@extend %display-flex
-	flex-wrap: wrap
+	@extend %flex-wrap
 	justify-content: space-evenly
 	align-items: center
 	margin: 0

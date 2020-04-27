@@ -183,7 +183,7 @@
 		ul.video-footer-content
 			list-style: none
 			@extend %display-flex
-			justify-content: space-between
+			@extend %space-between
 			margin: 0
 			padding-left: 80px
 			li
@@ -216,6 +216,10 @@
 					-webkit-mask-image: $maskImage
 					mask-image: $maskImage
 			ul.video-footer-content
+				-webkit-flex-wrap: wrap
+				-moz-flex-wrap: wrap
+				-ms-flex-wrap: wrap
+				-o-flex-wrap: wrap
 				flex-wrap: wrap
 				justify-content: space-evenly
 				padding-left: initial
