@@ -68,9 +68,9 @@
 			color: $color-red
 		.prod-img-wrapper
 			position: absolute
-			display: flex
-			flex-wrap: wrap
-			justify-content: center
+			@extend %display-flex
+			@extend %flex-wrap
+			@extend %justify-content-center
 			bottom: -100px
 			width: 100%
 			margin-left: -64px
@@ -171,9 +171,9 @@
 			border-radius: 50px
 			background-color: white
 			border: 4px solid $color-blue
-			display: flex
+			@extend %display-flex
 			align-items: center
-			justify-content: center
+			@extend %justify-content-center
 			margin: 15px auto
 			&--over
 				position: absolute
@@ -281,7 +281,7 @@
 			img
 				max-width: unset
 			span
-				display: flex
+				@extend %display-flex
 				font-size: 16px
 				color: $color-red
 			.title-blue
@@ -345,6 +345,10 @@
 					width: 100%
 		&--contato
 			.card
+				-webkit-flex-wrap: wrap
+				-moz-flex-wrap: wrap
+				-ms-flex-wrap: wrap
+				-o-flex-wrap: wrap
 				flex-wrap: wrap
 				padding: 40px 20px 0
 				.divide

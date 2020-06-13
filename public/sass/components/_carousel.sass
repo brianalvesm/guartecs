@@ -57,10 +57,10 @@
 		position: absolute
 		height: calc(100% - 75px)
 		text-align: left
-		display: flex
+		@extend %display-flex
 		flex-direction: column
 		align-items: baseline
-		justify-content: center
+		@extend %justify-content-center
 		h1
 			color: white
 			font-size: 56px
@@ -132,7 +132,7 @@
 		p
 			font-size: 16px
 			min-height: 265px
-			display: flex
+			@extend %display-flex
 			align-items: center
 			margin-bottom: 0
 		h3

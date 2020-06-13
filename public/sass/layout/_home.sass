@@ -61,9 +61,9 @@
 			overflow: visible
 			margin-bottom: 60px
 			.card-section
-				display: flex
+				@extend %display-flex
+				@extend %align-items-center
 				flex-direction: column
-				align-items: center
 				padding-top: 2rem
 				background: #fefefe
 				min-height: 356px
@@ -182,14 +182,14 @@
 			right: 0
 		ul.video-footer-content
 			list-style: none
-			display: flex
-			justify-content: space-between
+			@extend %display-flex
+			@extend %space-between
 			margin: 0
 			padding-left: 80px
 			li
 				display: inline-flex
 				flex-direction: column
-				align-items: center
+				@extend %align-items-center
 			img
 				max-height: 40px
 			span
@@ -216,6 +216,10 @@
 					-webkit-mask-image: $maskImage
 					mask-image: $maskImage
 			ul.video-footer-content
+				-webkit-flex-wrap: wrap
+				-moz-flex-wrap: wrap
+				-ms-flex-wrap: wrap
+				-o-flex-wrap: wrap
 				flex-wrap: wrap
 				justify-content: space-evenly
 				padding-left: initial

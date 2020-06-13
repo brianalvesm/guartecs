@@ -6,17 +6,17 @@ header
 	width: 100%
 
 .header-wrapper
-	display: flex
-	align-items: center
+	@extend %display-flex
+	@extend %align-items-center
+	@extend %space-between
 	padding: 15px 0
-	justify-content: space-between
 
 .logo-wrapper img
 	max-width: 274px
 
 .header-content
-	display: flex
-	align-items: center
+	@extend %display-flex
+	@extend %align-items-center
 	.btn-orcamento
 		box-shadow: none
 		font-size: 18px
@@ -52,13 +52,16 @@ header
 		text-align: center
 		border-top: none
 		font-size: 0
-		display: flex
-		justify-content: space-between
+		@extend %display-flex
+		@extend %space-between
 		li
 			position: relative
+			-webkit-flex-grow: 1
+			-moz-flex-grow: 1
 			flex-grow: 1
 			padding: 8px 0
 			margin: 0
+			max-height: 45px
 			border-right: 1px solid #F2617C
 			text-transform: uppercase
 			font-family: $font-baloo
@@ -160,6 +163,7 @@ div.breadcrumbs
 		box-shadow: 0 15px 34px 0 rgba(0,0,0,0.2)
 		display: flex
 		align-items: center
+		-webkit-justify-content: center
 		justify-content: center
 	.header-tel
 		line-height: 1.2
