@@ -925,7 +925,6 @@ header {
       flex-grow: 1;
       padding: 8px 0;
       margin: 0;
-      max-height: 45px;
       border-right: 1px solid #F2617C;
       text-transform: uppercase;
       font-family: "baloo_daregular", sans-serif;
